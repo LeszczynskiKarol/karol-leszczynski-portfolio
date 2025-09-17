@@ -176,7 +176,7 @@ export default function StronyWWWTorun() {
           </div>
         </section>
 
-        {/* Stats Bar */}
+        {/* Stats Bar 
         <section className="py-12 bg-primary/5 border-y border-primary/10">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -203,7 +203,7 @@ export default function StronyWWWTorun() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Dlaczego ja */}
         <section className="py-20">
@@ -252,7 +252,7 @@ export default function StronyWWWTorun() {
                 <h3 className="text-xl font-bold mb-3">Specjalista SEO</h3>
                 <p className="text-muted-foreground">
                   Od 2012 roku pozycjonuję strony.{" "}
-                  <strong>Każdą stronę buduję od podstaw pod Google</strong>.
+                  <strong>Każdą witrynę buduję od podstaw pod Google</strong>.
                   Zero dodatkowych kosztów na późniejszą optymalizację.
                 </p>
               </motion.div>
@@ -559,7 +559,7 @@ export default function StronyWWWTorun() {
               {[
                 {
                   day: "Dzień 1-2",
-                  title: "Brief & Strategia",
+                  title: "Brief & strategia",
                   tasks: [
                     "Analiza konkurencji",
                     "Mapa strony",
@@ -638,37 +638,52 @@ export default function StronyWWWTorun() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-                {
-                  icon: <Smartphone />,
-                  title: "Responsywny design",
-                  desc: "Strona idealnie dopasowana do każdego urządzenia",
-                },
-                {
-                  icon: <Gauge />,
-                  title: "PageSpeed 80+",
-                  desc: "Błyskawiczne ładowanie, lepsza pozycja w Google",
-                },
-                {
-                  icon: <Search />,
-                  title: "Optymalizacja SEO",
-                  desc: "Meta tagi, struktura URL, Schema.org, sitemap",
-                },
-                {
-                  icon: <Lock />,
-                  title: "Certyfikat SSL",
-                  desc: "Bezpieczne połączenie HTTPS w standardzie",
-                },
-                {
-                  icon: <BarChart />,
-                  title: "Google Analytics",
-                  desc: "Pełna analityka ruchu i zachowań użytkowników",
-                },
-                {
-                  icon: <HeadphonesIcon />,
-                  title: "Wsparcie 3 miesiące",
-                  desc: "Pomoc techniczna i drobne poprawki gratis",
-                },
-              ].map((feature, i) => (
+  {
+    icon: <Smartphone />,
+    title: "Responsywny design",
+    desc: "Strona idealnie dopasowana do każdego urządzenia",
+  },
+  {
+    icon: <Gauge />,
+    title: "PageSpeed 80+",
+    desc: "Błyskawiczne ładowanie, lepsza pozycja w Google",
+  },
+  {
+    icon: <Search />,
+    title: "Optymalizacja SEO",
+    desc: "Meta tagi, struktura URL, Schema.org, sitemap",
+  },
+  {
+    icon: <Lock />,
+    title: "Certyfikat SSL",
+    desc: "Bezpieczne połączenie HTTPS w standardzie",
+  },
+  {
+    icon: <BarChart />,
+    title: "Google Analytics",
+    desc: "Pełna analityka ruchu i zachowań użytkowników",
+  },
+  {
+    icon: <HeadphonesIcon />,
+    title: "Wsparcie 3 miesiące",
+    desc: "Pomoc techniczna i drobne poprawki gratis",
+  },
+  {
+    icon: <Globe />,
+    title: "Darmowy hosting",
+    desc: "Rok hostingu gratis w pakietach Wizytówka i Biznes",
+  },
+  {
+    icon: <FileText />,
+    title: "Dokumenty prawne",
+    desc: "RODO, polityka prywatności, cookies, regulamin",
+  },
+  {
+    icon: <Sparkles />,
+    title: "Treści sprzedażowe",
+    desc: "Profesjonalne teksty napisane przez copywritera",
+  },
+].map((feature, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -715,7 +730,8 @@ export default function StronyWWWTorun() {
                     "Responsywny design",
                     "Formularz kontaktowy",
                     "Podstawowe SEO",
-                    "Google Maps",
+                    "Google Analytics",
+                    "Dokumenty prawne",
                     "SSL i hosting (1 rok)",
                     "1 miesiąc wsparcia",
                   ],
@@ -734,6 +750,7 @@ export default function StronyWWWTorun() {
                     "Zaawansowane SEO",
                     "Google Analytics",
                     "Newsletter",
+                    "Dokumenty prawne",
                     "Animacje i efekty",
                     "SSL i hosting (1 rok)",
                     "3 miesiące wsparcia",
@@ -749,6 +766,7 @@ export default function StronyWWWTorun() {
                     "Nieograniczone podstrony",
                     "Dedykowany projekt UX/UI",
                     "Zaawansowany CMS",
+                    "Dokumenty prawne",
                     "Integracje API",
                     "Panel klienta",
                     "Wielojęzyczność",
