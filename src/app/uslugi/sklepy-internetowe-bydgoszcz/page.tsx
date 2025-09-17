@@ -8,16 +8,12 @@ import {
   Check,
   ChevronRight,
   Clock,
-  DollarSign,
   Mail,
   MapPin,
   Package,
   Phone,
   Shield,
-  ShoppingCart,
   Star,
-  TrendingUp,
-  Zap,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -211,7 +207,7 @@ export default function SklepyInternetoweBydgoszcz() {
           </div>
         </section>
 
-        {/* Statystyki sprzedaży */}
+        {/* Statystyki sprzedaży 
         <section className="py-20 bg-muted/20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
@@ -266,10 +262,10 @@ export default function SklepyInternetoweBydgoszcz() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Funkcjonalności interaktywne */}
-        <section className="py-20">
+        <section className="py-20 mt-10">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">

@@ -1,32 +1,32 @@
 // src/app/uslugi/platformy-saas-ai/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
 import {
-  Brain,
-  Rocket,
-  TrendingUp,
-  Code2,
-  Check,
   ArrowRight,
-  CreditCard,
   Award,
-  ChevronRight,
-  Phone,
-  Mail,
-  FileText,
   BarChart3,
-  Sparkles,
   Bot,
+  Brain,
+  Check,
+  ChevronRight,
+  Code2,
+  CreditCard,
   Database,
-  RefreshCw,
   DollarSign,
+  FileText,
+  Mail,
+  Phone,
+  RefreshCw,
+  Rocket,
+  Sparkles,
   Target,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  TrendingUp,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function PlatformySaaSAI() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -38,28 +38,28 @@ export default function PlatformySaaSAI() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    applicationCategory: "BusinessApplication",
-    name: "Tworzenie platform SaaS z AI",
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    applicationCategory: 'BusinessApplication',
+    name: 'Tworzenie platform SaaS z AI',
     description:
-      "Kompletne platformy SaaS wykorzystujące sztuczną inteligencję. MVP w 4-8 tygodni.",
+      'Kompletne platformy SaaS wykorzystujące sztuczną inteligencję. MVP w 4-8 tygodni.',
     creator: {
-      "@type": "Person",
-      name: "Karol Leszczyński",
+      '@type': 'Person',
+      name: 'Karol Leszczyński',
     },
     offers: {
-      "@type": "Offer",
-      price: "19990",
-      priceCurrency: "PLN",
-      priceValidUntil: "2025-12-31",
+      '@type': 'Offer',
+      price: '19990',
+      priceCurrency: 'PLN',
+      priceValidUntil: '2025-12-31',
     },
     featureList: [
-      "Integracje AI (OpenAI, Anthropic)",
-      "System płatności Stripe",
-      "Skalowalna architektura",
-      "Panel administracyjny",
-      "API REST/GraphQL",
+      'Integracje AI (OpenAI, Anthropic)',
+      'System płatności Stripe',
+      'Skalowalna architektura',
+      'Panel administracyjny',
+      'API REST/GraphQL',
     ],
   };
 
@@ -96,7 +96,7 @@ export default function PlatformySaaSAI() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -117,7 +117,7 @@ export default function PlatformySaaSAI() {
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                <strong>Tworzę inteligentne platformy SaaS</strong>{" "}
+                <strong>Tworzę inteligentne platformy SaaS</strong>{' '}
                 wykorzystujące moc sztucznej inteligencji. Od automatyzacji
                 procesów po generowanie treści - buduję rozwiązania, które
                 skalują Twój biznes.
@@ -177,7 +177,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Dlaczego{" "}
+                Dlaczego{' '}
                 <span className="text-gradient">AI zmienia zasady gry</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -191,27 +191,27 @@ export default function PlatformySaaSAI() {
               {[
                 {
                   icon: <RefreshCw />,
-                  title: "Automatyzacja 24/7",
-                  value: "90%",
-                  desc: "Redukcja czasu obsługi klienta",
+                  title: 'Automatyzacja 24/7',
+                  value: '90%',
+                  desc: 'Redukcja czasu obsługi klienta',
                 },
                 {
                   icon: <DollarSign />,
-                  title: "Niższe koszty",
-                  value: "70%",
-                  desc: "Oszczędności na procesach",
+                  title: 'Niższe koszty',
+                  value: '70%',
+                  desc: 'Oszczędności na procesach',
                 },
                 {
                   icon: <TrendingUp />,
-                  title: "Skalowalność",
-                  value: "∞",
-                  desc: "Bez limitu użytkowników",
+                  title: 'Skalowalność',
+                  value: '∞',
+                  desc: 'Bez limitu użytkowników',
                 },
                 {
                   icon: <Target />,
-                  title: "Personalizacja",
-                  value: "100%",
-                  desc: "Dopasowanie do użytkownika",
+                  title: 'Personalizacja',
+                  value: '100%',
+                  desc: 'Dopasowanie do użytkownika',
                 },
               ].map((stat, i) => (
                 <motion.div
@@ -240,7 +240,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Jakie platformy{" "}
+                Jakie platformy{' '}
                 <span className="text-gradient">mogę dla Ciebie zbudować</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -251,70 +251,70 @@ export default function PlatformySaaSAI() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Platformy edukacyjne z AI",
+                  title: 'Platformy edukacyjne z AI',
                   icon: <Brain />,
-                  desc: "Systemy e-learningowe z personalizacją treści, automatycznym sprawdzaniem zadań i generowaniem materiałów.",
+                  desc: 'Systemy e-learningowe z personalizacją treści, automatycznym sprawdzaniem zadań i generowaniem materiałów.',
                   examples: [
-                    "Kursy online",
-                    "Systemy egzaminacyjne",
-                    "Generatory treści edukacyjnych",
+                    'Kursy online',
+                    'Systemy egzaminacyjne',
+                    'Generatory treści edukacyjnych',
                   ],
-                  color: "from-blue-500 to-purple-500",
+                  color: 'from-blue-500 to-purple-500',
                 },
                 {
-                  title: "Generatory treści AI",
+                  title: 'Generatory treści AI',
                   icon: <FileText />,
-                  desc: "Platformy do automatycznego tworzenia tekstów, opisów produktów, postów social media.",
+                  desc: 'Platformy do automatycznego tworzenia tekstów, opisów produktów, postów social media.',
                   examples: [
-                    "Copywriting AI",
-                    "Content marketing",
-                    "Opisy produktów",
+                    'Copywriting AI',
+                    'Content marketing',
+                    'Opisy produktów',
                   ],
-                  color: "from-green-500 to-teal-500",
+                  color: 'from-green-500 to-teal-500',
                 },
                 {
-                  title: "Chatboty i asystenci",
+                  title: 'Chatboty i asystenci',
                   icon: <Bot />,
-                  desc: "Inteligentne systemy obsługi klienta, doradcy produktowi, wirtualni asystenci.",
+                  desc: 'Inteligentne systemy obsługi klienta, doradcy produktowi, wirtualni asystenci.',
                   examples: [
-                    "Customer service",
-                    "Doradcy sprzedażowi",
-                    "FAQ automatyczne",
+                    'Customer service',
+                    'Doradcy sprzedażowi',
+                    'FAQ automatyczne',
                   ],
-                  color: "from-orange-500 to-red-500",
+                  color: 'from-orange-500 to-red-500',
                 },
                 {
-                  title: "Analizy predykcyjne",
+                  title: 'Analizy predykcyjne',
                   icon: <BarChart3 />,
-                  desc: "Systemy przewidywania trendów, analizy ryzyka, optymalizacji procesów biznesowych.",
+                  desc: 'Systemy przewidywania trendów, analizy ryzyka, optymalizacji procesów biznesowych.',
                   examples: [
-                    "Prognozy sprzedaży",
-                    "Analiza churn",
-                    "Scoring leadów",
+                    'Prognozy sprzedaży',
+                    'Analiza churn',
+                    'Scoring leadów',
                   ],
-                  color: "from-purple-500 to-pink-500",
+                  color: 'from-purple-500 to-pink-500',
                 },
                 {
-                  title: "Automatyzacja workflow",
+                  title: 'Automatyzacja workflow',
                   icon: <RefreshCw />,
-                  desc: "Platformy automatyzujące procesy biznesowe, dokumenty, faktury, raporty.",
+                  desc: 'Platformy automatyzujące procesy biznesowe, dokumenty, faktury, raporty.',
                   examples: [
-                    "Obieg dokumentów",
-                    "Automatyczne raporty",
-                    "Procesy HR",
+                    'Obieg dokumentów',
+                    'Automatyczne raporty',
+                    'Procesy HR',
                   ],
-                  color: "from-cyan-500 to-blue-500",
+                  color: 'from-cyan-500 to-blue-500',
                 },
                 {
-                  title: "Personalizacja e-commerce",
+                  title: 'Personalizacja e-commerce',
                   icon: <Target />,
-                  desc: "Systemy rekomendacji produktów, dynamiczne ceny, personalizowane oferty.",
+                  desc: 'Systemy rekomendacji produktów, dynamiczne ceny, personalizowane oferty.',
                   examples: [
-                    "Rekomendacje AI",
-                    "Dynamic pricing",
-                    "Personalizacja UX",
+                    'Rekomendacje AI',
+                    'Dynamic pricing',
+                    'Personalizacja UX',
                   ],
-                  color: "from-indigo-500 to-purple-500",
+                  color: 'from-indigo-500 to-purple-500',
                 },
               ].map((platform, i) => (
                 <motion.div
@@ -355,7 +355,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Platformy które{" "}
+                Platformy które{' '}
                 <span className="text-gradient">już działają</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -381,7 +381,7 @@ export default function PlatformySaaSAI() {
 
                     <h3 className="text-3xl font-bold mb-4">Smart-Edu.AI</h3>
                     <p className="text-lg text-muted-foreground mb-6">
-                      Platforma wykorzystująca{" "}
+                      Platforma wykorzystująca{' '}
                       <strong>Claude AI (Anthropic)</strong> do generowania prac
                       naukowych i zaliczeniowych. System potrafi stworzyć
                       120-stronicową pracę dyplomową w 20 minut.
@@ -529,7 +529,7 @@ export default function PlatformySaaSAI() {
 
                     <h3 className="text-3xl font-bold mb-4">Ecopywriting.pl</h3>
                     <p className="text-lg text-muted-foreground mb-6">
-                      Platforma do{" "}
+                      Platforma do{' '}
                       <strong>
                         automatycznego zamawiania tekstów copywriterskich
                       </strong>
@@ -592,7 +592,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Technologie które{" "}
+                Technologie, które{' '}
                 <span className="text-gradient">wykorzystuję</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -609,24 +609,24 @@ export default function PlatformySaaSAI() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   {[
                     {
-                      name: "Anthropic Claude",
-                      desc: "Najlepszy do treści",
-                      icon: "🤖",
+                      name: 'Anthropic Claude',
+                      desc: 'Najlepszy do treści',
+                      icon: '🤖',
                     },
                     {
-                      name: "OpenAI GPT-4",
-                      desc: "Uniwersalne zastosowania",
-                      icon: "🧠",
+                      name: 'OpenAI GPT-4',
+                      desc: 'Uniwersalne zastosowania',
+                      icon: '🧠',
                     },
                     {
-                      name: "Google Gemini",
-                      desc: "Analiza danych",
-                      icon: "🌟",
+                      name: 'Google Gemini',
+                      desc: 'Analiza danych',
+                      icon: '🌟',
                     },
                     {
-                      name: "Stable Diffusion",
-                      desc: "Generowanie grafik",
-                      icon: "🎨",
+                      name: 'Stable Diffusion',
+                      desc: 'Generowanie grafik',
+                      icon: '🎨',
                     },
                   ].map((tech, i) => (
                     <motion.div
@@ -657,12 +657,12 @@ export default function PlatformySaaSAI() {
                   </h3>
                   <div className="space-y-2">
                     {[
-                      "Next.js 14",
-                      "React",
-                      "Node.js",
-                      "Python FastAPI",
-                      "TypeScript",
-                      "GraphQL",
+                      'Next.js 14',
+                      'React',
+                      'Node.js',
+                      'Python FastAPI',
+                      'TypeScript',
+                      'GraphQL',
                     ].map((tech) => (
                       <div
                         key={tech}
@@ -682,12 +682,12 @@ export default function PlatformySaaSAI() {
                   </h3>
                   <div className="space-y-2">
                     {[
-                      "MongoDB",
-                      "PostgreSQL",
-                      "Redis",
-                      "AWS",
-                      "Vercel",
-                      "Docker",
+                      'MongoDB',
+                      'PostgreSQL',
+                      'Redis',
+                      'AWS',
+                      'Vercel',
+                      'Docker',
                     ].map((tech) => (
                       <div
                         key={tech}
@@ -707,12 +707,12 @@ export default function PlatformySaaSAI() {
                   </h3>
                   <div className="space-y-2">
                     {[
-                      "Stripe",
-                      "PayPal",
-                      "Przelewy24",
-                      "Make.com",
-                      "Zapier",
-                      "Webhook",
+                      'Stripe',
+                      'PayPal',
+                      'Przelewy24',
+                      'Make.com',
+                      'Zapier',
+                      'Webhook',
                     ].map((tech) => (
                       <div
                         key={tech}
@@ -734,7 +734,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Od pomysłu do{" "}
+                Od pomysłu do{' '}
                 <span className="text-gradient">działającej platformy</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -745,63 +745,63 @@ export default function PlatformySaaSAI() {
             <div className="max-w-4xl mx-auto">
               {[
                 {
-                  phase: "Discovery",
-                  time: "1-2 tygodnie",
-                  title: "Analiza potrzeb i planowanie",
+                  phase: 'Discovery',
+                  time: '1-2 tygodnie',
+                  title: 'Analiza potrzeb i planowanie',
                   tasks: [
-                    "Warsztaty discovery",
-                    "Analiza konkurencji",
-                    "Wybór modelu AI",
-                    "Architektura systemu",
-                    "Plan MVP",
+                    'Warsztaty discovery',
+                    'Analiza konkurencji',
+                    'Wybór modelu AI',
+                    'Architektura systemu',
+                    'Plan MVP',
                   ],
                 },
                 {
-                  phase: "Design",
-                  time: "2-3 tygodnie",
-                  title: "Projektowanie UX/UI",
+                  phase: 'Design',
+                  time: '2-3 tygodnie',
+                  title: 'Projektowanie UX/UI',
                   tasks: [
-                    "User flow",
-                    "Wireframes",
-                    "Prototyp interaktywny",
-                    "Design system",
-                    "Testy z użytkownikami",
+                    'User flow',
+                    'Wireframes',
+                    'Prototyp interaktywny',
+                    'Design system',
+                    'Testy z użytkownikami',
                   ],
                 },
                 {
-                  phase: "Development",
-                  time: "6-8 tygodni",
-                  title: "Programowanie",
+                  phase: 'Development',
+                  time: '6-8 tygodni',
+                  title: 'Programowanie',
                   tasks: [
-                    "Setup infrastruktury",
-                    "Integracja AI",
-                    "Frontend & Backend",
-                    "System płatności",
-                    "Panel administracyjny",
+                    'Setup infrastruktury',
+                    'Integracja AI',
+                    'Frontend & Backend',
+                    'System płatności',
+                    'Panel administracyjny',
                   ],
                 },
                 {
-                  phase: "Testing",
-                  time: "1-2 tygodnie",
-                  title: "Testy i optymalizacja",
+                  phase: 'Testing',
+                  time: '1-2 tygodnie',
+                  title: 'Testy i optymalizacja',
                   tasks: [
-                    "Testy funkcjonalne",
-                    "Testy wydajności",
-                    "Testy bezpieczeństwa",
-                    "Optymalizacja AI",
-                    "Bug fixing",
+                    'Testy funkcjonalne',
+                    'Testy wydajności',
+                    'Testy bezpieczeństwa',
+                    'Optymalizacja AI',
+                    'Bug fixing',
                   ],
                 },
                 {
-                  phase: "Launch",
-                  time: "1 tydzień",
-                  title: "Wdrożenie i wsparcie",
+                  phase: 'Launch',
+                  time: '1 tydzień',
+                  title: 'Wdrożenie i wsparcie',
                   tasks: [
-                    "Deploy na produkcję",
-                    "Monitoring",
-                    "Szkolenie zespołu",
-                    "Dokumentacja",
-                    "Plan rozwoju",
+                    'Deploy na produkcję',
+                    'Monitoring',
+                    'Szkolenie zespołu',
+                    'Dokumentacja',
+                    'Plan rozwoju',
                   ],
                 },
               ].map((phase, i) => (
@@ -811,7 +811,7 @@ export default function PlatformySaaSAI() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className={`flex gap-6 mb-8 ${
-                    i % 2 === 1 ? "md:flex-row-reverse" : ""
+                    i % 2 === 1 ? 'md:flex-row-reverse' : ''
                   }`}
                 >
                   <div className="flex-shrink-0">
@@ -872,51 +872,51 @@ export default function PlatformySaaSAI() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "MVP",
-                  price: "15 000",
-                  time: "6-8 tygodni",
-                  desc: "Minimum Viable Product do walidacji pomysłu",
+                  name: 'MVP',
+                  price: '15 000',
+                  time: '6-8 tygodni',
+                  desc: 'Minimum Viable Product do walidacji pomysłu',
                   features: [
-                    "Podstawowa integracja AI",
-                    "Do 5 głównych funkcji",
-                    "System logowania",
-                    "Podstawowe płatności",
-                    "Hosting na 3 miesiące",
-                    "Wsparcie 1 miesiąc",
+                    'Podstawowa integracja AI',
+                    'Do 5 głównych funkcji',
+                    'System logowania',
+                    'Podstawowe płatności',
+                    'Hosting na 3 miesiące',
+                    'Wsparcie 1 miesiąc',
                   ],
                   best: false,
                 },
                 {
-                  name: "Standard",
-                  price: "35 000",
-                  time: "10-12 tygodni",
-                  desc: "Pełnoprawna platforma SaaS gotowa do skalowania",
+                  name: 'Standard',
+                  price: '35 000',
+                  time: '10-12 tygodni',
+                  desc: 'Pełnoprawna platforma SaaS gotowa do skalowania',
                   features: [
-                    "Zaawansowana integracja AI",
-                    "Nieograniczone funkcje",
-                    "System subskrypcji",
-                    "Panel administracyjny",
-                    "Integracje zewnętrzne",
-                    "Automatyzacje",
-                    "Hosting na 6 miesięcy",
-                    "Wsparcie 3 miesiące",
+                    'Zaawansowana integracja AI',
+                    'Nieograniczone funkcje',
+                    'System subskrypcji',
+                    'Panel administracyjny',
+                    'Integracje zewnętrzne',
+                    'Automatyzacje',
+                    'Hosting na 6 miesięcy',
+                    'Wsparcie 3 miesiące',
                   ],
                   best: true,
                 },
                 {
-                  name: "Enterprise",
-                  price: "od 60 000",
-                  time: "3-6 miesięcy",
-                  desc: "Dedykowane rozwiązanie dla dużych organizacji",
+                  name: 'Enterprise',
+                  price: 'od 60 000',
+                  time: '3-6 miesięcy',
+                  desc: 'Dedykowane rozwiązanie dla dużych organizacji',
                   features: [
-                    "Multiple AI providers",
-                    "Architektura mikroserwisowa",
-                    "Zaawansowane bezpieczeństwo",
-                    "White-label",
-                    "SLA 99.9%",
-                    "Dedykowany zespół",
-                    "Wsparcie 12 miesięcy",
-                    "Rozwój funkcjonalności",
+                    'Multiple AI providers',
+                    'Architektura mikroserwisowa',
+                    'Zaawansowane bezpieczeństwo',
+                    'White-label',
+                    'SLA 99.9%',
+                    'Dedykowany zespół',
+                    'Wsparcie 12 miesięcy',
+                    'Rozwój funkcjonalności',
                   ],
                   best: false,
                 },
@@ -928,8 +928,8 @@ export default function PlatformySaaSAI() {
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
                     model.best
-                      ? "border-primary shadow-xl"
-                      : "border-primary/10"
+                      ? 'border-primary shadow-xl'
+                      : 'border-primary/10'
                   }`}
                 >
                   {model.best && (
@@ -965,8 +965,8 @@ export default function PlatformySaaSAI() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       model.best
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Rozpocznij projekt
@@ -1007,7 +1007,7 @@ export default function PlatformySaaSAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Pytania o{" "}
+                Pytania o{' '}
                 <span className="text-gradient">platformy SaaS z AI</span>
               </h2>
             </motion.div>
@@ -1015,28 +1015,28 @@ export default function PlatformySaaSAI() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Ile kosztuje utrzymanie platformy SaaS z AI?",
-                  a: "Koszty zależą od skali. Dla małej platformy (do 1000 użytkowników) to około 500-1500 zł/miesiąc (hosting, AI API, bazy danych). Dla większych platform 3000-10000 zł/miesiąc. Koszty AI to zazwyczaj $0.01-0.10 per zapytanie.",
+                  q: 'Ile kosztuje utrzymanie platformy SaaS z AI?',
+                  a: 'Koszty zależą od skali. Dla małej platformy (do 1000 użytkowników) to około 500-1500 zł/miesiąc (hosting, AI API, bazy danych). Dla większych platform 3000-10000 zł/miesiąc. Koszty AI to zazwyczaj $0.01-0.10 per zapytanie.',
                 },
                 {
-                  q: "Czy moja platforma będzie zgodna z RODO?",
-                  a: "Tak, wszystkie platformy buduję zgodnie z RODO i innymi regulacjami. Implementuję szyfrowanie danych, zgody użytkowników, prawo do usunięcia danych, DPA z dostawcami AI. Mogę też pomóc w przygotowaniu dokumentacji prawnej.",
+                  q: 'Czy moja platforma będzie zgodna z RODO?',
+                  a: 'Tak, wszystkie platformy buduję zgodnie z RODO i innymi regulacjami. Implementuję szyfrowanie danych, zgody użytkowników, prawo do usunięcia danych, DPA z dostawcami AI. Mogę też pomóc w przygotowaniu dokumentacji prawnej.',
                 },
                 {
-                  q: "Jaka jest różnica między różnymi modelami AI?",
-                  a: "Claude (Anthropic) jest najlepszy do długich, złożonych tekstów i zadań wymagających rozumowania. GPT-4 (OpenAI) jest bardziej uniwersalny i szybszy. Google Gemini świetnie radzi sobie z analizą danych. Dobieram model do konkretnego zastosowania.",
+                  q: 'Jaka jest różnica między różnymi modelami AI?',
+                  a: 'Claude (Anthropic) jest najlepszy do długich, złożonych tekstów i zadań wymagających rozumowania. GPT-4 (OpenAI) jest bardziej uniwersalny i szybszy. Google Gemini świetnie radzi sobie z analizą danych. Dobieram model do konkretnego zastosowania.',
                 },
                 {
-                  q: "Czy platforma będzie skalowalna?",
-                  a: "Absolutnie tak. Używam architektury mikroserwisowej, auto-skalowania w chmurze, load balancerów. Platformy które tworzę obsługują od 10 do 100 000+ użytkowników bez zmiany kodu.",
+                  q: 'Czy platforma będzie skalowalna?',
+                  a: 'Absolutnie tak. Używam architektury mikroserwisowej, auto-skalowania w chmurze, load balancerów. Platformy które tworzę obsługują od 10 do 100 000+ użytkowników bez zmiany kodu.',
                 },
                 {
-                  q: "Co jeśli API AI przestanie działać?",
+                  q: 'Co jeśli API AI przestanie działać?',
                   a: "Implementuję fallback na alternatywne modele AI, cache'owanie odpowiedzi, graceful degradation. W krytycznych systemach można mieć backup z innym dostawcą AI.",
                 },
                 {
-                  q: "Jak długo trwa zwrot z inwestycji?",
-                  a: "Z moich doświadczeń, dobrze zaprojektowana platforma SaaS zwraca inwestycję w 6-12 miesięcy. Smart-Edu.AI zwróciła koszty już po 3 miesiącach dzięki modelowi subskrypcyjnemu.",
+                  q: 'Jak długo trwa zwrot z inwestycji?',
+                  a: 'Z moich doświadczeń, dobrze zaprojektowana platforma SaaS zwraca inwestycję w 6-12 miesięcy. Smart-Edu.AI zwróciła koszty już po 3 miesiącach dzięki modelowi subskrypcyjnemu.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -1053,7 +1053,7 @@ export default function PlatformySaaSAI() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -1080,7 +1080,7 @@ export default function PlatformySaaSAI() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Gotowy wyprzedzić konkurencję{" "}
+                Gotowy wyprzedzić konkurencję{' '}
                 <span className="text-gradient">o lata świetlne</span>?
               </h2>
 
@@ -1089,7 +1089,7 @@ export default function PlatformySaaSAI() {
                 które nie zautomatyzują procesów z AI, przegrają z tymi które to
                 zrobią.
                 <strong>
-                  {" "}
+                  {' '}
                   Porozmawiajmy o tym, jak AI może transformować Twój biznes.
                 </strong>
               </p>

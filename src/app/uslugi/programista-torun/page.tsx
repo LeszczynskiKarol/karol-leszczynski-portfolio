@@ -1,31 +1,31 @@
 // src/app/uslugi/programista-torun/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
-  Code2,
-  Rocket,
-  CheckCircle,
+  AlertCircle,
   ArrowRight,
-  Phone,
+  Award,
+  CheckCircle,
+  ChevronRight,
+  Clock,
+  Code2,
+  Lightbulb,
   Mail,
   MapPin,
-  Clock,
+  Package,
+  Phone,
+  Rocket,
+  Settings,
   Shield,
-  Zap,
   Target,
   TrendingUp,
   Users,
-  Award,
-  ChevronRight,
-  AlertCircle,
-  Lightbulb,
-  Settings,
-  Package,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  Zap,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ProgramistaTorun() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -37,36 +37,36 @@ export default function ProgramistaTorun() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Programista Toruń - Karol Leszczyński",
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Programista Toruń - Karol Leszczyński',
     description:
-      "Doświadczony programista w Toruniu. 15 lat doświadczenia, aplikacje webowe, sklepy internetowe.",
+      'Doświadczony programista w Toruniu. 15 lat doświadczenia, aplikacje webowe, sklepy internetowe.',
     provider: {
-      "@type": "Person",
-      name: "Karol Leszczyński",
-      jobTitle: "Full-Stack Developer",
-      telephone: "+48509370772",
-      email: "kontakt@karol-leszczynski.pl",
+      '@type': 'Person',
+      name: 'Karol Leszczyński',
+      jobTitle: 'Full-Stack Developer',
+      telephone: '+48509370772',
+      email: 'kontakt@karol-leszczynski.pl',
     },
     address: {
-      "@type": "PostalAddress",
-      addressLocality: "Toruń",
-      addressRegion: "Kujawsko-Pomorskie",
-      addressCountry: "PL",
+      '@type': 'PostalAddress',
+      addressLocality: 'Toruń',
+      addressRegion: 'Kujawsko-Pomorskie',
+      addressCountry: 'PL',
     },
     geo: {
-      "@type": "GeoCoordinates",
-      latitude: "53.0138",
-      longitude: "18.5981",
+      '@type': 'GeoCoordinates',
+      latitude: '53.0138',
+      longitude: '18.5981',
     },
-    areaServed: [{ "@type": "City", name: "Toruń" }],
-    priceRange: "150-500 PLN/h",
-    openingHours: "Mo-Fr 09:00-17:00",
+    areaServed: [{ '@type': 'City', name: 'Toruń' }],
+    priceRange: '150-500 PLN/h',
+    openingHours: 'Mo-Fr 09:00-17:00',
     aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "50",
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '50',
     },
   };
 
@@ -103,7 +103,7 @@ export default function ProgramistaTorun() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -124,7 +124,7 @@ export default function ProgramistaTorun() {
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                <strong>Szukasz doświadczonego programisty w Toruniu?</strong>{" "}
+                <strong>Szukasz doświadczonego programisty w Toruniu?</strong>{' '}
                 15 lat doświadczenia w branży digital. Od copywritera do
                 Full-Stack Developera - znam biznes od każdej strony. Tworzę
                 aplikacje webowe, sklepy internetowe, platformy SaaS i integruję
@@ -187,7 +187,7 @@ export default function ProgramistaTorun() {
             <div className="max-w-5xl mx-auto">
               <motion.div {...fadeInUp} className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Doświadczony{" "}
+                  Doświadczony{' '}
                   <span className="text-gradient">programista z Torunia</span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -301,7 +301,7 @@ export default function ProgramistaTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Co mogę dla Ciebie{" "}
+                Co mogę dla Ciebie{' '}
                 <span className="text-gradient">zaprogramować</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -312,75 +312,75 @@ export default function ProgramistaTorun() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Aplikacje webowe",
+                  title: 'Aplikacje webowe',
                   icon: <Code2 />,
-                  desc: "Nowoczesne aplikacje SPA/PWA w React i Next.js",
+                  desc: 'Nowoczesne aplikacje SPA/PWA w React i Next.js',
                   features: [
-                    "Single Page Applications",
-                    "Progressive Web Apps",
-                    "Panel administracyjny",
-                    "Systemy CRM/ERP",
-                    "Dashboardy analityczne",
+                    'Single Page Applications',
+                    'Progressive Web Apps',
+                    'Panel administracyjny',
+                    'Systemy CRM/ERP',
+                    'Dashboardy analityczne',
                   ],
                 },
                 {
-                  title: "Sklepy internetowe",
+                  title: 'Sklepy internetowe',
                   icon: <Package />,
-                  desc: "E-commerce od podstaw lub na gotowych platformach",
+                  desc: 'E-commerce od podstaw lub na gotowych platformach',
                   features: [
-                    "Własne rozwiązania Node.js",
-                    "WooCommerce",
-                    "Shopify",
-                    "Integracje płatności",
-                    "Synchronizacja z Allegro",
+                    'Własne rozwiązania Node.js',
+                    'WooCommerce',
+                    'Shopify',
+                    'Integracje płatności',
+                    'Synchronizacja z Allegro',
                   ],
                 },
                 {
-                  title: "Integracje AI",
+                  title: 'Integracje AI',
                   icon: <Zap />,
-                  desc: "Wdrażam sztuczną inteligencję w Twojej firmie",
+                  desc: 'Wdrażam sztuczną inteligencję w Twojej firmie',
                   features: [
-                    "Chatboty AI",
-                    "Automatyzacja procesów",
-                    "Generowanie treści",
-                    "Analiza danych",
-                    "Personalizacja",
+                    'Chatboty AI',
+                    'Automatyzacja procesów',
+                    'Generowanie treści',
+                    'Analiza danych',
+                    'Personalizacja',
                   ],
                 },
                 {
-                  title: "API & Backend",
+                  title: 'API & Backend',
                   icon: <Settings />,
-                  desc: "Solidne rozwiązania backendowe i integracje",
+                  desc: 'Solidne rozwiązania backendowe i integracje',
                   features: [
-                    "RESTful API",
-                    "GraphQL",
-                    "Mikrousługi",
-                    "Integracje zewnętrzne",
-                    "Websockets",
+                    'RESTful API',
+                    'GraphQL',
+                    'Mikrousługi',
+                    'Integracje zewnętrzne',
+                    'Websockets',
                   ],
                 },
                 {
-                  title: "Automatyzacja",
+                  title: 'Automatyzacja',
                   icon: <Rocket />,
-                  desc: "Automatyzuję procesy biznesowe i workflow",
+                  desc: 'Automatyzuję procesy biznesowe i workflow',
                   features: [
-                    "Make.com / Zapier",
-                    "Skrypty automatyzujące",
-                    "Web scraping",
-                    "Integracje systemów",
-                    "CI/CD pipelines",
+                    'Make.com / Zapier',
+                    'Skrypty automatyzujące',
+                    'Web scraping',
+                    'Integracje systemów',
+                    'CI/CD pipelines',
                   ],
                 },
                 {
-                  title: "Wsparcie techniczne",
+                  title: 'Wsparcie techniczne',
                   icon: <Shield />,
-                  desc: "Utrzymanie i rozwój istniejących aplikacji",
+                  desc: 'Utrzymanie i rozwój istniejących aplikacji',
                   features: [
-                    "Debugging",
-                    "Optymalizacja wydajności",
-                    "Aktualizacje",
-                    "Migracje",
-                    "Code review",
+                    'Debugging',
+                    'Optymalizacja wydajności',
+                    'Aktualizacje',
+                    'Migracje',
+                    'Code review',
                   ],
                 },
               ].map((service, i) => (
@@ -417,7 +417,7 @@ export default function ProgramistaTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Technologie które{" "}
+                Technologie, które{' '}
                 <span className="text-gradient">wykorzystuję</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -429,36 +429,36 @@ export default function ProgramistaTorun() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
                   {
-                    category: "Frontend",
-                    techs: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+                    category: 'Frontend',
+                    techs: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
                   },
                   {
-                    category: "Backend",
-                    techs: ["Node.js", "Express", "Python", "PHP"],
+                    category: 'Backend',
+                    techs: ['Node.js', 'Express', 'Python', 'PHP'],
                   },
                   {
-                    category: "Bazy danych",
-                    techs: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+                    category: 'Bazy danych',
+                    techs: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis'],
                   },
                   {
-                    category: "Cloud",
-                    techs: ["AWS", "Vercel", "Docker", "Nginx"],
+                    category: 'Cloud',
+                    techs: ['AWS', 'Vercel', 'Docker', 'Nginx'],
                   },
                   {
-                    category: "AI/ML",
-                    techs: ["OpenAI", "Anthropic", "LangChain", "TensorFlow"],
+                    category: 'AI/ML',
+                    techs: ['OpenAI', 'Anthropic', 'LangChain', 'TensorFlow'],
                   },
                   {
-                    category: "CMS",
-                    techs: ["WordPress", "Strapi", "Sanity", "Directus"],
+                    category: 'CMS',
+                    techs: ['WordPress', 'Strapi', 'Sanity', 'Directus'],
                   },
                   {
-                    category: "E-commerce",
-                    techs: ["WooCommerce", "Shopify", "Stripe", "PayPal"],
+                    category: 'E-commerce',
+                    techs: ['WooCommerce', 'Shopify', 'Stripe', 'PayPal'],
                   },
                   {
-                    category: "DevOps",
-                    techs: ["Git", "CI/CD", "Linux", "PM2"],
+                    category: 'DevOps',
+                    techs: ['Git', 'CI/CD', 'Linux', 'PM2'],
                   },
                 ].map((group, i) => (
                   <motion.div
@@ -501,32 +501,32 @@ export default function ProgramistaTorun() {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   {
-                    step: "1",
-                    title: "Konsultacja",
-                    desc: "Spotykamy się osobiście lub online. Omawiamy Twoje potrzeby i cele biznesowe.",
+                    step: '1',
+                    title: 'Konsultacja',
+                    desc: 'Spotykamy się osobiście lub online. Omawiamy Twoje potrzeby i cele biznesowe.',
                     icon: <Lightbulb />,
-                    time: "1-2 dni",
+                    time: '1-2 dni',
                   },
                   {
-                    step: "2",
-                    title: "Wycena",
-                    desc: "Przygotowuję szczegółową wycenę z harmonogramem i zakresem prac.",
+                    step: '2',
+                    title: 'Wycena',
+                    desc: 'Przygotowuję szczegółową wycenę z harmonogramem i zakresem prac.',
                     icon: <Target />,
-                    time: "2-3 dni",
+                    time: '2-3 dni',
                   },
                   {
-                    step: "3",
-                    title: "Realizacja",
-                    desc: "Programuję rozwiązanie z regularnym raportowaniem postępów.",
+                    step: '3',
+                    title: 'Realizacja',
+                    desc: 'Programuję rozwiązanie z regularnym raportowaniem postępów.',
                     icon: <Code2 />,
-                    time: "2-8 tygodni",
+                    time: '2-8 tygodni',
                   },
                   {
-                    step: "4",
-                    title: "Wdrożenie",
-                    desc: "Deploy, testy, szkolenie. Gwarancja i wsparcie po uruchomieniu.",
+                    step: '4',
+                    title: 'Wdrożenie',
+                    desc: 'Deploy, testy, szkolenie. Gwarancja i wsparcie po uruchomieniu.',
                     icon: <Rocket />,
-                    time: "3-5 dni",
+                    time: '3-5 dni',
                   },
                 ].map((phase, i) => (
                   <motion.div
@@ -574,33 +574,33 @@ export default function ProgramistaTorun() {
               {[
                 {
                   icon: <Award />,
-                  title: "15 lat doświadczenia",
-                  desc: "Od 2009 roku w branży digital. Znam biznes od strony marketingu i technologii.",
+                  title: '15 lat doświadczenia',
+                  desc: 'Od 2009 roku w branży digital. Znam biznes od strony marketingu i technologii.',
                 },
                 {
                   icon: <Users />,
-                  title: "Lokalne wsparcie",
-                  desc: "Jestem z Torunia. Możemy spotkać się osobiście, podpisać umowę, wystawię fakturę.",
+                  title: 'Lokalne wsparcie',
+                  desc: 'Jestem z Torunia. Możemy spotkać się osobiście, podpisać umowę, wystawię fakturę.',
                 },
                 {
                   icon: <TrendingUp />,
-                  title: "Biznesowe podejście",
-                  desc: "Nie tylko koduję - rozumiem cele biznesowe i pomagam je osiągnąć przez technologię.",
+                  title: 'Biznesowe podejście',
+                  desc: 'Nie tylko koduję - rozumiem cele biznesowe i pomagam je osiągnąć przez technologię.',
                 },
                 {
                   icon: <Shield />,
-                  title: "Gwarancja jakości",
-                  desc: "Czysty kod, dokumentacja, testy. Gwarancja na wykonane prace.",
+                  title: 'Gwarancja jakości',
+                  desc: 'Czysty kod, dokumentacja, testy. Gwarancja na wykonane prace.',
                 },
                 {
                   icon: <Clock />,
-                  title: "Terminowość",
-                  desc: "Dotrzymuję terminów. Regularnie informuję o postępach prac.",
+                  title: 'Terminowość',
+                  desc: 'Dotrzymuję terminów. Regularnie informuję o postępach prac.',
                 },
                 {
                   icon: <Zap />,
-                  title: "Nowoczesne rozwiązania",
-                  desc: "Wykorzystuję najnowsze technologie, w tym AI i automatyzację.",
+                  title: 'Nowoczesne rozwiązania',
+                  desc: 'Wykorzystuję najnowsze technologie, w tym AI i automatyzację.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -633,24 +633,24 @@ export default function ProgramistaTorun() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Ile kosztuje stworzenie aplikacji webowej?",
-                  a: "Ceny zaczynają się od 3000 zł za prostą stronę. Aplikacje webowe to koszt 8000-30000 zł w zależności od złożoności. Dokładną wycenę przygotuję po poznaniu wymagań.",
+                  q: 'Ile kosztuje stworzenie aplikacji webowej?',
+                  a: 'Ceny zaczynają się od 3000 zł za prostą stronę. Aplikacje webowe to koszt 8000-30000 zł w zależności od złożoności. Dokładną wycenę przygotuję po poznaniu wymagań.',
                 },
                 {
-                  q: "Jak długo trwa realizacja projektu?",
-                  a: "Prosta strona: 1-2 tygodnie. Sklep internetowy: 3-4 tygodnie. Zaawansowana aplikacja: 4-12 tygodni. Zawsze ustalam realistyczne terminy.",
+                  q: 'Jak długo trwa realizacja projektu?',
+                  a: 'Prosta strona: 1-2 tygodnie. Sklep internetowy: 3-4 tygodnie. Zaawansowana aplikacja: 4-12 tygodni. Zawsze ustalam realistyczne terminy.',
                 },
                 {
-                  q: "Czy oferujesz wsparcie po wdrożeniu?",
-                  a: "Tak, oferuję pakiety wsparcia od 500 zł/miesiąc. Obejmują aktualizacje, drobne zmiany, monitoring i pomoc techniczną.",
+                  q: 'Czy oferujesz wsparcie po wdrożeniu?',
+                  a: 'Tak, oferuję pakiety wsparcia od 500 zł/miesiąc. Obejmują aktualizacje, drobne zmiany, monitoring i pomoc techniczną.',
                 },
                 {
-                  q: "Jakie technologie wykorzystujesz?",
-                  a: "Głównie React, Next.js, Node.js, TypeScript. Ale dobieriam technologię do projektu - WordPress dla blogów, WooCommerce dla e-commerce, Python dla AI.",
+                  q: 'Jakie technologie wykorzystujesz?',
+                  a: 'Głównie React, Next.js, Node.js, TypeScript. Ale dobieriam technologię do projektu - WordPress dla blogów, WooCommerce dla e-commerce, Python dla AI.',
                 },
                 {
-                  q: "Czy możesz przejąć istniejący projekt?",
-                  a: "Tak, regularnie przejmuję i rozwijam istniejące projekty. Zaczynam od audytu kodu, identyfikuję problemy i proponuję plan rozwoju.",
+                  q: 'Czy możesz przejąć istniejący projekt?',
+                  a: 'Tak, regularnie przejmuję i rozwijam istniejące projekty. Zaczynam od audytu kodu, identyfikuję problemy i proponuję plan rozwoju.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -667,7 +667,7 @@ export default function ProgramistaTorun() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -694,7 +694,7 @@ export default function ProgramistaTorun() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Potrzebujesz{" "}
+                Potrzebujesz{' '}
                 <span className="text-gradient">programisty w Toruniu</span>?
               </h2>
 
@@ -702,7 +702,7 @@ export default function ProgramistaTorun() {
                 Zadzwoń lub napisz - omówimy Twój projekt i zaproponuję
                 najlepsze rozwiązanie.
                 <strong>
-                  {" "}
+                  {' '}
                   Pierwsza konsultacja jest całkowicie bezpłatna i
                   niezobowiązująca.
                 </strong>
