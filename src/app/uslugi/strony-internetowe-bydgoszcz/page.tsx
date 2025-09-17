@@ -1,34 +1,35 @@
 // src/app/uslugi/strony-internetowe-bydgoszcz/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
-  Globe,
-  Search,
-  Smartphone,
-  Package,
-  Rocket,
-  Check,
   ArrowRight,
+  Award,
   BarChart,
-  Lock,
-  GraduationCap,
-  Shield,
-  Gauge,
-  HeadphonesIcon,
+  Calendar,
+  Check,
   ChevronRight,
-  Phone,
+  FileText,
+  Gauge,
+  Globe,
+  GraduationCap,
+  HeadphonesIcon,
+  Layers,
+  Lock,
   Mail,
   MapPin,
-  Calendar,
+  Package,
+  Phone,
+  Rocket,
+  Search,
+  Shield,
+  Smartphone,
   Sparkles,
   Users,
-  Award,
-  Layers,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function StronyInternetoweBydgoszcz() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -40,33 +41,33 @@ export default function StronyInternetoweBydgoszcz() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Tworzenie stron internetowych Bydgoszcz",
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Tworzenie stron internetowych Bydgoszcz',
     description:
-      "Profesjonalne tworzenie stron www w Bydgoszczy. Firmowe strony internetowe, sklepy online, landing page. Next.js, WordPress, SEO.",
+      'Profesjonalne tworzenie stron www w Bydgoszczy. Firmowe strony internetowe, sklepy online, landing page. Next.js, WordPress, SEO.',
     creator: {
-      "@type": "LocalBusiness",
-      name: "Karol Leszczyński - Strony internetowe Bydgoszcz",
+      '@type': 'LocalBusiness',
+      name: 'Karol Leszczyński - Strony internetowe Bydgoszcz',
       address: {
-        "@type": "PostalAddress",
-        addressLocality: "Bydgoszcz",
-        addressRegion: "Kujawsko-Pomorskie",
+        '@type': 'PostalAddress',
+        addressLocality: 'Bydgoszcz',
+        addressRegion: 'Kujawsko-Pomorskie',
       },
-      telephone: "+48509370772",
+      telephone: '+48509370772',
     },
     offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "PLN",
-      lowPrice: "2490",
-      highPrice: "12990",
+      '@type': 'AggregateOffer',
+      priceCurrency: 'PLN',
+      lowPrice: '2490',
+      highPrice: '12990',
     },
     potentialAction: {
-      "@type": "ContactAction",
+      '@type': 'ContactAction',
       target: {
-        "@type": "ContactPoint",
-        telephone: "+48509370772",
-        contactType: "sales",
+        '@type': 'ContactPoint',
+        telephone: '+48509370772',
+        contactType: 'sales',
       },
     },
   };
@@ -103,7 +104,7 @@ export default function StronyInternetoweBydgoszcz() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -120,14 +121,14 @@ export default function StronyInternetoweBydgoszcz() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Tworzenie stron internetowych{" "}
+                Tworzenie stron internetowych{' '}
                 <span className="text-gradient">Bydgoszcz</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 <strong>
                   Firmowa strona internetowa, która pracuje na Twój sukces 24/7.
-                </strong>{" "}
+                </strong>{' '}
                 Projektuję i programuję nowoczesne witryny WWW dla firm i osób
                 prywatnych z Bydgoszczy. Każda realizacja to połączenie
                 estetyki, wydajności i skuteczności marketingowej.
@@ -150,7 +151,7 @@ export default function StronyInternetoweBydgoszcz() {
                   transition={{ delay: 0.4 }}
                 >
                   <Check className="w-5 h-5 text-green-500" />
-                  <span>Gwarancja PageSpeed 90+</span>
+                  <span>PageSpeed 80+</span>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2"
@@ -182,15 +183,15 @@ export default function StronyInternetoweBydgoszcz() {
           </div>
         </section>
 
-        {/* Stats Bar */}
+        {/* Stats Bar
         <section className="py-12 bg-primary/5 border-y border-primary/10">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: "15+", label: "Lat doświadczenia" },
-                { value: "50+", label: "Zrealizowanych projektów" },
-                { value: "90%", label: "Średnia PageSpeed" },
-                { value: "5.0", label: "Ocena klientów" },
+                { value: '15+', label: 'Lat doświadczenia' },
+                { value: '50+', label: 'Zrealizowanych projektów' },
+                { value: '90%', label: 'Średnia PageSpeed' },
+                { value: '5.0', label: 'Ocena klientów' },
               ].map((stat, i) => (
                 <motion.div
                   key={i}
@@ -209,14 +210,14 @@ export default function StronyInternetoweBydgoszcz() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Dlaczego warto */}
         <section className="py-20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Tworzenie stron www to{" "}
+                Tworzenie stron www to{' '}
                 <span className="text-gradient">więcej niż programowanie</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -259,9 +260,10 @@ export default function StronyInternetoweBydgoszcz() {
                   Kompleksowa realizacja
                 </h3>
                 <p className="text-muted-foreground">
-                  Od strategii przez projekt po wdrożenie.{" "}
-                  <strong>Tworzenie stron internetowych w Bydgoszczy</strong> to
-                  moja pasja - dbam o każdy detal, od UX po treści marketingowe.
+                  Od strategii przez projekt po wdrożenie.{' '}
+                  <strong>Tworzenie stron internetowych na zamówienie</strong>{' '}
+                  to moja pasja - dbam o każdy detal, od UX po treści
+                  marketingowe.
                 </p>
               </motion.div>
 
@@ -321,7 +323,7 @@ export default function StronyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Firmowe strony internetowe{" "}
+                Firmowe strony internetowe{' '}
                 <span className="text-gradient">dla każdej branży</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -333,74 +335,74 @@ export default function StronyInternetoweBydgoszcz() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Strony dla firm usługowych",
-                  desc: "Profesjonalna prezentacja usług z systemem rezerwacji i wyceny online. Idealne dla salonów, gabinetów, warsztatów.",
+                  title: 'Strony dla firm usługowych',
+                  desc: 'Profesjonalna prezentacja usług z systemem rezerwacji i wyceny online. Idealne dla salonów, gabinetów, warsztatów.',
                   features: [
-                    "Katalog usług",
-                    "System rezerwacji",
-                    "Kalendarz dostępności",
-                    "Wycena online",
-                    "Opinie klientów",
+                    'Katalog usług',
+                    'System rezerwacji',
+                    'Kalendarz dostępności',
+                    'Wycena online',
+                    'Opinie klientów',
                   ],
                   icon: <Calendar />,
                 },
                 {
-                  title: "Strony dla producentów",
-                  desc: "Katalog produktów, specyfikacje techniczne, do pobrania. Dla firm produkcyjnych z Bydgoszczy.",
+                  title: 'Strony dla producentów',
+                  desc: 'Katalog produktów, specyfikacje techniczne, do pobrania. Dla firm produkcyjnych z Bydgoszczy.',
                   features: [
-                    "Katalog produktów",
-                    "Karty techniczne",
-                    "Pliki CAD do pobrania",
-                    "Konfigurator produktu",
-                    "Zapytania ofertowe",
+                    'Katalog produktów',
+                    'Karty techniczne',
+                    'Pliki CAD do pobrania',
+                    'Konfigurator produktu',
+                    'Zapytania ofertowe',
                   ],
                   icon: <Package />,
                 },
                 {
-                  title: "Strony korporacyjne",
-                  desc: "Rozbudowane serwisy dla średnich i dużych firm. Wielojęzyczność, intranety, portale B2B.",
+                  title: 'Strony korporacyjne',
+                  desc: 'Rozbudowane serwisy dla średnich i dużych firm. Wielojęzyczność, intranety, portale B2B.',
                   features: [
-                    "Struktura wielopoziomowa",
-                    "Wersje językowe",
-                    "Portal pracowniczy",
-                    "Relacje inwestorskie",
-                    "CSR i ESG",
+                    'Struktura wielopoziomowa',
+                    'Wersje językowe',
+                    'Portal pracowniczy',
+                    'Relacje inwestorskie',
+                    'CSR i ESG',
                   ],
                   icon: <Globe />,
                 },
                 {
-                  title: "Strony dla startupów",
-                  desc: "Nowoczesny design, pitch deck online, integracje z CRM. Dla innowacyjnych firm z Bydgoszczy.",
+                  title: 'Strony dla startupów',
+                  desc: 'Nowoczesny design, pitch deck online, integracje z CRM. Dla innowacyjnych firm z Bydgoszczy.',
                   features: [
-                    "Landing page",
-                    "Prezentacja produktu",
-                    "Blog technologiczny",
-                    "Integracje API",
-                    "Analytics & tracking",
+                    'Landing page',
+                    'Prezentacja produktu',
+                    'Blog technologiczny',
+                    'Integracje API',
+                    'Analytics & tracking',
                   ],
                   icon: <Rocket />,
                 },
                 {
-                  title: "Strony medyczne i prawne",
-                  desc: "RODO-compliant, wysokie bezpieczeństwo, profesjonalny wizerunek dla kancelarii i przychodni.",
+                  title: 'Strony medyczne i prawne',
+                  desc: 'RODO-compliant, wysokie bezpieczeństwo, profesjonalny wizerunek dla kancelarii i przychodni.',
                   features: [
-                    "Rejestracja online",
-                    "Portal pacjenta",
-                    "Baza wiedzy",
-                    "Formularze RODO",
-                    "Szyfrowanie SSL",
+                    'Rejestracja online',
+                    'Portal pacjenta',
+                    'Baza wiedzy',
+                    'Formularze RODO',
+                    'Szyfrowanie SSL',
                   ],
                   icon: <Shield />,
                 },
                 {
-                  title: "Strony edukacyjne",
-                  desc: "Platformy e-learningowe, kursy online, materiały edukacyjne dla szkół i uczelni.",
+                  title: 'Strony edukacyjne',
+                  desc: 'Platformy e-learningowe, kursy online, materiały edukacyjne dla szkół i uczelni.',
                   features: [
-                    "System kursów",
-                    "Testy online",
-                    "Materiały do pobrania",
-                    "Forum dyskusyjne",
-                    "Certyfikaty",
+                    'System kursów',
+                    'Testy online',
+                    'Materiały do pobrania',
+                    'Forum dyskusyjne',
+                    'Certyfikaty',
                   ],
                   icon: <GraduationCap />,
                 },
@@ -564,7 +566,7 @@ export default function StronyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Jak powstaje{" "}
+                Jak powstaje{' '}
                 <span className="text-gradient">Twoja strona WWW</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -575,43 +577,43 @@ export default function StronyInternetoweBydgoszcz() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  day: "Etap 1",
-                  title: "Analiza potrzeb",
+                  day: 'Etap 1',
+                  title: 'Analiza potrzeb',
                   tasks: [
-                    "Konsultacja biznesowa",
-                    "Analiza konkurencji",
-                    "Strategia UX/UI",
-                    "Plan funkcjonalności",
+                    'Konsultacja biznesowa',
+                    'Analiza konkurencji',
+                    'Strategia UX/UI',
+                    'Plan funkcjonalności',
                   ],
                 },
                 {
-                  day: "Etap 2",
-                  title: "Projektowanie",
+                  day: 'Etap 2',
+                  title: 'Projektowanie',
                   tasks: [
-                    "Mockupy i wireframe",
-                    "Projekt graficzny",
-                    "Architektura informacji",
-                    "Prototyp interaktywny",
+                    'Mockupy i wireframe',
+                    'Projekt graficzny',
+                    'Architektura informacji',
+                    'Prototyp interaktywny',
                   ],
                 },
                 {
-                  day: "Etap 3",
-                  title: "Programowanie",
+                  day: 'Etap 3',
+                  title: 'Programowanie',
                   tasks: [
-                    "Kodowanie front-end",
-                    "Backend i bazy danych",
-                    "Integracje systemów",
-                    "Testy wydajności",
+                    'Kodowanie front-end',
+                    'Backend i bazy danych',
+                    'Integracje systemów',
+                    'Testy wydajności',
                   ],
                 },
                 {
-                  day: "Etap 4",
-                  title: "Wdrożenie",
+                  day: 'Etap 4',
+                  title: 'Wdrożenie',
                   tasks: [
-                    "Konfiguracja hostingu",
-                    "Optymalizacja SEO",
-                    "Szkolenie z obsługi",
-                    "Start i monitoring",
+                    'Konfiguracja hostingu',
+                    'Optymalizacja SEO',
+                    'Szkolenie z obsługi',
+                    'Start i monitoring',
                   ],
                 },
               ].map((phase, i) => (
@@ -649,13 +651,12 @@ export default function StronyInternetoweBydgoszcz() {
             </div>
           </div>
         </section>
-
         {/* Co otrzymujesz */}
         <section className="py-20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Co zawiera{" "}
+                Co zawiera{' '}
                 <span className="text-gradient">każda realizacja</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -667,33 +668,48 @@ export default function StronyInternetoweBydgoszcz() {
               {[
                 {
                   icon: <Smartphone />,
-                  title: "Design responsywny",
-                  desc: "Strona dopasowana do każdego ekranu - mobile first",
+                  title: 'Design responsywny',
+                  desc: 'Strona dopasowana do każdego ekranu - mobile first',
                 },
                 {
                   icon: <Gauge />,
-                  title: "Szybkość działania",
-                  desc: "Optymalizacja Core Web Vitals dla lepszego SEO",
+                  title: 'Szybkość działania',
+                  desc: 'Optymalizacja Core Web Vitals dla lepszego SEO',
                 },
                 {
                   icon: <Search />,
-                  title: "Podstawy SEO",
-                  desc: "Struktura przyjazna Google, meta tagi, sitemapy",
+                  title: 'Podstawy SEO',
+                  desc: 'Struktura przyjazna Google, meta tagi, sitemapy',
                 },
                 {
                   icon: <Lock />,
-                  title: "Bezpieczeństwo SSL",
-                  desc: "Certyfikat HTTPS i zabezpieczenia przed atakami",
+                  title: 'Bezpieczeństwo SSL',
+                  desc: 'Certyfikat HTTPS i zabezpieczenia przed atakami',
                 },
                 {
                   icon: <BarChart />,
-                  title: "Analityka ruchu",
-                  desc: "Google Analytics 4 i Search Console w standardzie",
+                  title: 'Analityka ruchu',
+                  desc: 'Google Analytics 4 i Search Console w standardzie',
                 },
                 {
                   icon: <HeadphonesIcon />,
-                  title: "Wsparcie techniczne",
-                  desc: "3 miesiące opieki i aktualizacji w cenie",
+                  title: 'Wsparcie techniczne',
+                  desc: '3 miesiące opieki i aktualizacji w cenie',
+                },
+                {
+                  icon: <Globe />,
+                  title: 'Hosting gratis',
+                  desc: 'Rok darmowego hostingu w pakietach Wizytówka i Biznes',
+                },
+                {
+                  icon: <FileText />,
+                  title: 'Zgodność prawna',
+                  desc: 'RODO, cookies, regulamin, polityka prywatności',
+                },
+                {
+                  icon: <Sparkles />,
+                  title: 'Teksty marketingowe',
+                  desc: 'Profesjonalne treści od doświadczonego copywritera',
                 },
               ].map((feature, i) => (
                 <motion.div
@@ -733,56 +749,59 @@ export default function StronyInternetoweBydgoszcz() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "Wizytówka",
-                  price: "1 990",
-                  time: "7 dni",
-                  desc: "Prosta strona dla małych firm i freelancerów",
+                  name: 'Wizytówka',
+                  price: '1 990',
+                  time: '7 dni',
+                  desc: 'Prosta strona dla małych firm i freelancerów',
                   features: [
-                    "Do 5 podstron",
-                    "Responsywny design",
-                    "Formularz kontaktowy",
-                    "Podstawowe SEO",
-                    "Google Maps",
-                    "SSL i hosting (1 rok)",
-                    "1 miesiąc wsparcia",
+                    'Do 5 podstron',
+                    'Responsywny design',
+                    'Formularz kontaktowy',
+                    'Podstawowe SEO',
+                    'Google Analytics',
+                    'Dokumenty prawne',
+                    'SSL i hosting (1 rok)',
+                    '1 miesiąc wsparcia',
                   ],
                   popular: false,
                 },
                 {
-                  name: "Biznes",
-                  price: "3 990",
-                  time: "14 dni",
-                  desc: "Profesjonalna strona firmowa z CMS",
+                  name: 'Biznes',
+                  price: '3 990',
+                  time: '14 dni',
+                  desc: 'Profesjonalna strona firmowa z CMS',
                   features: [
-                    "Do 15 podstron",
-                    "System CMS",
-                    "Blog firmowy",
-                    "Galeria/Portfolio",
-                    "Zaawansowane SEO",
-                    "Google Analytics",
-                    "Newsletter",
-                    "Animacje i efekty",
-                    "SSL i hosting (1 rok)",
-                    "3 miesiące wsparcia",
+                    'Do 15 podstron',
+                    'System CMS',
+                    'Blog firmowy',
+                    'Galeria/Portfolio',
+                    'Zaawansowane SEO',
+                    'Google Analytics',
+                    'Newsletter',
+                    'Dokumenty prawne',
+                    'Animacje i efekty',
+                    'SSL i hosting (1 rok)',
+                    '3 miesiące wsparcia',
                   ],
                   popular: true,
                 },
                 {
-                  name: "Premium",
-                  price: "+7 990",
-                  time: "21+ dni",
-                  desc: "Zaawansowane strony i aplikacje webowe",
+                  name: 'Premium',
+                  price: '+7 990',
+                  time: '21+ dni',
+                  desc: 'Zaawansowane strony i aplikacje webowe',
                   features: [
-                    "Nieograniczone podstrony",
-                    "Dedykowany projekt UX/UI",
-                    "Zaawansowany CMS",
-                    "Integracje API",
-                    "Panel klienta",
-                    "Wielojęzyczność",
-                    "Optymalizacja konwersji",
-                    "A/B testy",
-                    "Dedykowany hosting",
-                    "6 miesięcy wsparcia",
+                    'Nieograniczone podstrony',
+                    'Dedykowany projekt UX/UI',
+                    'Zaawansowany CMS',
+                    'Dokumenty prawne',
+                    'Integracje API',
+                    'Panel klienta',
+                    'Wielojęzyczność',
+                    'Optymalizacja konwersji',
+                    'A/B testy',
+                    'Dedykowany hosting',
+                    '6 miesięcy wsparcia',
                   ],
                   popular: false,
                 },
@@ -794,8 +813,8 @@ export default function StronyInternetoweBydgoszcz() {
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
                     plan.popular
-                      ? "border-primary shadow-xl"
-                      : "border-primary/10"
+                      ? 'border-primary shadow-xl'
+                      : 'border-primary/10'
                   }`}
                 >
                   {plan.popular && (
@@ -810,7 +829,7 @@ export default function StronyInternetoweBydgoszcz() {
                       Realizacja: {plan.time}
                     </div>
                     <div className="mb-3">
-                      {plan.price.includes("od") ? (
+                      {plan.price.includes('od') ? (
                         <span className="text-3xl font-bold">{plan.price}</span>
                       ) : (
                         <>
@@ -818,7 +837,7 @@ export default function StronyInternetoweBydgoszcz() {
                             {plan.price}
                           </span>
                           <span className="text-muted-foreground">
-                            {" "}
+                            {' '}
                             zł netto
                           </span>
                         </>
@@ -840,8 +859,8 @@ export default function StronyInternetoweBydgoszcz() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.popular
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Zamów pakiet
@@ -857,7 +876,7 @@ export default function StronyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Pytania o tworzenie{" "}
+                Pytania o tworzenie{' '}
                 <span className="text-gradient">stron internetowych</span>
               </h2>
             </motion.div>
@@ -865,28 +884,28 @@ export default function StronyInternetoweBydgoszcz() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Jak długo trwa tworzenie strony internetowej?",
-                  a: "Standardowa firmowa strona internetowa powstaje w 14-21 dni roboczych. Prosta wizytówka może być gotowa w 7-10 dni, zaawansowane projekty mogą zająć 4-6 tygodni. Dokładny czas zależy od zakresu projektu i szybkości dostarczania materiałów.",
+                  q: 'Jak długo trwa tworzenie strony internetowej?',
+                  a: 'Standardowa firmowa strona internetowa powstaje w 14-21 dni roboczych. Prosta wizytówka może być gotowa w 7-10 dni, zaawansowane projekty mogą zająć 4-6 tygodni. Dokładny czas zależy od zakresu projektu i szybkości dostarczania materiałów.',
                 },
                 {
-                  q: "Czy mogę edytować stronę samodzielnie po wdrożeniu?",
-                  a: "Jeśli zamawiasz stronę z CMS-em, edytowanie treści odbywa się w intuicyjnym, graficznym panelu administratora. W przypadku statycznych stron WWW edycja zawartości odbywa się poprzez modyfikację kodu plików składających się na witrynę.",
+                  q: 'Czy mogę edytować stronę samodzielnie po wdrożeniu?',
+                  a: 'Jeśli zamawiasz stronę z CMS-em, edytowanie treści odbywa się w intuicyjnym, graficznym panelu administratora. W przypadku statycznych stron WWW edycja zawartości odbywa się poprzez modyfikację kodu plików składających się na witrynę.',
                 },
                 {
-                  q: "Jakie technologie wykorzystujesz do tworzenia stron www?",
-                  a: "Specjalizuję się w nowoczesnych technologiach: Next.js, React, Node.js dla zaawansowanych projektów oraz Astro i WordPress dla prostszych stron. Zawsze dobieram technologię do potrzeb i budżetu klienta.",
+                  q: 'Jakie technologie wykorzystujesz do tworzenia stron www?',
+                  a: 'Specjalizuję się w nowoczesnych technologiach: Next.js, React, Node.js dla zaawansowanych projektów oraz Astro i WordPress dla prostszych stron. Zawsze dobieram technologię do potrzeb i budżetu klienta.',
                 },
                 {
-                  q: "Czy cena zawiera hosting i domenę?",
-                  a: "Tak, każdy pakiet zawiera hosting i domenę na pierwszy rok. Po tym okresie koszt to około 300-500 zł rocznie dla standardowej strony.",
+                  q: 'Czy cena zawiera hosting i domenę?',
+                  a: 'Tak, każdy pakiet zawiera hosting i domenę na pierwszy rok. Po tym okresie koszt to około 300-500 zł rocznie dla standardowej strony.',
                 },
                 {
-                  q: "Obsługujesz tylko firmy z Bydgoszczy?",
-                  a: "Pracuję z firmami z całego regionu kujawsko-pomorskiego. Mogę spotkać się osobiście w Bydgoszczy lub pracować zdalnie.",
+                  q: 'Obsługujesz tylko firmy z Bydgoszczy?',
+                  a: 'Pracuję z firmami z całego regionu kujawsko-pomorskiego. Mogę spotkać się osobiście w Bydgoszczy lub pracować zdalnie.',
                 },
                 {
-                  q: "Co wyróżnia Twoje usługi tworzenia stron internetowych?",
-                  a: "15 lat doświadczenia w marketingu internetowym, copywritingu i SEO. Nie tylko programuję, ale rozumiem biznes. Każda strona to przemyślane narzędzie sprzedażowe, nie tylko ładna wizytówka.",
+                  q: 'Co wyróżnia Twoje usługi tworzenia stron internetowych?',
+                  a: '15 lat doświadczenia w marketingu internetowym, copywritingu i SEO. Nie tylko programuję, ale rozumiem biznes. Każda strona to przemyślane narzędzie sprzedażowe, nie tylko ładna wizytówka.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -903,7 +922,7 @@ export default function StronyInternetoweBydgoszcz() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -923,7 +942,7 @@ export default function StronyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Szukasz specjalisty od{" "}
+                Szukasz specjalisty od{' '}
                 <span className="text-gradient">
                   tworzenia stron internetowych w Bydgoszczy
                 </span>

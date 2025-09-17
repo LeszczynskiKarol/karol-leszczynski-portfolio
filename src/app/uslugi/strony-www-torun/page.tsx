@@ -1,32 +1,32 @@
 // src/app/uslugi/strony-www-torun/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
 import {
-  Globe,
-  Search,
-  Smartphone,
-  Code2,
-  Check,
   ArrowRight,
-  Palette,
   BarChart,
-  Lock,
-  Gauge,
-  HeadphonesIcon,
+  Calendar,
+  Check,
   ChevronRight,
-  Phone,
+  Code2,
+  FileText,
+  Gauge,
+  Globe,
+  HeadphonesIcon,
+  Lock,
   Mail,
   MapPin,
   MousePointer,
-  FileText,
-  Calendar,
+  Palette,
+  Phone,
+  Search,
+  Smartphone,
   Sparkles,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function StronyWWWTorun() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -38,33 +38,33 @@ export default function StronyWWWTorun() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Strony internetowe Toruń",
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Strony internetowe Toruń',
     description:
-      "Tworzenie stron internetowych w Toruniu. Next.js, WordPress, responsywne, SEO.",
+      'Tworzenie stron internetowych w Toruniu. Next.js, WordPress, responsywne, SEO.',
     creator: {
-      "@type": "LocalBusiness",
-      name: "Karol Leszczyński - Strony WWW",
+      '@type': 'LocalBusiness',
+      name: 'Karol Leszczyński - Strony WWW',
       address: {
-        "@type": "PostalAddress",
-        addressLocality: "Toruń",
-        addressRegion: "Kujawsko-Pomorskie",
+        '@type': 'PostalAddress',
+        addressLocality: 'Toruń',
+        addressRegion: 'Kujawsko-Pomorskie',
       },
-      telephone: "+48509370772",
+      telephone: '+48509370772',
     },
     offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "PLN",
-      lowPrice: "1990",
-      highPrice: "9990",
+      '@type': 'AggregateOffer',
+      priceCurrency: 'PLN',
+      lowPrice: '1990',
+      highPrice: '9990',
     },
     potentialAction: {
-      "@type": "ContactAction",
+      '@type': 'ContactAction',
       target: {
-        "@type": "ContactPoint",
-        telephone: "+48509370772",
-        contactType: "sales",
+        '@type': 'ContactPoint',
+        telephone: '+48509370772',
+        contactType: 'sales',
       },
     },
   };
@@ -101,7 +101,7 @@ export default function StronyWWWTorun() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -210,7 +210,7 @@ export default function StronyWWWTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Strona WWW to{" "}
+                Strona WWW to{' '}
                 <span className="text-gradient">więcej niż kod</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -251,7 +251,7 @@ export default function StronyWWWTorun() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Specjalista SEO</h3>
                 <p className="text-muted-foreground">
-                  Od 2012 roku pozycjonuję strony.{" "}
+                  Od 2012 roku pozycjonuję strony.{' '}
                   <strong>Każdą witrynę buduję od podstaw pod Google</strong>.
                   Zero dodatkowych kosztów na późniejszą optymalizację.
                 </p>
@@ -268,7 +268,7 @@ export default function StronyWWWTorun() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Full-Stack Developer</h3>
                 <p className="text-muted-foreground">
-                  Używam najnowszych technologii:{" "}
+                  Używam najnowszych technologii:{' '}
                   <strong>Next.js, React, Node.js, Astro</strong>. Twoja strona
                   będzie szybsza od 95% konkurencji.
                 </p>
@@ -307,7 +307,7 @@ export default function StronyWWWTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Jakie strony internetowe{" "}
+                Jakie strony internetowe{' '}
                 <span className="text-gradient">tworzę</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -318,74 +318,74 @@ export default function StronyWWWTorun() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Strony firmowe",
-                  desc: "Profesjonalne strony prezentujące Twoją firmę, usługi i portfolio. Idealne dla małych i średnich firm.",
+                  title: 'Strony firmowe',
+                  desc: 'Profesjonalne strony prezentujące Twoją firmę, usługi i portfolio. Idealne dla małych i średnich firm.',
                   features: [
-                    "O firmie",
-                    "Usługi",
-                    "Portfolio",
-                    "Kontakt",
-                    "Blog firmowy",
+                    'O firmie',
+                    'Usługi',
+                    'Portfolio',
+                    'Kontakt',
+                    'Blog firmowy',
                   ],
                   icon: <Globe />,
                 },
                 {
-                  title: "Landing Page",
-                  desc: "Strony sprzedażowe nastawione na konkretną konwersję. Idealne do kampanii reklamowych.",
+                  title: 'Landing Page',
+                  desc: 'Strony sprzedażowe nastawione na konkretną konwersję. Idealne do kampanii reklamowych.',
                   features: [
-                    "Jeden cel",
-                    "Wysoka konwersja",
-                    "A/B testy",
-                    "Integracje",
-                    "Analytics",
+                    'Jeden cel',
+                    'Wysoka konwersja',
+                    'A/B testy',
+                    'Integracje',
+                    'Analytics',
                   ],
                   icon: <MousePointer />,
                 },
                 {
-                  title: "Strony portfolio",
-                  desc: "Prezentacja Twoich projektów i realizacji. Dla freelancerów, artystów, architektów.",
+                  title: 'Strony portfolio',
+                  desc: 'Prezentacja Twoich projektów i realizacji. Dla freelancerów, artystów, architektów.',
                   features: [
-                    "Galerie",
-                    "Case studies",
-                    "Filtry projektów",
-                    "Lightbox",
-                    "Animacje",
+                    'Galerie',
+                    'Case studies',
+                    'Filtry projektów',
+                    'Lightbox',
+                    'Animacje',
                   ],
                   icon: <Palette />,
                 },
                 {
-                  title: "Strony usługowe",
-                  desc: "Kompleksowa prezentacja usług z możliwością rezerwacji i wyceny online.",
+                  title: 'Strony usługowe',
+                  desc: 'Kompleksowa prezentacja usług z możliwością rezerwacji i wyceny online.',
                   features: [
-                    "Katalog usług",
-                    "Kalendarze",
-                    "Formularze",
-                    "Kalkulatory",
-                    "Płatności",
+                    'Katalog usług',
+                    'Kalendarze',
+                    'Formularze',
+                    'Kalkulatory',
+                    'Płatności',
                   ],
                   icon: <Calendar />,
                 },
                 {
-                  title: "Blogi i magazyny",
-                  desc: "Platformy contentowe z zaawansowanym CMS. Łatwe zarządzanie treścią.",
+                  title: 'Blogi i magazyny',
+                  desc: 'Platformy contentowe z zaawansowanym CMS. Łatwe zarządzanie treścią.',
                   features: [
-                    "CMS",
-                    "Kategorie",
-                    "Tagi",
-                    "Newsletter",
-                    "Komentarze",
+                    'CMS',
+                    'Kategorie',
+                    'Tagi',
+                    'Newsletter',
+                    'Komentarze',
                   ],
                   icon: <FileText />,
                 },
                 {
-                  title: "Aplikacje webowe",
-                  desc: "Zaawansowane systemy i platformy SaaS. Panele klienta, CRM, automatyzacje.",
+                  title: 'Aplikacje webowe',
+                  desc: 'Zaawansowane systemy i platformy SaaS. Panele klienta, CRM, automatyzacje.',
                   features: [
-                    "Logowanie",
-                    "Panel admina",
-                    "API",
-                    "Bazy danych",
-                    "Integracje",
+                    'Logowanie',
+                    'Panel admina',
+                    'API',
+                    'Bazy danych',
+                    'Integracje',
                   ],
                   icon: <Code2 />,
                 },
@@ -558,34 +558,34 @@ export default function StronyWWWTorun() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  day: "Dzień 1-2",
-                  title: "Brief & strategia",
+                  day: 'Dzień 1-2',
+                  title: 'Brief & strategia',
                   tasks: [
-                    "Analiza konkurencji",
-                    "Mapa strony",
-                    "Strategia SEO",
-                    "Wireframes",
+                    'Analiza konkurencji',
+                    'Mapa strony',
+                    'Strategia SEO',
+                    'Wireframes',
                   ],
                 },
                 {
-                  day: "Dzień 3-5",
-                  title: "Projekt graficzny",
+                  day: 'Dzień 3-5',
+                  title: 'Projekt graficzny',
                   tasks: [
-                    "Projekt UI/UX",
-                    "Wybór kolorystyki",
-                    "Typografia",
-                    "Responsywność",
+                    'Projekt UI/UX',
+                    'Wybór kolorystyki',
+                    'Typografia',
+                    'Responsywność',
                   ],
                 },
                 {
-                  day: "Dzień 6-10",
-                  title: "Kodowanie",
-                  tasks: ["Frontend", "Backend", "Integracje", "Optymalizacja"],
+                  day: 'Dzień 6-10',
+                  title: 'Kodowanie',
+                  tasks: ['Frontend', 'Backend', 'Integracje', 'Optymalizacja'],
                 },
                 {
-                  day: "Dzień 11-14",
-                  title: "Finalizacja",
-                  tasks: ["Treści i SEO", "Testy", "Szkolenie", "Publikacja"],
+                  day: 'Dzień 11-14',
+                  title: 'Finalizacja',
+                  tasks: ['Treści i SEO', 'Testy', 'Szkolenie', 'Publikacja'],
                 },
               ].map((phase, i) => (
                 <motion.div
@@ -638,52 +638,52 @@ export default function StronyWWWTorun() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
-  {
-    icon: <Smartphone />,
-    title: "Responsywny design",
-    desc: "Strona idealnie dopasowana do każdego urządzenia",
-  },
-  {
-    icon: <Gauge />,
-    title: "PageSpeed 80+",
-    desc: "Błyskawiczne ładowanie, lepsza pozycja w Google",
-  },
-  {
-    icon: <Search />,
-    title: "Optymalizacja SEO",
-    desc: "Meta tagi, struktura URL, Schema.org, sitemap",
-  },
-  {
-    icon: <Lock />,
-    title: "Certyfikat SSL",
-    desc: "Bezpieczne połączenie HTTPS w standardzie",
-  },
-  {
-    icon: <BarChart />,
-    title: "Google Analytics",
-    desc: "Pełna analityka ruchu i zachowań użytkowników",
-  },
-  {
-    icon: <HeadphonesIcon />,
-    title: "Wsparcie 3 miesiące",
-    desc: "Pomoc techniczna i drobne poprawki gratis",
-  },
-  {
-    icon: <Globe />,
-    title: "Darmowy hosting",
-    desc: "Rok hostingu gratis w pakietach Wizytówka i Biznes",
-  },
-  {
-    icon: <FileText />,
-    title: "Dokumenty prawne",
-    desc: "RODO, polityka prywatności, cookies, regulamin",
-  },
-  {
-    icon: <Sparkles />,
-    title: "Treści sprzedażowe",
-    desc: "Profesjonalne teksty napisane przez copywritera",
-  },
-].map((feature, i) => (
+                {
+                  icon: <Smartphone />,
+                  title: 'Responsywny design',
+                  desc: 'Strona idealnie dopasowana do każdego urządzenia',
+                },
+                {
+                  icon: <Gauge />,
+                  title: 'PageSpeed 80+',
+                  desc: 'Błyskawiczne ładowanie, lepsza pozycja w Google',
+                },
+                {
+                  icon: <Search />,
+                  title: 'Optymalizacja SEO',
+                  desc: 'Meta tagi, struktura URL, Schema.org, sitemap',
+                },
+                {
+                  icon: <Lock />,
+                  title: 'Certyfikat SSL',
+                  desc: 'Bezpieczne połączenie HTTPS w standardzie',
+                },
+                {
+                  icon: <BarChart />,
+                  title: 'Google Analytics',
+                  desc: 'Pełna analityka ruchu i zachowań użytkowników',
+                },
+                {
+                  icon: <HeadphonesIcon />,
+                  title: 'Wsparcie 3 miesiące',
+                  desc: 'Pomoc techniczna i drobne poprawki gratis',
+                },
+                {
+                  icon: <Globe />,
+                  title: 'Darmowy hosting',
+                  desc: 'Rok hostingu gratis w pakietach Wizytówka i Biznes',
+                },
+                {
+                  icon: <FileText />,
+                  title: 'Dokumenty prawne',
+                  desc: 'RODO, polityka prywatności, cookies, regulamin',
+                },
+                {
+                  icon: <Sparkles />,
+                  title: 'Treści sprzedażowe',
+                  desc: 'Profesjonalne teksty napisane przez copywritera',
+                },
+              ].map((feature, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -721,59 +721,59 @@ export default function StronyWWWTorun() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "Wizytówka",
-                  price: "1 990",
-                  time: "7 dni",
-                  desc: "Prosta strona dla małych firm i freelancerów",
+                  name: 'Wizytówka',
+                  price: '1 990',
+                  time: '7 dni',
+                  desc: 'Prosta strona dla małych firm i freelancerów',
                   features: [
-                    "Do 5 podstron",
-                    "Responsywny design",
-                    "Formularz kontaktowy",
-                    "Podstawowe SEO",
-                    "Google Analytics",
-                    "Dokumenty prawne",
-                    "SSL i hosting (1 rok)",
-                    "1 miesiąc wsparcia",
+                    'Do 5 podstron',
+                    'Responsywny design',
+                    'Formularz kontaktowy',
+                    'Podstawowe SEO',
+                    'Google Analytics',
+                    'Dokumenty prawne',
+                    'SSL i hosting (1 rok)',
+                    '1 miesiąc wsparcia',
                   ],
                   popular: false,
                 },
                 {
-                  name: "Biznes",
-                  price: "3 990",
-                  time: "14 dni",
-                  desc: "Profesjonalna strona firmowa z CMS",
+                  name: 'Biznes',
+                  price: '3 990',
+                  time: '14 dni',
+                  desc: 'Profesjonalna strona firmowa z CMS',
                   features: [
-                    "Do 15 podstron",
-                    "System CMS",
-                    "Blog firmowy",
-                    "Galeria/Portfolio",
-                    "Zaawansowane SEO",
-                    "Google Analytics",
-                    "Newsletter",
-                    "Dokumenty prawne",
-                    "Animacje i efekty",
-                    "SSL i hosting (1 rok)",
-                    "3 miesiące wsparcia",
+                    'Do 15 podstron',
+                    'System CMS',
+                    'Blog firmowy',
+                    'Galeria/Portfolio',
+                    'Zaawansowane SEO',
+                    'Google Analytics',
+                    'Newsletter',
+                    'Dokumenty prawne',
+                    'Animacje i efekty',
+                    'SSL i hosting (1 rok)',
+                    '3 miesiące wsparcia',
                   ],
                   popular: true,
                 },
                 {
-                  name: "Premium",
-                  price: "+7 990",
-                  time: "21+ dni",
-                  desc: "Zaawansowane strony i aplikacje webowe",
+                  name: 'Premium',
+                  price: '+7 990',
+                  time: '21+ dni',
+                  desc: 'Zaawansowane strony i aplikacje webowe',
                   features: [
-                    "Nieograniczone podstrony",
-                    "Dedykowany projekt UX/UI",
-                    "Zaawansowany CMS",
-                    "Dokumenty prawne",
-                    "Integracje API",
-                    "Panel klienta",
-                    "Wielojęzyczność",
-                    "Optymalizacja konwersji",
-                    "A/B testy",
-                    "Dedykowany hosting",
-                    "6 miesięcy wsparcia",
+                    'Nieograniczone podstrony',
+                    'Dedykowany projekt UX/UI',
+                    'Zaawansowany CMS',
+                    'Dokumenty prawne',
+                    'Integracje API',
+                    'Panel klienta',
+                    'Wielojęzyczność',
+                    'Optymalizacja konwersji',
+                    'A/B testy',
+                    'Dedykowany hosting',
+                    '6 miesięcy wsparcia',
                   ],
                   popular: false,
                 },
@@ -785,8 +785,8 @@ export default function StronyWWWTorun() {
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
                     plan.popular
-                      ? "border-primary shadow-xl"
-                      : "border-primary/10"
+                      ? 'border-primary shadow-xl'
+                      : 'border-primary/10'
                   }`}
                 >
                   {plan.popular && (
@@ -801,7 +801,7 @@ export default function StronyWWWTorun() {
                       Realizacja: {plan.time}
                     </div>
                     <div className="mb-3">
-                      {plan.price.includes("od") ? (
+                      {plan.price.includes('od') ? (
                         <span className="text-3xl font-bold">{plan.price}</span>
                       ) : (
                         <>
@@ -809,7 +809,7 @@ export default function StronyWWWTorun() {
                             {plan.price}
                           </span>
                           <span className="text-muted-foreground">
-                            {" "}
+                            {' '}
                             zł netto
                           </span>
                         </>
@@ -831,8 +831,8 @@ export default function StronyWWWTorun() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.popular
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Zamów pakiet
@@ -855,28 +855,28 @@ export default function StronyWWWTorun() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "W jakich technologiach tworzysz strony WWW?",
-                  a: "Używam najnowszych technologii: Next.js, React, Astro, Node.js, TypeScript. To gwarantuje szybkość, bezpieczeństwo i skalowalność. Dla prostszych projektów mogę użyć WordPress, ale zawsze polecam nowoczesne, dedykowany strony internetowe czy to firmowe, czy na użytek prywatny.",
+                  q: 'W jakich technologiach tworzysz strony WWW?',
+                  a: 'Używam najnowszych technologii: Next.js, React, Astro, Node.js, TypeScript. To gwarantuje szybkość, bezpieczeństwo i skalowalność. Dla prostszych projektów mogę użyć WordPress, ale zawsze polecam nowoczesne, dedykowany strony internetowe czy to firmowe, czy na użytek prywatny.',
                 },
                 {
-                  q: "Czy mogę sam edytować treści na stronie?",
-                  a: "Jeśli zamawiasz stronę z CMS-em, edytowanie treści odbywa się w intuicyjnym, graficznym panelu administratora. W przypadku statycznych stron WWW edycja zawartości odbywa się poprzez modyfikację kodu plików składających się na witrynę.",
+                  q: 'Czy mogę sam edytować treści na stronie?',
+                  a: 'Jeśli zamawiasz stronę z CMS-em, edytowanie treści odbywa się w intuicyjnym, graficznym panelu administratora. W przypadku statycznych stron WWW edycja zawartości odbywa się poprzez modyfikację kodu plików składających się na witrynę.',
                 },
                 {
-                  q: "Ile kosztuje utrzymanie strony?",
-                  a: "Hosting i domena to koszt około 300-500 zł rocznie dla standardowej strony. Pierwszy rok masz w cenie.",
+                  q: 'Ile kosztuje utrzymanie strony?',
+                  a: 'Hosting i domena to koszt około 300-500 zł rocznie dla standardowej strony. Pierwszy rok masz w cenie.',
                 },
                 {
-                  q: "Czy strona będzie wysoko w Google?",
-                  a: "Każdą stronę buduję zgodnie z najlepszymi praktykami SEO. To solidna podstawa do pozycjonowania, jednak pamiętaj, że bez działań w zakresie SEO istnieją nikłe szanse na osiągnięcie wysokich pozycji, szczególnie jeśli działasz w wysoce konkurencyjnym otoczeniu.",
+                  q: 'Czy strona będzie wysoko w Google?',
+                  a: 'Każdą stronę buduję zgodnie z najlepszymi praktykami SEO. To solidna podstawa do pozycjonowania, jednak pamiętaj, że bez działań w zakresie SEO istnieją nikłe szanse na osiągnięcie wysokich pozycji, szczególnie jeśli działasz w wysoce konkurencyjnym otoczeniu.',
                 },
                 {
-                  q: "Co, jeśli będę potrzebował zmian po wdrożeniu?",
-                  a: "Przez pierwsze 1-3 miesiące (zależnie od pakietu) masz darmowe wsparcie i drobne poprawki. Później oferuję wsparcie w abonamencie lub rozliczenie godzinowe.",
+                  q: 'Co, jeśli będę potrzebował zmian po wdrożeniu?',
+                  a: 'Przez pierwsze 1-3 miesiące (zależnie od pakietu) masz darmowe wsparcie i drobne poprawki. Później oferuję wsparcie w abonamencie lub rozliczenie godzinowe.',
                 },
                 {
-                  q: "Dlaczego warto wybrać lokalnego wykonawcę z Torunia?",
-                  a: "Możemy spotkać się osobiście, omówić projekt przy kawie. Jestem na miejscu, gdy potrzebujesz pomocy. Znam lokalny rynek i specyfikę firm z regionu kujawsko-pomorskiego.",
+                  q: 'Dlaczego warto wybrać lokalnego wykonawcę z Torunia?',
+                  a: 'Możemy spotkać się osobiście, omówić projekt przy kawie. Jestem na miejscu, gdy potrzebujesz pomocy. Znam lokalny rynek i specyfikę firm z regionu kujawsko-pomorskiego.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -893,7 +893,7 @@ export default function StronyWWWTorun() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -913,7 +913,7 @@ export default function StronyWWWTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Potrzebujesz strony WWW w{" "}
+                Potrzebujesz strony WWW w{' '}
                 <span className="text-gradient">Toruniu</span>?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
