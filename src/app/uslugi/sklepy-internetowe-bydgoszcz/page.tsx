@@ -1,30 +1,31 @@
 // src/app/uslugi/sklepy-internetowe-bydgoszcz/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
-  ShoppingCart,
-  TrendingUp,
-  Shield,
-  Zap,
-  Check,
   ArrowRight,
+  Check,
   ChevronRight,
-  Phone,
-  Mail,
-  MapPin,
-  Star,
   Clock,
   DollarSign,
-  Award,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  Mail,
+  MapPin,
+  Package,
+  Phone,
+  Shield,
+  ShoppingCart,
+  Star,
+  TrendingUp,
+  Zap,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function SklepyInternetoweBydgoszcz() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [selectedFeature, setSelectedFeature] = useState<string>("konwersja");
+  const [selectedFeature, setSelectedFeature] = useState<string>('konwersja');
+  const [imageError, setImageError] = useState(false);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -33,68 +34,67 @@ export default function SklepyInternetoweBydgoszcz() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPageElement",
-    name: "Sklepy internetowe Bydgoszcz - Nowoczesne e-commerce",
+    '@context': 'https://schema.org',
+    '@type': 'WebPageElement',
+    name: 'Sklepy internetowe Bydgoszcz - Nowoczesne e-commerce',
     description:
-      "Tworzenie sklepów internetowych w Bydgoszczy. Nowoczesne rozwiązania e-commerce, integracje z marketplace, płatności online.",
+      'Tworzenie sklepów internetowych w Bydgoszczy. Nowoczesne rozwiązania e-commerce, integracje z marketplace, płatności online.',
     provider: {
-      "@type": "LocalBusiness",
-      name: "Karol Leszczyński - Sklepy internetowe Bydgoszcz",
-      priceRange: "4990-24990 PLN",
-      telephone: "+48509370772",
+      '@type': 'LocalBusiness',
+      name: 'Karol Leszczyński - Sklepy internetowe Bydgoszcz',
+      priceRange: '4990-24990 PLN',
+      telephone: '+48509370772',
     },
     areaServed: {
-      "@type": "City",
-      name: "Bydgoszcz",
+      '@type': 'City',
+      name: 'Bydgoszcz',
     },
     offers: {
-      "@type": "Offer",
-      price: "4990",
-      priceCurrency: "PLN",
-      availability: "https://schema.org/InStock",
-      validFrom: "2024-01-01",
+      '@type': 'Offer',
+      price: '4990',
+      priceCurrency: 'PLN',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2024-01-01',
     },
     aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "47",
-      bestRating: "5",
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '47',
+      bestRating: '5',
     },
   };
 
   const features = {
     konwersja: {
-      title: "Optymalizacja konwersji",
-      desc: "Każdy element zaprojektowany pod sprzedaż",
+      title: 'Optymalizacja konwersji',
+      desc: 'Każdy element zaprojektowany pod sprzedaż',
       items: [
-        "Psychologia zakupów online",
-        "A/B testy elementów",
-        "Inteligentne rekomendacje",
-        "Uproszczony checkout",
-        "Trust badges i social proof",
+        'Psychologia zakupów online',
+        'A/B testy elementów',
+        'Inteligentne rekomendacje',
+        'Uproszczony checkout',
+        'Trust badges i social proof',
       ],
     },
     mobile: {
-      title: "Mobile-first design",
-      desc: "65% zakupów z telefonu - Twój sklep musi być gotowy",
+      title: 'Mobile-first design',
+      desc: '65% zakupów z telefonu - Twój sklep musi być gotowy',
       items: [
-        "PWA - działa jak aplikacja",
-        "Offline mode",
-        "Push notifications",
-        "One-click checkout",
-        "Apple Pay / Google Pay",
+        'PWA - działa jak aplikacja',
+        'Push notifications',
+        'One-click checkout',
+        'Apple Pay / Google Pay',
       ],
     },
     automatyzacja: {
-      title: "Pełna automatyzacja",
-      desc: "Sklep pracuje za Ciebie 24/7",
+      title: 'Pełna automatyzacja',
+      desc: 'Sklep pracuje za Ciebie 24/7',
       items: [
-        "Auto-import z hurtowni",
-        "Synchronizacja stanów",
-        "Automatyczne faktury",
-        "Email marketing",
-        "Powiadomienia SMS",
+        'Auto-import z hurtowni',
+        'Synchronizacja stanów',
+        'Automatyczne faktury',
+        'Email marketing',
+        'Powiadomienia SMS',
       ],
     },
   };
@@ -132,7 +132,7 @@ export default function SklepyInternetoweBydgoszcz() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -149,7 +149,7 @@ export default function SklepyInternetoweBydgoszcz() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Sklepy internetowe{" "}
+                Sklepy internetowe{' '}
                 <span className="text-gradient">Bydgoszcz</span>
               </h1>
 
@@ -169,7 +169,7 @@ export default function SklepyInternetoweBydgoszcz() {
                   transition={{ delay: 0.3 }}
                 >
                   <Check className="w-5 h-5 text-green-500" />
-                  <span>47 sklepów w portfolio</span>
+                  <span>Wygoda i szybkość działania</span>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2"
@@ -178,7 +178,7 @@ export default function SklepyInternetoweBydgoszcz() {
                   transition={{ delay: 0.4 }}
                 >
                   <Check className="w-5 h-5 text-green-500" />
-                  <span>Średni CR 3.5%</span>
+                  <span>Optymalizacja SEO</span>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2"
@@ -216,7 +216,7 @@ export default function SklepyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Liczby mówią{" "}
+                Liczby mówią{' '}
                 <span className="text-gradient">same za siebie</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -227,28 +227,24 @@ export default function SklepyInternetoweBydgoszcz() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  value: "340%",
-                  label: "Wzrost ruchu organicznego",
+                  label: 'Nastawienie na sprzedaż',
                   icon: <TrendingUp />,
-                  color: "text-green-500",
+                  color: 'text-green-500',
                 },
                 {
-                  value: "3.5%",
-                  label: "Średnia konwersja",
+                  label: 'Wysoka konwersja',
                   icon: <ShoppingCart />,
-                  color: "text-blue-500",
+                  color: 'text-blue-500',
                 },
                 {
-                  value: "45%",
-                  label: "Wzrost przychodów",
+                  label: 'Wzrost przychodów',
                   icon: <DollarSign />,
-                  color: "text-purple-500",
+                  color: 'text-purple-500',
                 },
                 {
-                  value: "1.8s",
-                  label: "Czas ładowania",
+                  label: 'Szybkość działania',
                   icon: <Zap />,
-                  color: "text-yellow-500",
+                  color: 'text-yellow-500',
                 },
               ].map((stat, i) => (
                 <motion.div
@@ -262,9 +258,6 @@ export default function SklepyInternetoweBydgoszcz() {
                     className={`inline-flex p-3 rounded-lg bg-muted mb-4 ${stat.color}`}
                   >
                     {stat.icon}
-                  </div>
-                  <div className={`text-3xl font-bold mb-2 ${stat.color}`}>
-                    {stat.value}
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {stat.label}
@@ -280,7 +273,7 @@ export default function SklepyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Funkcje które{" "}
+                Funkcje, które{' '}
                 <span className="text-gradient">zwiększają sprzedaż</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -297,8 +290,8 @@ export default function SklepyInternetoweBydgoszcz() {
                       onClick={() => setSelectedFeature(key)}
                       className={`p-4 rounded-lg border text-left transition-all ${
                         selectedFeature === key
-                          ? "border-primary bg-primary/10"
-                          : "border-primary/10 hover:border-primary/30"
+                          ? 'border-primary bg-primary/10'
+                          : 'border-primary/10 hover:border-primary/30'
                       }`}
                     >
                       <h3 className="font-bold mb-1">{feature.title}</h3>
@@ -341,112 +334,181 @@ export default function SklepyInternetoweBydgoszcz() {
             </div>
           </div>
         </section>
-
-        {/* Realizacje */}
-        <section className="py-20 bg-muted/20">
+        {/* Portfolio / Case Studies */}
+        <section id="portfolio" className="py-20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Ostatnie <span className="text-gradient">realizacje</span>
+                Sklepy, które{' '}
+                <span className="text-gradient">skutecznie sprzedają</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Sklepy które napędzają biznes moich klientów
+                Realizacje z konkretnymi wynikami biznesowymi
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  name: "FashionHub Bydgoszcz",
-                  category: "Moda & Akcesoria",
-                  results: "+65% konwersji w 3 miesiące",
-                  tech: "Next.js + Stripe",
-                  features: [
-                    "Wirtualna przymierzalnia AR",
-                    "Personalizowane rekomendacje AI",
-                    "Integracja z Instagramem",
-                  ],
-                  metric: "12K",
-                  metricLabel: "Użytkowników/mies.",
-                },
-                {
-                  name: "TechStore24",
-                  category: "Elektronika",
-                  results: "3.8% conversion rate",
-                  tech: "Node.js + MongoDB",
-                  features: [
-                    "Porównywarka produktów",
-                    "Live chat z ekspertem",
-                    "Raty 0% online",
-                  ],
-                  metric: "850K",
-                  metricLabel: "Przychód/rok",
-                },
-                {
-                  name: "EkoMarket",
-                  category: "Żywność ekologiczna",
-                  results: "2h dostawa w Bydgoszczy",
-                  tech: "React + Express",
-                  features: [
-                    "Subskrypcje produktów",
-                    "Program lojalnościowy",
-                    "Śledzenie dostaw GPS",
-                  ],
-                  metric: "4.9★",
-                  metricLabel: "Ocena klientów",
-                },
-              ].map((project, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-background/50 backdrop-blur-sm border border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 transition-all hover:scale-105"
-                >
-                  <div className="p-6">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-xl font-bold mb-1">
-                          {project.name}
-                        </h3>
-                        <p className="text-sm text-primary">
-                          {project.category}
-                        </p>
-                      </div>
-                      <Award className="w-8 h-8 text-yellow-500" />
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Case Study 1 - Stojan Shop */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="bg-muted/30 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/30 transition-all"
+              >
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-2">
+                        Silniki-Elektryczne.com.pl
+                      </h3>
+                      <p className="text-primary">
+                        Branża: Sprzedaż silników elektrycznych
+                      </p>
                     </div>
-
-                    <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-3 mb-4">
-                      <p className="text-sm font-semibold">{project.results}</p>
-                    </div>
-
-                    <ul className="space-y-2 mb-4">
-                      {project.features.map((feature, j) => (
-                        <li key={j} className="flex items-start gap-2 text-sm">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5" />
-                          <span className="text-muted-foreground">
-                            {feature}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    <div className="flex items-center justify-between pt-4 border-t border-primary/10">
-                      <div>
-                        <div className="text-2xl font-bold text-primary">
-                          {project.metric}
-                        </div>
-                        <div className="text-xs text-muted-foreground">
-                          {project.metricLabel}
-                        </div>
+                    <div className="text-right">
+                      <div className="text-3xl font-bold text-green-500">
+                        +40%
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        {project.tech}
+                      <div className="text-sm text-muted-foreground">
+                        wzrost sprzedaży
                       </div>
                     </div>
                   </div>
-                </motion.div>
-              ))}
+
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <h4 className="font-semibold mb-2">Wyzwanie:</h4>
+                      <p className="text-muted-foreground">
+                        Mało wygodny sklep na WooCommerce, wolne ładowanie,
+                        wysokie koszty utrzymania, ograniczone możliwości edycji
+                        panelu, brak integracji z Allegro.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold mb-2">Rozwiązanie:</h4>
+                      <p className="text-muted-foreground">
+                        Migracja do własnego rozwiązania Next.js + Node.js.
+                        Pełna integracja z Allegro, automatyczne opisy AI,
+                        synchronizacja stanów magazynowych. Logiczna struktura
+                        sklepu obejmnująca ponad 2000 produktów. Rozbudowany i
+                        czytelny panel admina. Mailing AWS SES.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://www.silniki-elektryczne.com.pl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80"
+                  >
+                    Zobacz sklep <ChevronRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>
+              {/* Case Study 2 - Placeholder for Image */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="bg-muted/30 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/30 transition-all"
+              >
+                <div className="relative h-full min-h-[400px] flex flex-col">
+                  {/* Image Placeholder Area */}
+                  <div className="relative flex-1 bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center">
+                    {!imageError ? (
+                      <img
+                        src="https://s3.eu-north-1.amazonaws.com/piszemy.com.pl/stojan/invoices/sklepstojan.png"
+                        alt="Case Study"
+                        className="w-full h-full object-cover"
+                        onError={() => setImageError(true)}
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-muted-foreground">
+                        <Package className="w-16 h-16 mb-4 opacity-30" />
+                        <p className="text-sm">Miejsce na obraz projektu</p>
+                        <p className="text-xs mt-2 opacity-60">
+                          [Wklej link do obrazu]
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+              {/* Case Study 2 - Smart-Edu.AI 
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="bg-muted/30 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/30 transition-all"
+              >
+                <div className="p-8">
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-2">
+                        eBookCopywriting.pl
+                      </h3>
+                      <p className="text-primary">Copywriting</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <h4 className="font-semibold mb-2">Wyzwanie:</h4>
+                      <p className="text-muted-foreground">
+                        Stworzenie maksymalnie intuicyjnego w obsłudze sklepu, w
+                        którym po błyskawicznej płatności użytkownik będzie mógł
+                        pobrać zamówiony ebook.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold mb-2">Rozwiązanie:</h4>
+                      <p className="text-muted-foreground">
+                        Strona typu landing page
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="bg-background/50 p-3 rounded-lg">
+                      <div className="text-2xl font-bold text-primary">
+                        10k+
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        Prac wygenerowanych
+                      </div>
+                    </div>
+                    <div className="bg-background/50 p-3 rounded-lg">
+                      <div className="text-2xl font-bold text-primary">8</div>
+                      <div className="text-sm text-muted-foreground">
+                        Języków
+                      </div>
+                    </div>
+                    <div className="bg-background/50 p-3 rounded-lg">
+                      <div className="text-2xl font-bold text-primary">
+                        4.8/5
+                      </div>
+                      <div className="text-sm text-muted-foreground">Ocena</div>
+                    </div>
+                    <div className="bg-background/50 p-3 rounded-lg">
+                      <div className="text-2xl font-bold text-primary">
+                        99.9%
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        Uptime
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://smart-edu.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80"
+                  >
+                    Zobacz platformę <ChevronRight className="w-4 h-4" />
+                  </a>
+                </div>
+              </motion.div>*/}
             </div>
           </div>
         </section>
@@ -456,7 +518,7 @@ export default function SklepyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Od pomysłu do{" "}
+                Od pomysłu do{' '}
                 <span className="text-gradient">pierwszej sprzedaży</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -472,48 +534,48 @@ export default function SklepyInternetoweBydgoszcz() {
                 <div className="space-y-12">
                   {[
                     {
-                      week: "Tydzień 1",
-                      title: "Discovery & Research",
+                      week: 'Tydzień 1',
+                      title: 'Discovery & Research',
                       tasks: [
-                        "Analiza konkurencji w Bydgoszczy",
-                        "Badanie grupy docelowej",
-                        "Strategia UX/UI",
-                        "Mapa funkcjonalności",
+                        'Analiza konkurencji w Bydgoszczy',
+                        'Badanie grupy docelowej',
+                        'Strategia UX/UI',
+                        'Mapa funkcjonalności',
                       ],
-                      deliverable: "Brief strategiczny",
+                      deliverable: 'Brief strategiczny',
                     },
                     {
-                      week: "Tydzień 2-3",
-                      title: "Design & Prototyp",
+                      week: 'Tydzień 2-3',
+                      title: 'Design & Prototyp',
                       tasks: [
-                        "Wireframes kluczowych stron",
-                        "Projekt graficzny",
-                        "Interaktywny prototyp",
-                        "Testy użyteczności",
+                        'Wireframes kluczowych stron',
+                        'Projekt graficzny',
+                        'Interaktywny prototyp',
+                        'Testy użyteczności',
                       ],
-                      deliverable: "Prototyp Figma",
+                      deliverable: 'Prototyp Figma',
                     },
                     {
-                      week: "Tydzień 4-6",
-                      title: "Development",
+                      week: 'Tydzień 4-6',
+                      title: 'Development',
                       tasks: [
-                        "Frontend w React/Next.js",
-                        "Backend Node.js/Python",
-                        "Integracje płatności",
-                        "Panel administracyjny",
+                        'Frontend w React/Next.js',
+                        'Backend Node.js/Python',
+                        'Integracje płatności',
+                        'Panel administracyjny',
                       ],
-                      deliverable: "Sklep na staging",
+                      deliverable: 'Sklep na staging',
                     },
                     {
-                      week: "Tydzień 7-8",
-                      title: "Launch & Growth",
+                      week: 'Tydzień 7-8',
+                      title: 'Launch & Growth',
                       tasks: [
-                        "Migracja produktów",
-                        "Konfiguracja SEO",
-                        "Testy wydajnościowe",
-                        "Szkolenie zespołu",
+                        'Migracja produktów',
+                        'Konfiguracja SEO',
+                        'Testy wydajnościowe',
+                        'Szkolenie zespołu',
                       ],
-                      deliverable: "Sklep na produkcji",
+                      deliverable: 'Sklep na produkcji',
                     },
                   ].map((phase, i) => (
                     <motion.div
@@ -582,63 +644,63 @@ export default function SklepyInternetoweBydgoszcz() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
                 {
-                  name: "Start-up",
-                  price: "4 990",
-                  installment: "415 zł x 12 rat",
-                  desc: "Idealny na start w e-commerce",
+                  name: 'Start-up',
+                  price: '4 990',
+                  installment: '415 zł x 12 rat',
+                  desc: 'Idealny na start w e-commerce',
                   features: [
-                    "Do 100 produktów",
-                    "Design z szablonu premium",
-                    "Płatności online (P24, PayU)",
-                    "Integracja InPost/DPD",
-                    "RWD + PWA",
-                    "Google Analytics 4",
-                    "SSL + hosting 12 mies.",
-                    "2h szkolenia",
+                    'Do 100 produktów',
+                    'Design z szablonu premium',
+                    'Płatności online (P24, PayU)',
+                    'Integracja InPost/DPD',
+                    'RWD + PWA',
+                    'Google Analytics 4',
+                    'SSL + hosting 12 mies.',
+                    '2h szkolenia',
                   ],
-                  support: "30 dni wsparcia",
-                  time: "3-4 tygodnie",
+                  support: '30 dni wsparcia',
+                  time: '3-4 tygodnie',
                 },
                 {
-                  name: "Business",
-                  price: "12 990",
-                  installment: "649 zł x 20 rat",
-                  desc: "Dla rozwijających się firm",
+                  name: 'Business',
+                  price: '12 990',
+                  installment: '649 zł x 20 rat',
+                  desc: 'Dla rozwijających się firm',
                   features: [
-                    "Do 5000 produktów",
-                    "Dedykowany design UX/UI",
-                    "Multi-payment (Stripe, PayPal)",
-                    "Marketplace (Allegro, Amazon)",
-                    "Marketing automation",
-                    "AI rekomendacje",
-                    "Multi-language",
-                    "Advanced SEO",
-                    "CRM integration",
-                    "A/B testing",
+                    'Do 5000 produktów',
+                    'Dedykowany design UX/UI',
+                    'Multi-payment (Stripe, PayPal)',
+                    'Marketplace (Allegro, Amazon)',
+                    'Marketing automation',
+                    'AI rekomendacje',
+                    'Multi-language',
+                    'Advanced SEO',
+                    'CRM integration',
+                    'A/B testing',
                   ],
-                  support: "6 miesięcy wsparcia",
-                  time: "6-8 tygodni",
+                  support: '6 miesięcy wsparcia',
+                  time: '6-8 tygodni',
                   popular: true,
                 },
                 {
-                  name: "Enterprise",
-                  price: "24 990+",
-                  installment: "Indywidualne raty",
-                  desc: "Zaawansowane rozwiązania B2B/B2C",
+                  name: 'Enterprise',
+                  price: '24 990+',
+                  installment: 'Indywidualne raty',
+                  desc: 'Zaawansowane rozwiązania B2B/B2C',
                   features: [
-                    "Nieograniczone produkty",
-                    "Custom development",
-                    "Headless commerce",
-                    "API dla partnerów",
-                    "ERP/WMS integration",
-                    "Dedykowany serwer",
-                    "Load balancing",
-                    "24/7 monitoring",
-                    "SLA 99.9%",
-                    "Dedykowany PM",
+                    'Nieograniczone produkty',
+                    'Custom development',
+                    'Headless commerce',
+                    'API dla partnerów',
+                    'ERP/WMS integration',
+                    'Dedykowany serwer',
+                    'Load balancing',
+                    '24/7 monitoring',
+                    'SLA 99.9%',
+                    'Dedykowany PM',
                   ],
-                  support: "12 miesięcy wsparcia",
-                  time: "10-12 tygodni",
+                  support: '12 miesięcy wsparcia',
+                  time: '10-12 tygodni',
                 },
               ].map((plan, i) => (
                 <motion.div
@@ -648,8 +710,8 @@ export default function SklepyInternetoweBydgoszcz() {
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
                     plan.popular
-                      ? "border-primary shadow-xl scale-105"
-                      : "border-primary/10"
+                      ? 'border-primary shadow-xl scale-105'
+                      : 'border-primary/10'
                   }`}
                 >
                   {plan.popular && (
@@ -696,8 +758,8 @@ export default function SklepyInternetoweBydgoszcz() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.popular
-                        ? "bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-gradient-to-r from-primary to-accent text-white hover:shadow-lg'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Zamów pakiet
@@ -726,7 +788,7 @@ export default function SklepyInternetoweBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Pytania{" "}
+                Pytania{' '}
                 <span className="text-gradient">
                   przedsiębiorców z Bydgoszczy
                 </span>
@@ -736,28 +798,28 @@ export default function SklepyInternetoweBydgoszcz() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Czy mogę sprzedawać w całej Polsce mając sklep w Bydgoszczy?",
-                  a: "Oczywiście! Tworzę sklepy działające globalnie. Dodatkowo optymalizuję pod lokalne SEO, więc będziesz widoczny zarówno w Bydgoszczy, jak i w całej Polsce. Integruję wszystkich głównych kurierów i systemy płatności.",
+                  q: 'Czy mogę sprzedawać w całej Polsce, mając sklep w Bydgoszczy?',
+                  a: 'Oczywiście! Tworzę sklepy działające globalnie. Dodatkowo optymalizuję pod lokalne SEO, więc będziesz widoczny zarówno w Bydgoszczy, jak i w całej Polsce. Integruję wszystkich głównych kurierów i systemy płatności.',
                 },
                 {
-                  q: "Jak długo trwa pozycjonowanie nowego sklepu?",
-                  a: "Pierwsze efekty SEO widać po 2-3 miesiącach. Pełne rezultaty po 6-12 miesiącach. Każdy sklep buduję od podstaw pod SEO - struktura, szybkość, schema.org. Mam 15 lat doświadczenia w pozycjonowaniu.",
+                  q: 'Jak długo trwa pozycjonowanie nowego sklepu?',
+                  a: 'Pierwsze efekty SEO widać po 2-3 miesiącach. Pełne rezultaty po 6-12 miesiącach. Każdy sklep buduję od podstaw pod SEO - struktura, szybkość, schema.org. Mam 15 lat doświadczenia w pozycjonowaniu.',
                 },
                 {
-                  q: "Czy mogę integrować sklep z moim systemem magazynowym?",
-                  a: "Tak, integruję sklepy z popularnymi systemami: Subiekt, Comarch, SAP, własne rozwiązania przez API. Synchronizacja stanów magazynowych w czasie rzeczywistym.",
+                  q: 'Czy mogę integrować sklep z moim systemem magazynowym?',
+                  a: 'Tak, integruję sklepy z popularnymi systemami: Subiekt, Comarch, SAP, własne rozwiązania przez API. Synchronizacja stanów magazynowych w czasie rzeczywistym.',
                 },
                 {
-                  q: "Ile kosztuje utrzymanie sklepu miesięcznie?",
-                  a: "Hosting od 50 zł/mies dla małych sklepów. Średni sklep to 150-300 zł/mies (hosting + domeny + certyfikaty). Duże sklepy z dużym ruchem od 500 zł. Oferuję pakiety maintanance z aktualizacjami.",
+                  q: 'Ile kosztuje utrzymanie sklepu miesięcznie?',
+                  a: 'Hosting od 50 zł/mies dla małych sklepów. Średni sklep to 150-300 zł/mies (hosting + domeny + certyfikaty). Duże sklepy z dużym ruchem od 500 zł. Oferuję pakiety maintanance z aktualizacjami.',
                 },
                 {
-                  q: "Czy sklep będzie działał szybko przy dużym ruchu?",
+                  q: 'Czy sklep będzie działał szybko przy dużym ruchu?',
                   a: "Absolutnie. Używam CDN, cache'owania, optymalizacji obrazów. Sklepy obsługują tysiące użytkowników jednocześnie. Load time poniżej 2 sekund gwarantowany.",
                 },
                 {
-                  q: "Oferujesz wsparcie po uruchomieniu sklepu?",
-                  a: "Tak, każdy pakiet zawiera okres wsparcia (30 dni - 12 miesięcy). Później oferuję pakiety wsparcia od 500 zł/mies obejmujące aktualizacje, monitoring, drobne zmiany.",
+                  q: 'Oferujesz wsparcie po uruchomieniu sklepu?',
+                  a: 'Tak, każdy pakiet zawiera okres wsparcia (30 dni - 12 miesięcy). Później oferuję pakiety wsparcia od 500 zł/mies obejmujące aktualizacje, monitoring, drobne zmiany.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -774,7 +836,7 @@ export default function SklepyInternetoweBydgoszcz() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -789,12 +851,12 @@ export default function SklepyInternetoweBydgoszcz() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Testimonials 
         <section className="py-20 bg-muted/20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Opinie{" "}
+                Opinie{' '}
                 <span className="text-gradient">zadowolonych klientów</span>
               </h2>
             </motion.div>
@@ -802,22 +864,22 @@ export default function SklepyInternetoweBydgoszcz() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "Michał Kowalski",
-                  company: "FashionHub Bydgoszcz",
+                  name: 'Michał Kowalski',
+                  company: 'FashionHub Bydgoszcz',
                   rating: 5,
-                  text: "Sklep przekroczył nasze oczekiwania. Konwersja wzrosła o 65% w 3 miesiące! Karol nie tylko koduje, ale rozumie biznes.",
+                  text: 'Sklep przekroczył nasze oczekiwania. Konwersja wzrosła o 65% w 3 miesiące! Karol nie tylko koduje, ale rozumie biznes.',
                 },
                 {
-                  name: "Anna Nowak",
-                  company: "EkoMarket",
+                  name: 'Anna Nowak',
+                  company: 'EkoMarket',
                   rating: 5,
-                  text: "Profesjonalizm na najwyższym poziomie. Sklep działa błyskawicznie, obsługa prosta, a wsparcie po wdrożeniu bezcenne.",
+                  text: 'Profesjonalizm na najwyższym poziomie. Sklep działa błyskawicznie, obsługa prosta, a wsparcie po wdrożeniu bezcenne.',
                 },
                 {
-                  name: "Tomasz Wiśniewski",
-                  company: "TechStore24",
+                  name: 'Tomasz Wiśniewski',
+                  company: 'TechStore24',
                   rating: 5,
-                  text: "Migracja z PrestaShop przebiegła bez problemów. Nowy sklep jest 5x szybszy i generuje 40% więcej sprzedaży.",
+                  text: 'Migracja z PrestaShop przebiegła bez problemów. Nowy sklep jest 5x szybszy i generuje 40% więcej sprzedaży.',
                 },
               ].map((review, i) => (
                 <motion.div
@@ -846,7 +908,7 @@ export default function SklepyInternetoweBydgoszcz() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* CTA */}
         <section className="py-20 bg-gradient-to-br from-primary/10 to-accent/10">
@@ -855,20 +917,20 @@ export default function SklepyInternetoweBydgoszcz() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 rounded-full mb-6">
                 <Clock className="w-4 h-4 text-green-500" />
                 <span className="text-sm font-semibold text-green-500">
-                  Odpowiedź w 24h • Start projektu w 7 dni
+                  Odpowiedź w 24 godz. • Start projektu w 7 dni
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Zacznij sprzedawać online{" "}
+                Zacznij sprzedawać online{' '}
                 <span className="text-gradient">już za 4 tygodnie</span>
               </h2>
 
               <p className="text-lg text-muted-foreground mb-8">
-                Dołącz do grona 47 zadowolonych właścicieli sklepów z Bydgoszczy
-                i regionu.
+                Dołącz do grona zadowolonych właścicieli sklepów z Bydgoszczy i
+                regionu.
                 <strong>
-                  {" "}
+                  {' '}
                   Pierwsza konsultacja bezpłatna i bez zobowiązań.
                 </strong>
               </p>
@@ -912,15 +974,7 @@ export default function SklepyInternetoweBydgoszcz() {
               <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <Check className="w-4 h-4 text-green-500" />
-                  Darmowa wycena w 48h
-                </span>
-                <span className="flex items-center gap-1">
-                  <Check className="w-4 h-4 text-green-500" />
-                  Płatność w ratach 0%
-                </span>
-                <span className="flex items-center gap-1">
-                  <Check className="w-4 h-4 text-green-500" />
-                  Gwarancja satysfakcji
+                  Darmowa wycena w 48 godz.
                 </span>
               </div>
             </motion.div>

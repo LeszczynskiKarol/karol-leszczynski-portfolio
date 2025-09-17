@@ -119,8 +119,9 @@ export default function SklepyInternetoweTorun() {
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Tworzę <strong>szybkie, konwertujące sklepy internetowe</strong>{' '}
-                które skutecznie sprzedają. 15 lat doświadczenia w e-commerce,
+                Tworzę{' '}
+                <strong>szybkie, konwertujące sklepy internetowe,</strong> które
+                skutecznie sprzedają. 15 lat doświadczenia w e-commerce,
                 copywritingu i SEO - połączenie, którego nie znajdziesz często u
                 programisty.
               </p>
