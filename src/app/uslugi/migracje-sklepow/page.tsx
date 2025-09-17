@@ -1,40 +1,40 @@
 // src/app/uslugi/migracje-sklepow/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
-  RefreshCw,
-  TrendingUp,
-  Shield,
-  Zap,
-  Code2,
-  Check,
+  AlertTriangle,
   ArrowRight,
-  HeadphonesIcon,
+  ArrowUpRight,
   Award,
-  ChevronRight,
-  Phone,
-  Mail,
   BarChart3,
+  Check,
+  CheckCircle,
+  ChevronRight,
+  Code2,
   Database,
-  Lock,
   DollarSign,
+  Gauge,
+  HeadphonesIcon,
+  Lock,
+  Mail,
+  Phone,
+  RefreshCw,
+  Shield,
+  ShoppingCart,
   Target,
   Timer,
-  AlertTriangle,
-  CheckCircle,
-  ArrowUpRight,
-  ShoppingCart,
-  Gauge,
+  TrendingUp,
   XCircle,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  Zap,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function MigracjeSklepow() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [currentPlatform, setCurrentPlatform] = useState<string>("woocommerce");
+  const [currentPlatform, setCurrentPlatform] = useState<string>('woocommerce');
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -43,29 +43,29 @@ export default function MigracjeSklepow() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Data Migration Service",
-    name: "Migracja sklepów internetowych",
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Data Migration Service',
+    name: 'Migracja sklepów internetowych',
     description:
-      "Bezpieczna migracja sklepu z WooCommerce, PrestaShop na nowoczesną platformę.",
+      'Bezpieczna migracja sklepu z WooCommerce, PrestaShop na nowoczesną platformę.',
     provider: {
-      "@type": "Person",
-      name: "Karol Leszczyński",
+      '@type': 'Person',
+      name: 'Karol Leszczyński',
     },
     offers: {
-      "@type": "Offer",
-      price: "4990",
-      priceCurrency: "PLN",
-      availability: "https://schema.org/InStock",
+      '@type': 'Offer',
+      price: '4990',
+      priceCurrency: 'PLN',
+      availability: 'https://schema.org/InStock',
     },
     benefits: [
-      "0% utraty danych",
-      "Zachowanie SEO i pozycji",
-      "+40% wzrost wydajności",
-      "Pełne wsparcie podczas migracji",
+      '0% utraty danych',
+      'Zachowanie SEO i pozycji',
+      '+40% wzrost wydajności',
+      'Pełne wsparcie podczas migracji',
     ],
-    duration: "P7D",
+    duration: 'P7D',
   };
 
   return (
@@ -101,7 +101,7 @@ export default function MigracjeSklepow() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -118,7 +118,7 @@ export default function MigracjeSklepow() {
               </div>
 
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Migracje{" "}
+                Migracje{' '}
                 <span className="text-gradient">sklepów internetowych</span>
               </h1>
 
@@ -184,7 +184,7 @@ export default function MigracjeSklepow() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Problemy które{" "}
+                Problemy które{' '}
                 <span className="text-gradient">Cię frustrują</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -195,46 +195,46 @@ export default function MigracjeSklepow() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  problem: "Sklep ładuje się 5+ sekund",
-                  platform: "WooCommerce",
+                  problem: 'Sklep ładuje się 5+ sekund',
+                  platform: 'WooCommerce',
                   icon: <Timer />,
-                  desc: "WordPress + 30 wtyczek = katastrofa wydajności",
-                  solution: "Next.js ładuje się w 1-2 sekundy",
+                  desc: 'WordPress + 30 wtyczek = katastrofa wydajności',
+                  solution: 'Next.js ładuje się w 1-2 sekundy',
                 },
                 {
-                  problem: "Miesięczne koszty rosną",
-                  platform: "Shopify",
+                  problem: 'Miesięczne koszty rosną',
+                  platform: 'Shopify',
                   icon: <DollarSign />,
-                  desc: "Plan $299 + aplikacje $500 = $800/mies",
-                  solution: "Własny sklep = tylko hosting $50/mies",
+                  desc: 'Plan $299 + aplikacje $500 = $800/mies',
+                  solution: 'Własny sklep = tylko hosting $50/mies',
                 },
                 {
-                  problem: "Limity i ograniczenia",
-                  platform: "Platformy SaaS",
+                  problem: 'Limity i ograniczenia',
+                  platform: 'Platformy SaaS',
                   icon: <Lock />,
-                  desc: "Nie możesz dodać funkcji której potrzebujesz",
-                  solution: "Dedykowany sklep = nieograniczone możliwości",
+                  desc: 'Nie możesz dodać funkcji której potrzebujesz',
+                  solution: 'Dedykowany sklep = nieograniczone możliwości',
                 },
                 {
-                  problem: "SEO nie działa",
-                  platform: "PrestaShop",
+                  problem: 'SEO nie działa',
+                  platform: 'PrestaShop',
                   icon: <TrendingUp />,
-                  desc: "Duplikaty, wolne ładowanie, brak kontroli",
-                  solution: "Pełna kontrola nad SEO i wydajnością",
+                  desc: 'Duplikaty, wolne ładowanie, brak kontroli',
+                  solution: 'Pełna kontrola nad SEO i wydajnością',
                 },
                 {
-                  problem: "Wtyczki się konfliktują",
-                  platform: "WooCommerce",
+                  problem: 'Wtyczki się konfliktują',
+                  platform: 'WooCommerce',
                   icon: <AlertTriangle />,
-                  desc: "Aktualizacja = wszystko się sypie",
-                  solution: "Kod na miarę = zero konfliktów",
+                  desc: 'Aktualizacja = wszystko się sypie',
+                  solution: 'Kod na miarę = zero konfliktów',
                 },
                 {
-                  problem: "Checkout porzucany",
-                  platform: "Wszystkie",
+                  problem: 'Checkout porzucany',
+                  platform: 'Wszystkie',
                   icon: <ShoppingCart />,
-                  desc: "Skomplikowany proces, wolne ładowanie",
-                  solution: "Checkout w 2 krokach, konwersja +30%",
+                  desc: 'Skomplikowany proces, wolne ładowanie',
+                  solution: 'Checkout w 2 krokach, konwersja +30%',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -282,7 +282,7 @@ export default function MigracjeSklepow() {
                   </span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Stojan Shop:{" "}
+                  Stojan Shop:{' '}
                   <span className="text-gradient">
                     +40% sprzedaży po migracji
                   </span>
@@ -397,17 +397,6 @@ export default function MigracjeSklepow() {
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-12 text-center">
-                  <blockquote className="text-lg italic text-muted-foreground mb-4">
-                    &quot;Migracja to najlepsza decyzja biznesowa. Sklep działa
-                    błyskawicznie, klienci są zadowoleni, a ja oszczędzam 4h
-                    dziennie na automatyzacji.&quot;
-                  </blockquote>
-                  <p className="text-sm">
-                    <strong>Michał S.</strong>, właściciel Stojan Shop
-                  </p>
-                </div>
               </div>
             </motion.div>
           </div>
@@ -418,7 +407,7 @@ export default function MigracjeSklepow() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Migruję z{" "}
+                Migruję z{' '}
                 <span className="text-gradient">każdej platformy</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -429,20 +418,20 @@ export default function MigracjeSklepow() {
             {/* Platform selector */}
             <div className="flex flex-wrap gap-4 justify-center mb-12">
               {[
-                "woocommerce",
-                "prestashop",
-                "shopify",
-                "shoper",
-                "magento",
-                "inne",
+                'woocommerce',
+                'prestashop',
+                'shopify',
+                'shoper',
+                'magento',
+                'inne',
               ].map((platform) => (
                 <button
                   key={platform}
                   onClick={() => setCurrentPlatform(platform)}
                   className={`px-6 py-3 rounded-lg transition-all capitalize ${
                     currentPlatform === platform
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted hover:bg-muted/80"
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted hover:bg-muted/80'
                   }`}
                 >
                   {platform}
@@ -452,7 +441,7 @@ export default function MigracjeSklepow() {
 
             {/* Platform specific info */}
             <div className="max-w-4xl mx-auto">
-              {currentPlatform === "woocommerce" && (
+              {currentPlatform === 'woocommerce' && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -535,7 +524,315 @@ export default function MigracjeSklepow() {
                 </motion.div>
               )}
 
-              {currentPlatform === "prestashop" && (
+              {currentPlatform === 'shoper' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-background/50 backdrop-blur-sm border border-primary/10 rounded-xl p-8"
+                >
+                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <ShoppingCart className="w-6 h-6 text-primary" />
+                    Migracja z Shoper
+                  </h3>
+
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground">
+                      Shoper to polska platforma SaaS popularna wśród małych i
+                      średnich sklepów. Migracja daje pełną kontrolę nad kodem i
+                      eliminuje miesięczne opłaty abonamentowe.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h4 className="font-semibold mb-3">
+                          Koszty Shoper (miesięcznie):
+                        </h4>
+                        <ul className="space-y-2 text-sm">
+                          <li className="flex justify-between">
+                            <span>Plan Standard</span>
+                            <span className="text-red-500">299 zł</span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Aplikacje dodatkowe</span>
+                            <span className="text-red-500">150-400 zł</span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Szablon premium</span>
+                            <span className="text-red-500">
+                              500 zł (jednorazowo)
+                            </span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Prowizje transakcyjne</span>
+                            <span className="text-red-500">0.5-1%</span>
+                          </li>
+                          <li className="pt-2 border-t flex justify-between font-semibold">
+                            <span>Suma</span>
+                            <span className="text-red-500">
+                              450-700 zł/mies
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold mb-3">
+                          Koszty po migracji:
+                        </h4>
+                        <ul className="space-y-2 text-sm">
+                          <li className="flex justify-between">
+                            <span>Hosting VPS/Cloud</span>
+                            <span className="text-green-500">100-200 zł</span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Funkcje wbudowane</span>
+                            <span className="text-green-500">0 zł</span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Własny design</span>
+                            <span className="text-green-500">0 zł</span>
+                          </li>
+                          <li className="flex justify-between">
+                            <span>Płatności (tylko prowizja)</span>
+                            <span className="text-green-500">1.4% + 1 zł</span>
+                          </li>
+                          <li className="pt-2 border-t flex justify-between font-semibold">
+                            <span>Suma</span>
+                            <span className="text-green-500">
+                              100-200 zł/mies
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="p-4 bg-yellow-500/10 rounded-lg border border-yellow-500/20">
+                      <p className="text-sm">
+                        <strong>Główne ograniczenia Shoper:</strong> Brak
+                        dostępu do kodu, limity produktów w tańszych planach,
+                        ograniczone możliwości SEO, brak zaawansowanych
+                        automatyzacji.
+                      </p>
+                    </div>
+
+                    <div className="text-center p-4 bg-green-500/10 rounded-lg">
+                      <p className="text-2xl font-bold text-green-500">
+                        Oszczędzasz 350-500 zł miesięcznie!
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        To 4200-6000 zł rocznie + własność kodu
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+
+              {currentPlatform === 'magento' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-background/50 backdrop-blur-sm border border-primary/10 rounded-xl p-8"
+                >
+                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <ShoppingCart className="w-6 h-6 text-primary" />
+                    Migracja z Magento
+                  </h3>
+
+                  <div className="space-y-6">
+                    <div className="p-4 bg-orange-500/10 rounded-lg border border-orange-500/20">
+                      <p className="text-sm">
+                        <strong>Uwaga:</strong> Magento to potężna, ale bardzo
+                        wymagająca platforma. Większość sklepów wykorzystuje
+                        tylko 20% jej możliwości, płacąc za 100% złożoności.
+                      </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">Problemy Magento</h4>
+                        <ul className="text-sm space-y-1 text-muted-foreground">
+                          <li>• Wymaga drogiego hostingu</li>
+                          <li>• Kosztowni specjaliści</li>
+                          <li>• Wolne bez optymalizacji</li>
+                          <li>• Skomplikowane aktualizacje</li>
+                        </ul>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">
+                          Koszty utrzymania
+                        </h4>
+                        <ul className="text-sm space-y-1 text-muted-foreground">
+                          <li>• Hosting: 500-2000 zł/mies</li>
+                          <li>• Developer: 150-300 zł/h</li>
+                          <li>• Licencje: 0-1000 zł</li>
+                          <li>• Rozszerzenia: 200-800 zł</li>
+                        </ul>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">Po migracji</h4>
+                        <ul className="text-sm space-y-1 text-muted-foreground">
+                          <li>• Hosting: 200-400 zł/mies</li>
+                          <li>• Wsparcie: 100-200 zł/mies</li>
+                          <li>• Licencje: 0 zł</li>
+                          <li>• Funkcje wbudowane: 0 zł</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-red-500/10 to-green-500/10 rounded-lg p-6">
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-semibold mb-3">
+                            Typowy sklep Magento:
+                          </h4>
+                          <ul className="space-y-2 text-sm">
+                            <li>⚠️ Czas ładowania: 4-8 sekund</li>
+                            <li>⚠️ Koszty miesięczne: 1500-3500 zł</li>
+                            <li>⚠️ Czas wdrożenia zmian: dni/tygodnie</li>
+                            <li>⚠️ Wymagana wiedza: ekspert Magento</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-3">
+                            Po migracji na Next.js:
+                          </h4>
+                          <ul className="space-y-2 text-sm">
+                            <li>✅ Czas ładowania: 1-2 sekundy</li>
+                            <li>✅ Koszty miesięczne: 300-600 zł</li>
+                            <li>✅ Czas wdrożenia zmian: godziny</li>
+                            <li>✅ Wymagana wiedza: podstawy CMS</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="text-center p-4 bg-green-500/10 rounded-lg">
+                      <p className="text-2xl font-bold text-green-500">
+                        Redukcja kosztów o 70-80%
+                      </p>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Oszczędność 1200-2900 zł miesięcznie + 5x szybszy sklep
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+
+              {currentPlatform === 'inne' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-background/50 backdrop-blur-sm border border-primary/10 rounded-xl p-8"
+                >
+                  <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <ShoppingCart className="w-6 h-6 text-primary" />
+                    Migracja z innych platform
+                  </h3>
+
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground">
+                      Migruję również sklepy z mniej popularnych platform i
+                      rozwiązań custom. Każdy przypadek analizuję indywidualnie.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">OpenCart</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Przestarzały kod PHP, problemy z bezpieczeństwem, brak
+                          wsparcia
+                        </p>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">osCommerce</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Technologia z 2000 roku, brak responsywności, słabe
+                          SEO
+                        </p>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">
+                          Joomla + VirtueMart
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          Wolne działanie, skomplikowana obsługa, wysokie koszty
+                        </p>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">IdoSell</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Wysokie prowizje, ograniczenia w customizacji, vendor
+                          lock-in
+                        </p>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">
+                          Własne rozwiązania
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          Stary kod, brak dokumentacji, problemy z utrzymaniem
+                        </p>
+                      </div>
+                      <div className="bg-muted/50 rounded-lg p-4">
+                        <h4 className="font-semibold mb-2">
+                          Sklepy na Allegro
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          Przejście na własny sklep z integracją Allegro API
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="bg-primary/5 rounded-lg p-6">
+                      <h4 className="font-semibold mb-4">
+                        Proces migracji z nietypowych platform:
+                      </h4>
+                      <ol className="space-y-3 text-sm">
+                        <li className="flex gap-3">
+                          <span className="font-bold text-primary">1.</span>
+                          <div>
+                            <strong>Audyt techniczny</strong> - analizuję
+                            strukturę bazy danych, format eksportu, API
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="font-bold text-primary">2.</span>
+                          <div>
+                            <strong>Mapa danych</strong> - tworzę plan migracji
+                            każdego typu danych
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="font-bold text-primary">3.</span>
+                          <div>
+                            <strong>Skrypty migracyjne</strong> - piszę
+                            dedykowane konwertery danych
+                          </div>
+                        </li>
+                        <li className="flex gap-3">
+                          <span className="font-bold text-primary">4.</span>
+                          <div>
+                            <strong>Testy i walidacja</strong> - sprawdzam
+                            kompletność migracji
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+
+                    <div className="text-center p-4 bg-blue-500/10 rounded-lg">
+                      <p className="text-lg font-bold text-blue-500 mb-2">
+                        Darmowa analiza możliwości migracji
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Wyślij mi dostęp do panelu lub przykładowy eksport
+                        danych - przygotuję plan migracji w 24h
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+
+              {currentPlatform === 'prestashop' && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -585,7 +882,7 @@ export default function MigracjeSklepow() {
                 </motion.div>
               )}
 
-              {currentPlatform === "shopify" && (
+              {currentPlatform === 'shopify' && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -613,17 +910,15 @@ export default function MigracjeSklepow() {
                         <ul className="space-y-2 text-sm">
                           <li className="flex justify-between">
                             <span>Plan Shopify</span>
-                            <span className="text-red-500">$299</span>
+                            <span className="text-red-500">1299 zł</span>
                           </li>
                           <li className="flex justify-between">
                             <span>Aplikacje (średnio 10)</span>
-                            <span className="text-red-500">$200-500</span>
+                            <span className="text-red-500">870-2170 zł</span>
                           </li>
                           <li className="flex justify-between">
                             <span>Szablon premium</span>
-                            <span className="text-red-500">
-                              $180 (jednorazowo)
-                            </span>
+                            <span className="text-red-500">780 zł</span>
                           </li>
                           <li className="flex justify-between">
                             <span>Prowizje transakcyjne</span>
@@ -631,7 +926,9 @@ export default function MigracjeSklepow() {
                           </li>
                           <li className="pt-2 border-t flex justify-between font-semibold">
                             <span>Suma</span>
-                            <span className="text-red-500">$500-800/mies</span>
+                            <span className="text-red-500">
+                              2170-3470 zł/mies
+                            </span>
                           </li>
                         </ul>
                       </div>
@@ -643,7 +940,7 @@ export default function MigracjeSklepow() {
                         <ul className="space-y-2 text-sm">
                           <li className="flex justify-between">
                             <span>Hosting AWS/Vercel</span>
-                            <span className="text-green-500">$50-100</span>
+                            <span className="text-green-500">220-430 zł</span>
                           </li>
                           <li className="flex justify-between">
                             <span>Funkcje wbudowane</span>
@@ -659,7 +956,9 @@ export default function MigracjeSklepow() {
                           </li>
                           <li className="pt-2 border-t flex justify-between font-semibold">
                             <span>Suma</span>
-                            <span className="text-green-500">$50-100/mies</span>
+                            <span className="text-green-500">
+                              220-430 zł/mies
+                            </span>
                           </li>
                         </ul>
                       </div>
@@ -667,10 +966,10 @@ export default function MigracjeSklepow() {
 
                     <div className="text-center p-4 bg-green-500/10 rounded-lg">
                       <p className="text-2xl font-bold text-green-500">
-                        Oszczędzasz $450-700 miesięcznie!
+                        Oszczędzasz 1950-3040 zł miesięcznie!
                       </p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        To $5400-8400 rocznie
+                        To 23 400-36 480 zł rocznie
                       </p>
                     </div>
                   </div>
@@ -699,46 +998,46 @@ export default function MigracjeSklepow() {
                 <div className="space-y-6">
                   {[
                     {
-                      day: "Dzień 1-2",
-                      title: "Audyt i backup",
-                      desc: "Analizuję obecny sklep, robię pełny backup danych",
+                      day: 'Dzień 1-2',
+                      title: 'Audyt i backup',
+                      desc: 'Analizuję obecny sklep, robię pełny backup danych',
                       icon: <Shield />,
-                      status: "Sklep działa normalnie",
+                      status: 'Sklep działa normalnie',
                     },
                     {
-                      day: "Dzień 3-7",
-                      title: "Budowa nowego sklepu",
-                      desc: "Tworzę nową platformę na środowisku testowym",
+                      day: 'Dzień 3-7',
+                      title: 'Budowa nowego sklepu',
+                      desc: 'Tworzę nową platformę na środowisku testowym',
                       icon: <Code2 />,
-                      status: "Sklep działa normalnie",
+                      status: 'Sklep działa normalnie',
                     },
                     {
-                      day: "Dzień 8-12",
-                      title: "Migracja danych",
-                      desc: "Przenoszę produkty, klientów, zamówienia",
+                      day: 'Dzień 8-12',
+                      title: 'Migracja danych',
+                      desc: 'Przenoszę produkty, klientów, zamówienia',
                       icon: <Database />,
-                      status: "Sklep działa normalnie",
+                      status: 'Sklep działa normalnie',
                     },
                     {
-                      day: "Dzień 13-14",
-                      title: "Testy i optymalizacja",
-                      desc: "Testuję każdą funkcję, optymalizuję wydajność",
+                      day: 'Dzień 13-14',
+                      title: 'Testy i optymalizacja',
+                      desc: 'Testuję każdą funkcję, optymalizuję wydajność',
                       icon: <Gauge />,
-                      status: "Sklep działa normalnie",
+                      status: 'Sklep działa normalnie',
                     },
                     {
-                      day: "Dzień 15",
-                      title: "Przełączenie DNS",
-                      desc: "Przekierowuję domenę na nowy sklep",
+                      day: 'Dzień 15',
+                      title: 'Przełączenie DNS',
+                      desc: 'Przekierowuję domenę na nowy sklep',
                       icon: <RefreshCw />,
-                      status: "15 minut przerwy technicznej",
+                      status: '15 minut przerwy technicznej',
                     },
                     {
-                      day: "Dzień 16-20",
-                      title: "Monitoring i wsparcie",
-                      desc: "Monitoruję działanie, rozwiązuję ewentualne problemy",
+                      day: 'Dzień 16-20',
+                      title: 'Monitoring i wsparcie',
+                      desc: 'Monitoruję działanie, rozwiązuję ewentualne problemy',
                       icon: <HeadphonesIcon />,
-                      status: "Nowy sklep działa!",
+                      status: 'Nowy sklep działa!',
                     },
                   ].map((phase, i) => (
                     <motion.div
@@ -898,7 +1197,7 @@ export default function MigracjeSklepow() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Co otrzymujesz{" "}
+                Co otrzymujesz{' '}
                 <span className="text-gradient">po migracji</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -910,33 +1209,33 @@ export default function MigracjeSklepow() {
               {[
                 {
                   icon: <Zap />,
-                  title: "Błyskawiczna szybkość",
-                  desc: "PageSpeed 90+, ładowanie < 2s, CDN globalny",
+                  title: 'Błyskawiczna szybkość',
+                  desc: 'PageSpeed 90+, ładowanie < 2s, CDN globalny',
                 },
                 {
                   icon: <Code2 />,
-                  title: "Kod na własność",
-                  desc: "100% własności kodu, możliwość modyfikacji, brak vendor lock-in",
+                  title: 'Kod na własność',
+                  desc: '100% własności kodu, możliwość modyfikacji, brak vendor lock-in',
                 },
                 {
                   icon: <Shield />,
-                  title: "Bezpieczeństwo",
-                  desc: "Szyfrowanie, backupy, ochrona przed atakami, GDPR ready",
+                  title: 'Bezpieczeństwo',
+                  desc: 'Szyfrowanie, backupy, ochrona przed atakami, GDPR ready',
                 },
                 {
                   icon: <Target />,
-                  title: "SEO na sterydach",
-                  desc: "Zachowanie pozycji, redirecty 301, sitemapy, schema.org",
+                  title: 'SEO na sterydach',
+                  desc: 'Zachowanie pozycji, redirecty 301, sitemapy, schema.org',
                 },
                 {
                   icon: <RefreshCw />,
-                  title: "Automatyzacje",
-                  desc: "Integracje z Allegro, InPost, fakturowanie, maile",
+                  title: 'Automatyzacje',
+                  desc: 'Integracje z Allegro, InPost, fakturowanie, maile',
                 },
                 {
                   icon: <BarChart3 />,
-                  title: "Analityka",
-                  desc: "Google Analytics 4, Facebook Pixel, heatmapy, A/B testy",
+                  title: 'Analityka',
+                  desc: 'Google Analytics 4, Facebook Pixel, heatmapy, A/B testy',
                 },
               ].map((feature, i) => (
                 <motion.div
@@ -974,53 +1273,53 @@ export default function MigracjeSklepow() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "Essential",
-                  price: "7 990",
-                  time: "2 tygodnie",
-                  desc: "Dla małych sklepów do 500 produktów",
+                  name: 'Essential',
+                  price: '7 990',
+                  time: '2 tygodnie',
+                  desc: 'Dla małych sklepów do 500 produktów',
                   features: [
-                    "Migracja produktów i klientów",
-                    "Podstawowy design responsywny",
-                    "Płatności i dostawa",
-                    "SEO - zachowanie pozycji",
-                    "Panel administracyjny",
-                    "Szkolenie z obsługi",
-                    "1 miesiąc wsparcia",
+                    'Migracja produktów i klientów',
+                    'Podstawowy design responsywny',
+                    'Płatności i dostawa',
+                    'SEO - zachowanie pozycji',
+                    'Panel administracyjny',
+                    'Szkolenie z obsługi',
+                    '1 miesiąc wsparcia',
                   ],
                   best: false,
                 },
                 {
-                  name: "Professional",
-                  price: "14 990",
-                  time: "3-4 tygodnie",
-                  desc: "Dla średnich sklepów z integracjami",
+                  name: 'Professional',
+                  price: '14 990',
+                  time: '3-4 tygodnie',
+                  desc: 'Dla średnich sklepów z integracjami',
                   features: [
-                    "Do 5000 produktów",
-                    "Custom design UX/UI",
-                    "Integracje (Allegro, InPost)",
-                    "Automatyzacje procesów",
-                    "Migracja historii zamówień",
-                    "Optymalizacja wydajności",
-                    "Multi-język / Multi-waluta",
-                    "3 miesiące wsparcia",
+                    'Do 5000 produktów',
+                    'Custom design UX/UI',
+                    'Integracje (Allegro, InPost)',
+                    'Automatyzacje procesów',
+                    'Migracja historii zamówień',
+                    'Optymalizacja wydajności',
+                    'Multi-język / Multi-waluta',
+                    '3 miesiące wsparcia',
                   ],
                   best: true,
                 },
                 {
-                  name: "Enterprise",
-                  price: "od 24 990",
-                  time: "4-8 tygodni",
-                  desc: "Dla dużych sklepów i marketplace",
+                  name: 'Enterprise',
+                  price: 'od 24 990',
+                  time: '4-8 tygodni',
+                  desc: 'Dla dużych sklepów i marketplace',
                   features: [
-                    "Nieograniczona ilość produktów",
-                    "Architektura mikroserwisowa",
-                    "Zaawansowane integracje B2B",
-                    "System multi-vendor",
-                    "Dedykowane API",
-                    "Load balancing",
-                    "DevOps i CI/CD",
-                    "SLA 99.9%",
-                    "6 miesięcy wsparcia",
+                    'Nieograniczona ilość produktów',
+                    'Architektura mikroserwisowa',
+                    'Zaawansowane integracje B2B',
+                    'System multi-vendor',
+                    'Dedykowane API',
+                    'Load balancing',
+                    'DevOps i CI/CD',
+                    'SLA 99.9%',
+                    '6 miesięcy wsparcia',
                   ],
                   best: false,
                 },
@@ -1031,7 +1330,7 @@ export default function MigracjeSklepow() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
-                    plan.best ? "border-primary shadow-xl" : "border-primary/10"
+                    plan.best ? 'border-primary shadow-xl' : 'border-primary/10'
                   }`}
                 >
                   {plan.best && (
@@ -1046,7 +1345,7 @@ export default function MigracjeSklepow() {
                       Czas: {plan.time}
                     </div>
                     <div className="mb-3">
-                      {plan.price.includes("od") ? (
+                      {plan.price.includes('od') ? (
                         <span className="text-3xl font-bold">{plan.price}</span>
                       ) : (
                         <>
@@ -1054,7 +1353,7 @@ export default function MigracjeSklepow() {
                             {plan.price}
                           </span>
                           <span className="text-muted-foreground">
-                            {" "}
+                            {' '}
                             zł netto
                           </span>
                         </>
@@ -1076,8 +1375,8 @@ export default function MigracjeSklepow() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.best
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Wybierz pakiet
@@ -1100,28 +1399,28 @@ export default function MigracjeSklepow() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Czy stracę pozycje w Google po migracji?",
-                  a: "Nie! Zachowuję wszystkie URL lub ustawiam redirecty 301. Dbam o meta tagi, sitemapy, schema.org. W 95% przypadków pozycje się poprawiają dzięki lepszej wydajności.",
+                  q: 'Czy stracę pozycje w Google po migracji?',
+                  a: 'Nie! Zachowuję wszystkie URL lub ustawiam redirecty 301. Dbam o meta tagi, sitemapy, schema.org. W 95% przypadków pozycje się poprawiają dzięki lepszej wydajności.',
                 },
                 {
-                  q: "Co z moimi klientami i ich kontami?",
-                  a: "Migruję wszystkich klientów z historią zamówień. Muszą tylko zresetować hasło przy pierwszym logowaniu. Informuję ich mailem o zmianach.",
+                  q: 'Co z moimi klientami i ich kontami?',
+                  a: 'Migruję wszystkich klientów z historią zamówień. Muszą tylko zresetować hasło przy pierwszym logowaniu. Informuję ich mailem o zmianach.',
                 },
                 {
-                  q: "Ile czasu sklep będzie niedostępny?",
-                  a: "Maksymalnie 15-30 minut podczas przełączania DNS. Całą migrację robię na środowisku testowym, więc Twój sklep działa normalnie przez 99% czasu migracji.",
+                  q: 'Ile czasu sklep będzie niedostępny?',
+                  a: 'Maksymalnie 15-30 minut podczas przełączania DNS. Całą migrację robię na środowisku testowym, więc Twój sklep działa normalnie przez 99% czasu migracji.',
                 },
                 {
-                  q: "Co jeśli coś pójdzie nie tak?",
-                  a: "Mam pełny backup starego sklepu. W razie problemów mogę cofnąć zmiany w 15 minut. Ale w 11 latach nie miałem ani jednej nieudanej migracji.",
+                  q: 'Co jeśli coś pójdzie nie tak?',
+                  a: 'Mam pełny backup starego sklepu. W razie problemów mogę cofnąć zmiany w 15 minut. Ale w 11 latach nie miałem ani jednej nieudanej migracji.',
                 },
                 {
-                  q: "Czy będę mógł sam zarządzać nowym sklepem?",
-                  a: "Oczywiście! Tworzę intuicyjny panel admina, przeprowadzam szkolenie, dostarczam dokumentację. Jest prostszy niż WooCommerce czy PrestaShop.",
+                  q: 'Czy będę mógł sam zarządzać nowym sklepem?',
+                  a: 'Oczywiście! Tworzę intuicyjny panel admina, przeprowadzam szkolenie, dostarczam dokumentację. Jest prostszy niż WooCommerce czy PrestaShop.',
                 },
                 {
-                  q: "Jakie technologie wykorzystujesz?",
-                  a: "Next.js 14 (frontend), Node.js (backend), PostgreSQL (baza), AWS/Vercel (hosting). To stack używany przez największe sklepy na świecie.",
+                  q: 'Jakie technologie wykorzystujesz?',
+                  a: 'Next.js 14 (frontend), Node.js (backend), PostgreSQL (baza), AWS/Vercel (hosting). To stack używany przez największe sklepy na świecie.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -1138,7 +1437,7 @@ export default function MigracjeSklepow() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -1165,7 +1464,7 @@ export default function MigracjeSklepow() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Przestań płacić{" "}
+                Przestań płacić{' '}
                 <span className="text-gradient">
                   500 zł miesięcznie za wtyczki
                 </span>

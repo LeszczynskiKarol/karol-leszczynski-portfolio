@@ -1,38 +1,38 @@
 // src/app/uslugi/programista-bydgoszcz/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
+  ArrowRight,
+  Award,
+  Briefcase,
+  Bug,
+  CheckCircle,
+  ChevronRight,
+  Clock,
+  Cloud,
   Code2,
+  Coffee,
   Cpu,
   Database,
   GitBranch,
-  Terminal,
-  Bug,
-  Layers,
-  Server,
-  Cloud,
-  Lock,
-  Smartphone,
   Globe,
-  TrendingUp,
-  Users,
-  Award,
-  ChevronRight,
-  Phone,
+  GraduationCap,
+  Layers,
+  Lock,
   Mail,
   MapPin,
-  Clock,
-  CheckCircle,
-  ArrowRight,
+  Phone,
+  Server,
+  Smartphone,
+  Terminal,
+  TrendingUp,
+  Users,
   Zap,
-  Briefcase,
-  GraduationCap,
-  Coffee,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ProgramistaBydgoszcz() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -44,36 +44,36 @@ export default function ProgramistaBydgoszcz() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Programista, usługi programistyczne Bydgoszcz",
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Programista, usługi programistyczne Bydgoszcz',
     description:
-      "Profesjonalny programista w Bydgoszczy. Tworzenie aplikacji webowych, systemów dla firm, integracje API. 15 lat doświadczenia.",
+      'Profesjonalny programista w Bydgoszczy. Tworzenie aplikacji webowych, systemów dla firm, integracje API. 15 lat doświadczenia.',
     provider: {
-      "@type": "Person",
-      name: "Karol Leszczyński",
-      jobTitle: "Senior Full-Stack Developer",
-      telephone: "+48509370772",
-      email: "kontakt@karol-leszczynski.pl",
+      '@type': 'Person',
+      name: 'Karol Leszczyński',
+      jobTitle: 'Senior Full-Stack Developer',
+      telephone: '+48509370772',
+      email: 'kontakt@karol-leszczynski.pl',
     },
     address: {
-      "@type": "PostalAddress",
-      addressLocality: "Bydgoszcz",
-      addressRegion: "Kujawsko-Pomorskie",
-      addressCountry: "PL",
+      '@type': 'PostalAddress',
+      addressLocality: 'Bydgoszcz',
+      addressRegion: 'Kujawsko-Pomorskie',
+      addressCountry: 'PL',
     },
     geo: {
-      "@type": "GeoCoordinates",
-      latitude: "53.1235",
-      longitude: "18.0084",
+      '@type': 'GeoCoordinates',
+      latitude: '53.1235',
+      longitude: '18.0084',
     },
-    areaServed: [{ "@type": "City", name: "Bydgoszcz" }],
-    priceRange: "150-600 PLN/h",
-    openingHours: "Mo-Fr 08:00-18:00",
+    areaServed: [{ '@type': 'City', name: 'Bydgoszcz' }],
+    priceRange: '150-600 PLN/h',
+    openingHours: 'Mo-Fr 08:00-18:00',
     aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "47",
+      '@type': 'AggregateRating',
+      ratingValue: '5.0',
+      reviewCount: '47',
     },
   };
 
@@ -111,11 +111,11 @@ export default function ProgramistaBydgoszcz() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 >
                   {
-                    ["</>", "{}", "[]", "()", "=>", "//"][
+                    ['</>', '{}', '[]', '()', '=>', '//'][
                       Math.floor(Math.random() * 6)
                     ]
                   }
@@ -140,7 +140,7 @@ export default function ProgramistaBydgoszcz() {
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 <strong>
                   Full-Stack Developer z Bydgoszczy do Twojej dyspozycji.
-                </strong>{" "}
+                </strong>{' '}
                 Przekształcam pomysły biznesowe w działające aplikacje. Od
                 prostych stron po złożone systemy enterprise - programuję
                 rozwiązania, które napędzają biznes w erze cyfrowej.
@@ -154,7 +154,7 @@ export default function ProgramistaBydgoszcz() {
                   transition={{ delay: 0.3 }}
                 >
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span>Senior Developer 15+ lat</span>
+                  <span>Web Developer</span>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2"
@@ -202,11 +202,11 @@ export default function ProgramistaBydgoszcz() {
             <div className="max-w-5xl mx-auto">
               <motion.div {...fadeInUp} className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Developer, który{" "}
+                  Developer, który{' '}
                   <span className="text-gradient">rozumie Twój biznes</span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Nie jestem tylko programistą - jestem partnerem
+                  Poza tym, że pracuję jako programista, jestem też partnerem
                   technologicznym, który pomoże Ci wykorzystać potencjał
                   cyfryzacji
                 </p>
@@ -226,7 +226,7 @@ export default function ProgramistaBydgoszcz() {
                       <p className="text-muted-foreground mb-4">
                         Moja droga zawodowa jest nietypowa. Przez 10 lat
                         pracowałem jako copywriter i specjalista SEO. Napisałem
-                        ponad 5000 tekstów sprzedażowych, wypozycjonowałem setki
+                        tysiące tekstów sprzedażowych, wypozycjonowałem setki
                         stron w Google.
                       </p>
                       <p className="text-muted-foreground mb-4">
@@ -300,75 +300,75 @@ export default function ProgramistaBydgoszcz() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Systemy dla firm",
+                  title: 'Systemy dla firm',
                   icon: <Server />,
-                  desc: "Nowoczesne rozwiązania usprawniające procesy biznesowe",
+                  desc: 'Nowoczesne rozwiązania usprawniające procesy biznesowe',
                   features: [
-                    "Systemy CRM na miarę",
-                    "Platformy B2B/B2C",
-                    "Panele administracyjne",
-                    "Systemy rezerwacji",
-                    "Automatyzacja workflow",
+                    'Systemy CRM na miarę',
+                    'Platformy B2B/B2C',
+                    'Panele administracyjne',
+                    'Systemy rezerwacji',
+                    'Automatyzacja workflow',
                   ],
                 },
                 {
-                  title: "Aplikacje webowe",
+                  title: 'Aplikacje webowe',
                   icon: <Globe />,
-                  desc: "Nowoczesne aplikacje działające w przeglądarce",
+                  desc: 'Nowoczesne aplikacje działające w przeglądarce',
                   features: [
-                    "Progressive Web Apps",
-                    "Single Page Applications",
-                    "Real-time dashboards",
-                    "Portale społecznościowe",
-                    "Platformy e-learningowe",
+                    'Progressive Web Apps',
+                    'Single Page Applications',
+                    'Real-time dashboards',
+                    'Portale społecznościowe',
+                    'Platformy e-learningowe',
                   ],
                 },
                 {
-                  title: "E-commerce & SaaS",
+                  title: 'E-commerce & SaaS',
                   icon: <TrendingUp />,
-                  desc: "Sklepy internetowe i aplikacje subskrypcyjne",
+                  desc: 'Sklepy internetowe i aplikacje subskrypcyjne',
                   features: [
-                    "Sklepy headless commerce",
-                    "Platformy marketplace",
-                    "Systemy subskrypcji",
-                    "Integracje płatności",
-                    "Multi-tenant SaaS",
+                    'Sklepy headless commerce',
+                    'Platformy marketplace',
+                    'Systemy subskrypcji',
+                    'Integracje płatności',
+                    'Multi-tenant SaaS',
                   ],
                 },
                 {
-                  title: "Integracje systemów",
+                  title: 'Integracje systemów',
                   icon: <GitBranch />,
-                  desc: "Łączę różne systemy w spójną całość",
+                  desc: 'Łączę różne systemy w spójną całość',
                   features: [
-                    "REST API & GraphQL",
-                    "Integracje ERP",
-                    "Synchronizacja danych",
-                    "Webhook automation",
-                    "Legacy system migration",
+                    'REST API & GraphQL',
+                    'Integracje ERP',
+                    'Synchronizacja danych',
+                    'Webhook automation',
+                    'Legacy system migration',
                   ],
                 },
                 {
-                  title: "DevOps & Cloud",
+                  title: 'DevOps & Cloud',
                   icon: <Cloud />,
-                  desc: "Wdrożenia, hosting, monitoring aplikacji",
+                  desc: 'Wdrożenia, hosting, monitoring aplikacji',
                   features: [
-                    "AWS & Azure deployment",
-                    "CI/CD pipelines",
-                    "Docker & Kubernetes",
-                    "Monitoring & logging",
-                    "Optymalizacja kosztów",
+                    'AWS & Azure deployment',
+                    'CI/CD pipelines',
+                    'Docker & Kubernetes',
+                    'Monitoring & logging',
+                    'Optymalizacja kosztów',
                   ],
                 },
                 {
-                  title: "Wsparcie & rozwój",
+                  title: 'Wsparcie & rozwój',
                   icon: <Bug />,
-                  desc: "Utrzymanie i rozwój istniejących systemów",
+                  desc: 'Utrzymanie i rozwój istniejących systemów',
                   features: [
-                    "Code review & refactoring",
-                    "Debugowanie błędów",
-                    "Optymalizacja wydajności",
-                    "Migracje technologiczne",
-                    "Dokumentacja techniczna",
+                    'Code review & refactoring',
+                    'Debugowanie błędów',
+                    'Optymalizacja wydajności',
+                    'Migracje technologiczne',
+                    'Dokumentacja techniczna',
                   ],
                 },
               ].map((service, i) => (
@@ -416,47 +416,47 @@ export default function ProgramistaBydgoszcz() {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   {
-                    category: "Frontend Excellence",
+                    category: 'Frontend Excellence',
                     icon: <Smartphone />,
                     techs: [
-                      { name: "React 18", level: "✅" },
-                      { name: "Next.js 14", level: "✅" },
-                      { name: "TypeScript", level: "✅" },
-                      { name: "Tailwind CSS", level: "✅" },
-                      { name: "Redux Toolkit", level: "✅" },
+                      { name: 'React 18', level: '✅' },
+                      { name: 'Next.js 14', level: '✅' },
+                      { name: 'TypeScript', level: '✅' },
+                      { name: 'Tailwind CSS', level: '✅' },
+                      { name: 'Redux Toolkit', level: '✅' },
                     ],
                   },
                   {
-                    category: "Backend Power",
+                    category: 'Backend Power',
                     icon: <Cpu />,
                     techs: [
-                      { name: "Node.js", level: "✅" },
-                      { name: "Express/Fastify", level: "✅" },
-                      { name: "Python/FastAPI", level: "✅" },
-                      { name: "PHP/Laravel", level: "✅" },
-                      { name: "GraphQL", level: "✅" },
+                      { name: 'Node.js', level: '✅' },
+                      { name: 'Express/Fastify', level: '✅' },
+                      { name: 'Python/FastAPI', level: '✅' },
+                      { name: 'PHP/Laravel', level: '✅' },
+                      { name: 'GraphQL', level: '✅' },
                     ],
                   },
                   {
-                    category: "Database & Storage",
+                    category: 'Database & Storage',
                     icon: <Database />,
                     techs: [
-                      { name: "PostgreSQL", level: "✅" },
-                      { name: "MongoDB", level: "✅" },
-                      { name: "Redis", level: "✅" },
-                      { name: "Prisma ORM", level: "✅" },
-                      { name: "AWS S3", level: "✅" },
+                      { name: 'PostgreSQL', level: '✅' },
+                      { name: 'MongoDB', level: '✅' },
+                      { name: 'Redis', level: '✅' },
+                      { name: 'Prisma ORM', level: '✅' },
+                      { name: 'AWS S3', level: '✅' },
                     ],
                   },
                   {
-                    category: "DevOps & Tools",
+                    category: 'DevOps & Tools',
                     icon: <Layers />,
                     techs: [
-                      { name: "Docker", level: "✅" },
-                      { name: "AWS/Vercel", level: "✅" },
-                      { name: "GitHub Actions", level: "✅" },
-                      { name: "Jest/Cypress", level: "✅" },
-                      { name: "Nginx", level: "✅" },
+                      { name: 'Docker', level: '✅' },
+                      { name: 'AWS/Vercel', level: '✅' },
+                      { name: 'GitHub Actions', level: '✅' },
+                      { name: 'Jest/Cypress', level: '✅' },
+                      { name: 'Nginx', level: '✅' },
                     ],
                   },
                 ].map((stack, i) => (
@@ -640,7 +640,7 @@ export default function ProgramistaBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Jak pracuję nad{" "}
+                Jak pracuję nad{' '}
                 <span className="text-gradient">projektami</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -652,47 +652,47 @@ export default function ProgramistaBydgoszcz() {
               <div className="space-y-8">
                 {[
                   {
-                    phase: "Discovery & Planning",
+                    phase: 'Discovery & Planning',
                     icon: <Layers />,
-                    time: "1 tydzień",
-                    desc: "Analiza wymagań, architektura systemu, stack technologiczny, harmonogram",
+                    time: '1 tydzień',
+                    desc: 'Analiza wymagań, architektura systemu, stack technologiczny, harmonogram',
                     deliverables: [
-                      "Specyfikacja techniczna",
-                      "Mockupy",
-                      "Estymacja czasu",
+                      'Specyfikacja techniczna',
+                      'Mockupy',
+                      'Estymacja czasu',
                     ],
                   },
                   {
-                    phase: "Development Sprint",
+                    phase: 'Development Sprint',
                     icon: <Code2 />,
-                    time: "2-4 tygodnie",
-                    desc: "Iteracyjne programowanie, code review, testy jednostkowe, daily updates",
+                    time: '2-4 tygodnie',
+                    desc: 'Iteracyjne programowanie, code review, testy jednostkowe, daily updates',
                     deliverables: [
-                      "Working software",
-                      "Dokumentacja API",
-                      "Test coverage",
+                      'Working software',
+                      'Dokumentacja API',
+                      'Test coverage',
                     ],
                   },
                   {
-                    phase: "Testing & QA",
+                    phase: 'Testing & QA',
                     icon: <Bug />,
-                    time: "3-5 dni",
-                    desc: "Testy integracyjne, UAT, optymalizacja wydajności, security audit",
+                    time: '3-5 dni',
+                    desc: 'Testy integracyjne, UAT, optymalizacja wydajności, security audit',
                     deliverables: [
-                      "Bug-free code",
-                      "Performance report",
-                      "Security check",
+                      'Bug-free code',
+                      'Performance report',
+                      'Security check',
                     ],
                   },
                   {
-                    phase: "Deployment & Support",
+                    phase: 'Deployment & Support',
                     icon: <Cloud />,
-                    time: "2-3 dni",
-                    desc: "Wdrożenie produkcyjne, monitoring, szkolenie, dokumentacja użytkownika",
+                    time: '2-3 dni',
+                    desc: 'Wdrożenie produkcyjne, monitoring, szkolenie, dokumentacja użytkownika',
                     deliverables: [
-                      "Live application",
-                      "User manual",
-                      "Support plan",
+                      'Live application',
+                      'User manual',
+                      'Support plan',
                     ],
                   },
                 ].map((phase, i) => (
@@ -739,7 +739,7 @@ export default function ProgramistaBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Programista z{" "}
+                Programista z{' '}
                 <span className="text-gradient">Bydgoszczy do usług</span>
               </h2>
             </motion.div>
@@ -748,33 +748,33 @@ export default function ProgramistaBydgoszcz() {
               {[
                 {
                   icon: <MapPin />,
-                  title: "Lokalność ma znaczenie",
-                  desc: "Spotkajmy się w Bydgoszczy - Stary Rynek, Wyspa Młyńska, Focus Mall. Omówimy projekt przy kawie.",
+                  title: 'Lokalność ma znaczenie',
+                  desc: 'Spotkajmy się w Bydgoszczy - Stary Rynek, Wyspa Młyńska, Focus Mall. Omówimy projekt przy kawie.',
                 },
                 {
                   icon: <Clock />,
-                  title: "Dostępność 24/7",
-                  desc: "Mieszkam i pracuję w okolicach Bydgoszczy. W nagłych sytuacjach mogę być u Ciebie w 60 minut.",
+                  title: 'Dostępność 24/7',
+                  desc: 'Mieszkam i pracuję w okolicach Bydgoszczy. W nagłych sytuacjach mogę być u Ciebie w 60 minut.',
                 },
                 {
                   icon: <Users />,
-                  title: "Wsparcie lokalne biznesu",
-                  desc: "Znam bydgoskie firmy i ich potrzeby. Współpracuję z lokalnymi przedsiębiorcami od lat.",
+                  title: 'Wsparcie lokalne biznesu',
+                  desc: 'Znam bydgoskie firmy i ich potrzeby. Współpracuję z lokalnymi przedsiębiorcami od lat.',
                 },
                 {
                   icon: <Award />,
-                  title: "Szerokie umiejętności",
-                  desc: "Łączę usługi programowania z kompetencjami marketingowymi i content marketingowymi.",
+                  title: 'Szerokie umiejętności',
+                  desc: 'Łączę usługi programowania z kompetencjami marketingowymi i content marketingowymi.',
                 },
                 {
                   icon: <Lock />,
-                  title: "Bezpieczeństwo prawne",
-                  desc: "Polska umowa, faktura VAT, możliwość NDA. Pełna transparentność współpracy.",
+                  title: 'Bezpieczeństwo prawne',
+                  desc: 'Polska umowa i faktura, możliwość NDA. Pełna transparentność współpracy.',
                 },
                 {
                   icon: <Zap />,
-                  title: "Elastyczność",
-                  desc: "Dopasowuję się do Twoich potrzeb - godziny pracy, forma współpracy, zakres projektu.",
+                  title: 'Elastyczność',
+                  desc: 'Dopasowuję się do Twoich potrzeb - godziny pracy, forma współpracy, zakres projektu.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -800,7 +800,7 @@ export default function ProgramistaBydgoszcz() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Pytania które często{" "}
+                Pytania, które często{' '}
                 <span className="text-gradient">zadają klienci</span>
               </h2>
             </motion.div>
@@ -808,28 +808,28 @@ export default function ProgramistaBydgoszcz() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Jakie są Twoje stawki godzinowe?",
-                  a: "Moje stawki zaczynają się od 150 zł/h netto w zależności od złożoności projektu. Dla długoterminowej współpracy oferuję korzystniejsze stawki. Możliwa też wycena ryczałtowa całego projektu.",
+                  q: 'Jakie są Twoje stawki godzinowe?',
+                  a: 'Moje stawki zaczynają się od 150 zł/h netto w zależności od złożoności projektu. Dla długoterminowej współpracy oferuję korzystniejsze stawki. Możliwa też wycena ryczałtowa całego projektu.',
                 },
                 {
-                  q: "Czy pracujesz tylko dla firm z Bydgoszczy?",
-                  a: "Nie, ale firmy z Bydgoszczy i regionu kujawsko-pomorskiego mają u mnie priorytet. Cenię sobie możliwość osobistych spotkań i budowania długoterminowych relacji biznesowych.",
+                  q: 'Czy pracujesz tylko dla firm z Bydgoszczy?',
+                  a: 'Nie, ale firmy z Bydgoszczy i regionu kujawsko-pomorskiego mają u mnie priorytet. Cenię sobie możliwość osobistych spotkań i budowania długoterminowych relacji biznesowych.',
                 },
                 {
-                  q: "W jakim modelu preferujesz pracować?",
-                  a: "Najchętniej w modelu B2B (faktura) lub umowa zlecenie. Dla stałej współpracy możliwy kontrakt. Pracuję zarówno zdalnie jak i u klienta w Bydgoszczy.",
+                  q: 'W jakim modelu preferujesz pracować?',
+                  a: 'Najchętniej w modelu B2B (faktura) lub umowa zlecenie. Dla stałej współpracy możliwy kontrakt. Pracuję zarówno zdalnie jak i u klienta w Bydgoszczy.',
                 },
                 {
-                  q: "Czy możesz przejąć i rozwinąć istniejący projekt?",
-                  a: "Tak, regularnie przejmuję projekty po innych developerach. Zaczynam od code review, identyfikuję problemy i proponuję plan modernizacji. Mam doświadczenie z legacy code.",
+                  q: 'Czy możesz przejąć i rozwinąć istniejący projekt?',
+                  a: 'Tak, regularnie przejmuję projekty po innych developerach. Zaczynam od code review, identyfikuję problemy i proponuję plan modernizacji. Mam doświadczenie z legacy code.',
                 },
                 {
-                  q: "Jak szybko możesz rozpocząć projekt?",
-                  a: "Zazwyczaj w ciągu 3-5 dni roboczych. Dla pilnych przypadków z Bydgoszczy mogę zacząć nawet następnego dnia. Zawsze dotrzymuję ustalonych terminów.",
+                  q: 'Jak szybko możesz rozpocząć projekt?',
+                  a: 'Zazwyczaj w ciągu 3-5 dni roboczych. Dla pilnych przypadków z Bydgoszczy mogę zacząć nawet następnego dnia. Zawsze dotrzymuję ustalonych terminów.',
                 },
                 {
-                  q: "Czy oferujesz gwarancję na swoje prace?",
-                  a: "Tak, daję 3-miesięczną gwarancję na napisany kod. W tym czasie bezpłatnie usuwam ewentualne błędy. Oferuję też pakiety maintenance dla długoterminowego wsparcia.",
+                  q: 'Czy oferujesz gwarancję na swoje prace?',
+                  a: 'Tak, daję 3-miesięczną gwarancję na napisany kod. W tym czasie bezpłatnie usuwam ewentualne błędy. Oferuję też pakiety maintenance dla długoterminowego wsparcia.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -846,7 +846,7 @@ export default function ProgramistaBydgoszcz() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -873,7 +873,7 @@ export default function ProgramistaBydgoszcz() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Szukasz{" "}
+                Szukasz{' '}
                 <span className="text-gradient">programisty w Bydgoszczy</span>?
               </h2>
 

@@ -1,32 +1,32 @@
 // src/app/uslugi/integracje-ai/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
+import { motion } from 'framer-motion';
 import {
-  Brain,
-  Rocket,
-  TrendingUp,
-  Check,
   ArrowRight,
-  Users,
-  HeadphonesIcon,
-  ChevronRight,
-  Phone,
-  Mail,
-  Target,
+  Brain,
   Calculator,
-  Settings,
+  Check,
+  ChevronRight,
+  HeadphonesIcon,
   Lightbulb,
-  Timer,
+  Mail,
+  Phone,
   PiggyBank,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  Rocket,
+  Settings,
+  Target,
+  Timer,
+  TrendingUp,
+  Users,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function IntegrajeAI() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [selectedIndustry, setSelectedIndustry] = useState("wszystkie");
+  const [selectedIndustry, setSelectedIndustry] = useState('wszystkie');
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -35,32 +35,32 @@ export default function IntegrajeAI() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    headline: "Integracje AI dla firm",
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: 'Integracje AI dla firm',
     description:
-      "Wdrażam sztuczną inteligencję w firmach. Chatboty, automatyzacja, ROI 250%.",
+      'Wdrażam sztuczną inteligencję w firmach. Chatboty, automatyzacja, ROI 250%.',
     author: {
-      "@type": "Person",
-      name: "Karol Leszczyński",
-      expertise: "AI Integration",
+      '@type': 'Person',
+      name: 'Karol Leszczyński',
+      expertise: 'AI Integration',
     },
     offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "PLN",
-      lowPrice: "2990",
-      highPrice: "19990",
-      offerCount: "3",
+      '@type': 'AggregateOffer',
+      priceCurrency: 'PLN',
+      lowPrice: '2990',
+      highPrice: '19990',
+      offerCount: '3',
       offers: [
-        { "@type": "Offer", name: "AI Starter", price: "2990" },
-        { "@type": "Offer", name: "AI Business", price: "9990" },
-        { "@type": "Offer", name: "AI Enterprise", price: "19990" },
+        { '@type': 'Offer', name: 'AI Starter', price: '2990' },
+        { '@type': 'Offer', name: 'AI Business', price: '9990' },
+        { '@type': 'Offer', name: 'AI Enterprise', price: '19990' },
       ],
     },
     about: {
-      "@type": "Thing",
-      name: "Artificial Intelligence",
-      description: "OpenAI, Anthropic Claude, Custom AI Solutions",
+      '@type': 'Thing',
+      name: 'Artificial Intelligence',
+      description: 'OpenAI, Anthropic Claude, Custom AI Solutions',
     },
   };
 
@@ -97,7 +97,7 @@ export default function IntegrajeAI() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -119,8 +119,8 @@ export default function IntegrajeAI() {
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 <strong>
-                  Automatyzuj procesy, które zabierają 80% czasu Twojego
-                  zespołu.
+                  Automatyzuję procesy, które zabierają 80% czasu Twojego
+                  zespołu. {''}
                 </strong>
                 Wdrażam sztuczną inteligencję w istniejące systemy biznesowe.
                 Bez rewolucji, bez wymiany oprogramowania - tylko realne
@@ -282,7 +282,7 @@ export default function IntegrajeAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Co możesz{" "}
+                Co możesz{' '}
                 <span className="text-gradient">zautomatyzować z AI</span>?
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -293,76 +293,76 @@ export default function IntegrajeAI() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
                 {
-                  dept: "Obsługa klienta",
+                  dept: 'Obsługa klienta',
                   icon: <HeadphonesIcon />,
                   tasks: [
-                    "Chatbot odpowiadający na 80% pytań",
-                    "Automatyczna kategoryzacja zgłoszeń",
-                    "Analiza sentymentu rozmów",
-                    "Generowanie odpowiedzi email",
-                    "FAQ dynamiczne",
+                    'Chatbot odpowiadający na 80% pytań',
+                    'Automatyczna kategoryzacja zgłoszeń',
+                    'Analiza sentymentu rozmów',
+                    'Generowanie odpowiedzi email',
+                    'FAQ dynamiczne',
                   ],
-                  savings: "60% czasu",
+                  savings: '60% czasu',
                 },
                 {
-                  dept: "Sprzedaż",
+                  dept: 'Sprzedaż',
                   icon: <TrendingUp />,
                   tasks: [
-                    "Scoring i kwalifikacja leadów",
-                    "Personalizowane oferty",
-                    "Automatyczne follow-upy",
-                    "Prognozowanie sprzedaży",
-                    "Analiza konkurencji",
+                    'Scoring i kwalifikacja leadów',
+                    'Personalizowane oferty',
+                    'Automatyczne follow-upy',
+                    'Prognozowanie sprzedaży',
+                    'Analiza konkurencji',
                   ],
-                  savings: "40% więcej konwersji",
+                  savings: '40% więcej konwersji',
                 },
                 {
-                  dept: "Marketing",
+                  dept: 'Marketing',
                   icon: <Target />,
                   tasks: [
-                    "Generowanie treści i postów",
-                    "Optymalizacja kampanii",
-                    "Personalizacja contentu",
-                    "A/B testy automatyczne",
-                    "Analiza trendów",
+                    'Generowanie treści i postów',
+                    'Optymalizacja kampanii',
+                    'Personalizacja contentu',
+                    'A/B testy automatyczne',
+                    'Analiza trendów',
                   ],
-                  savings: "70% czasu",
+                  savings: '70% czasu',
                 },
                 {
-                  dept: "HR",
+                  dept: 'HR',
                   icon: <Users />,
                   tasks: [
-                    "Screening CV",
-                    "Chatbot dla pracowników",
-                    "Onboarding automatyczny",
-                    "Analiza satysfakcji",
-                    "Planowanie szkoleń",
+                    'Screening CV',
+                    'Chatbot dla pracowników',
+                    'Onboarding automatyczny',
+                    'Analiza satysfakcji',
+                    'Planowanie szkoleń',
                   ],
-                  savings: "50% procesów",
+                  savings: '50% procesów',
                 },
                 {
-                  dept: "Finanse",
+                  dept: 'Finanse',
                   icon: <Calculator />,
                   tasks: [
-                    "Automatyczne faktury",
-                    "Kategoryzacja wydatków",
-                    "Prognozy finansowe",
-                    "Wykrywanie anomalii",
-                    "Raporty automatyczne",
+                    'Automatyczne faktury',
+                    'Kategoryzacja wydatków',
+                    'Prognozy finansowe',
+                    'Wykrywanie anomalii',
+                    'Raporty automatyczne',
                   ],
-                  savings: "80% rutyny",
+                  savings: '80% rutyny',
                 },
                 {
-                  dept: "Operacje",
+                  dept: 'Operacje',
                   icon: <Settings />,
                   tasks: [
-                    "Optymalizacja procesów",
-                    "Predykcyjne utrzymanie",
-                    "Zarządzanie zapasami",
-                    "Automatyzacja workflow",
-                    "Monitoring KPI",
+                    'Optymalizacja procesów',
+                    'Predykcyjne utrzymanie',
+                    'Zarządzanie zapasami',
+                    'Automatyzacja workflow',
+                    'Monitoring KPI',
                   ],
-                  savings: "45% kosztów",
+                  savings: '45% kosztów',
                 },
               ].map((dept, i) => (
                 <motion.div
@@ -414,20 +414,20 @@ export default function IntegrajeAI() {
             {/* Industry Filter */}
             <div className="flex flex-wrap gap-2 justify-center mb-8">
               {[
-                "wszystkie",
-                "e-commerce",
-                "usługi",
-                "produkcja",
-                "edukacja",
-                "zdrowie",
+                'wszystkie',
+                'e-commerce',
+                'usługi',
+                'produkcja',
+                'edukacja',
+                'zdrowie',
               ].map((industry) => (
                 <button
                   key={industry}
                   onClick={() => setSelectedIndustry(industry)}
                   className={`px-4 py-2 rounded-full transition-all capitalize ${
                     selectedIndustry === industry
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted hover:bg-muted/80"
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-muted hover:bg-muted/80'
                   }`}
                 >
                   {industry}
@@ -438,87 +438,87 @@ export default function IntegrajeAI() {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  industry: "e-commerce",
-                  title: "E-commerce i retail",
-                  icon: "🛍️",
+                  industry: 'e-commerce',
+                  title: 'E-commerce i retail',
+                  icon: '🛍️',
                   solutions: [
-                    "Rekomendacje produktów AI",
-                    "Chatbot sprzedażowy 24/7",
-                    "Automatyczne opisy produktów",
-                    "Dynamic pricing",
-                    "Analiza koszyka",
+                    'Rekomendacje produktów AI',
+                    'Chatbot sprzedażowy 24/7',
+                    'Automatyczne opisy produktów',
+                    'Dynamic pricing',
+                    'Analiza koszyka',
                   ],
-                  case: "Sklep odzieżowy zwiększył sprzedaż o 35% dzięki personalizacji AI",
+                  case: 'Sklep odzieżowy zwiększył sprzedaż o 35% dzięki personalizacji AI',
                 },
                 {
-                  industry: "usługi",
-                  title: "Firmy usługowe",
-                  icon: "💼",
+                  industry: 'usługi',
+                  title: 'Firmy usługowe',
+                  icon: '💼',
                   solutions: [
-                    "Automatyczna rezerwacja terminów",
-                    "Wirtualny asystent",
-                    "Wyceny automatyczne",
-                    "CRM z AI",
-                    "Analiza satysfakcji",
+                    'Automatyczna rezerwacja terminów',
+                    'Wirtualny asystent',
+                    'Wyceny automatyczne',
+                    'CRM z AI',
+                    'Analiza satysfakcji',
                   ],
-                  case: "Salon fryzjerski zredukował no-shows o 60% dzięki AI",
+                  case: 'Salon fryzjerski zredukował no-shows o 60% dzięki AI',
                 },
                 {
-                  industry: "produkcja",
-                  title: "Produkcja i logistyka",
-                  icon: "🏭",
+                  industry: 'produkcja',
+                  title: 'Produkcja i logistyka',
+                  icon: '🏭',
                   solutions: [
-                    "Predictive maintenance",
-                    "Optymalizacja łańcucha dostaw",
-                    "Kontrola jakości AI",
-                    "Planowanie produkcji",
-                    "Automatyzacja dokumentów",
+                    'Predictive maintenance',
+                    'Optymalizacja łańcucha dostaw',
+                    'Kontrola jakości AI',
+                    'Planowanie produkcji',
+                    'Automatyzacja dokumentów',
                   ],
-                  case: "Fabryka mebli zmniejszyła przestoje o 40% dzięki AI",
+                  case: 'Fabryka mebli zmniejszyła przestoje o 40% dzięki AI',
                 },
                 {
-                  industry: "edukacja",
-                  title: "Edukacja i szkolenia",
-                  icon: "🎓",
+                  industry: 'edukacja',
+                  title: 'Edukacja i szkolenia',
+                  icon: '🎓',
                   solutions: [
-                    "Personalizacja ścieżek nauki",
-                    "Automatyczne sprawdzanie prac",
-                    "Chatbot dla studentów",
-                    "Generowanie materiałów",
-                    "Analiza postępów",
+                    'Personalizacja ścieżek nauki',
+                    'Automatyczne sprawdzanie prac',
+                    'Chatbot dla studentów',
+                    'Generowanie materiałów',
+                    'Analiza postępów',
                   ],
-                  case: "Szkoła językowa zwiększyła retencję o 50% dzięki AI",
+                  case: 'Szkoła językowa zwiększyła retencję o 50% dzięki AI',
                 },
                 {
-                  industry: "zdrowie",
-                  title: "Zdrowie i wellness",
-                  icon: "🏥",
+                  industry: 'zdrowie',
+                  title: 'Zdrowie i wellness',
+                  icon: '🏥',
                   solutions: [
-                    "Rejestracja online z AI",
-                    "Wstępna diagnoza",
-                    "Przypomnienia o lekach",
-                    "Analiza wyników",
-                    "Dokumentacja medyczna",
+                    'Rejestracja online z AI',
+                    'Wstępna diagnoza',
+                    'Przypomnienia o lekach',
+                    'Analiza wyników',
+                    'Dokumentacja medyczna',
                   ],
-                  case: "Przychodnia skróciła czas rejestracji o 70% dzięki AI",
+                  case: 'Przychodnia skróciła czas rejestracji o 70% dzięki AI',
                 },
                 {
-                  industry: "wszystkie",
-                  title: "Uniwersalne rozwiązania",
-                  icon: "🚀",
+                  industry: 'wszystkie',
+                  title: 'Uniwersalne rozwiązania',
+                  icon: '🚀',
                   solutions: [
-                    "Automatyzacja dokumentów",
-                    "Chatboty i asystenci",
-                    "Analiza danych",
-                    "Generowanie raportów",
-                    "Integracje API",
+                    'Automatyzacja dokumentów',
+                    'Chatboty i asystenci',
+                    'Analiza danych',
+                    'Generowanie raportów',
+                    'Integracje API',
                   ],
-                  case: "Każda firma może zaoszczędzić min. 20h/tydzień z AI",
+                  case: 'Każda firma może zaoszczędzić min. 20h/tydzień z AI',
                 },
               ]
                 .filter(
                   (item) =>
-                    selectedIndustry === "wszystkie" ||
+                    selectedIndustry === 'wszystkie' ||
                     item.industry === selectedIndustry
                 )
                 .map((item, i) => (
@@ -557,7 +557,7 @@ export default function IntegrajeAI() {
             <motion.div {...fadeInUp} className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Kalkulator{" "}
+                  Kalkulator{' '}
                   <span className="text-gradient">oszczędności z AI</span>
                 </h2>
                 <p className="text-lg text-muted-foreground">
@@ -646,7 +646,7 @@ export default function IntegrajeAI() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Wdrożenie AI w{" "}
+                Wdrożenie AI w{' '}
                 <span className="text-gradient">4 prostych krokach</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -658,48 +658,48 @@ export default function IntegrajeAI() {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   {
-                    step: "1",
-                    title: "Audyt AI",
-                    time: "1-2 dni",
-                    desc: "Analizuję procesy w Twojej firmie i identyfikuję obszary do automatyzacji",
+                    step: '1',
+                    title: 'Audyt AI',
+                    time: '1-2 dni',
+                    desc: 'Analizuję procesy w Twojej firmie i identyfikuję obszary do automatyzacji',
                     icon: <Lightbulb />,
                     deliverables: [
-                      "Mapa procesów",
-                      "Potencjał oszczędności",
-                      "Rekomendacje AI",
+                      'Mapa procesów',
+                      'Potencjał oszczędności',
+                      'Rekomendacje AI',
                     ],
                   },
                   {
-                    step: "2",
-                    title: "Strategia",
-                    time: "2-3 dni",
-                    desc: "Przygotowuję plan wdrożenia AI dopasowany do Twoich celów biznesowych",
+                    step: '2',
+                    title: 'Strategia',
+                    time: '2-3 dni',
+                    desc: 'Przygotowuję plan wdrożenia AI dopasowany do Twoich celów biznesowych',
                     icon: <Target />,
                     deliverables: [
-                      "Roadmapa",
-                      "Wybór technologii",
-                      "KPIs i metryki",
+                      'Roadmapa',
+                      'Wybór technologii',
+                      'KPIs i metryki',
                     ],
                   },
                   {
-                    step: "3",
-                    title: "Implementacja",
-                    time: "1-2 tygodnie",
-                    desc: "Integruję AI z Twoimi systemami i konfiguruję automatyzacje",
+                    step: '3',
+                    title: 'Implementacja',
+                    time: '1-2 tygodnie',
+                    desc: 'Integruję AI z Twoimi systemami i konfiguruję automatyzacje',
                     icon: <Settings />,
                     deliverables: [
-                      "Integracja API",
-                      "Konfiguracja AI",
-                      "Testy",
+                      'Integracja API',
+                      'Konfiguracja AI',
+                      'Testy',
                     ],
                   },
                   {
-                    step: "4",
-                    title: "Optymalizacja",
-                    time: "Ongoing",
-                    desc: "Monitoruję wyniki i optymalizuję AI dla maksymalnej efektywności",
+                    step: '4',
+                    title: 'Optymalizacja',
+                    time: 'Ongoing',
+                    desc: 'Monitoruję wyniki i optymalizuję AI dla maksymalnej efektywności',
                     icon: <TrendingUp />,
-                    deliverables: ["Monitoring", "Fine-tuning", "Raporty ROI"],
+                    deliverables: ['Monitoring', 'Fine-tuning', 'Raporty ROI'],
                   },
                 ].map((phase, i) => (
                   <motion.div
@@ -750,7 +750,7 @@ export default function IntegrajeAI() {
           </div>
         </section>
 
-        {/* ROI Examples */}
+        {/* ROI Examples 
         <section className="py-20">
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
@@ -765,40 +765,40 @@ export default function IntegrajeAI() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  company: "Agencja marketingowa",
-                  size: "15 osób",
-                  implementation: "AI do generowania contentu",
+                  company: 'Agencja marketingowa',
+                  size: '15 osób',
+                  implementation: 'AI do generowania contentu',
                   results: [
-                    { metric: "Czas tworzenia treści", value: "-75%" },
-                    { metric: "Liczba obsługiwanych klientów", value: "+200%" },
-                    { metric: "ROI", value: "320%" },
+                    { metric: 'Czas tworzenia treści', value: '-75%' },
+                    { metric: 'Liczba obsługiwanych klientów', value: '+200%' },
+                    { metric: 'ROI', value: '320%' },
                   ],
                   quote:
-                    "AI pozwoliło nam obsłużyć 3x więcej klientów bez zwiększania zespołu",
+                    'AI pozwoliło nam obsłużyć 3x więcej klientów bez zwiększania zespołu',
                 },
                 {
-                  company: "Sklep internetowy",
-                  size: "5 osób",
-                  implementation: "Chatbot i rekomendacje AI",
+                  company: 'Sklep internetowy',
+                  size: '5 osób',
+                  implementation: 'Chatbot i rekomendacje AI',
                   results: [
-                    { metric: "Konwersja", value: "+35%" },
-                    { metric: "Średnia wartość koszyka", value: "+48%" },
-                    { metric: "Zwroty", value: "-22%" },
+                    { metric: 'Konwersja', value: '+35%' },
+                    { metric: 'Średnia wartość koszyka', value: '+48%' },
+                    { metric: 'Zwroty', value: '-22%' },
                   ],
                   quote:
-                    "Chatbot obsługuje 80% pytań klientów automatycznie 24/7",
+                    'Chatbot obsługuje 80% pytań klientów automatycznie 24/7',
                 },
                 {
-                  company: "Firma produkcyjna",
-                  size: "50 osób",
-                  implementation: "Automatyzacja procesów",
+                  company: 'Firma produkcyjna',
+                  size: '50 osób',
+                  implementation: 'Automatyzacja procesów',
                   results: [
-                    { metric: "Czas przetwarzania zamówień", value: "-60%" },
-                    { metric: "Błędy w dokumentacji", value: "-95%" },
-                    { metric: "Oszczędności", value: "25k zł/mies" },
+                    { metric: 'Czas przetwarzania zamówień', value: '-60%' },
+                    { metric: 'Błędy w dokumentacji', value: '-95%' },
+                    { metric: 'Oszczędności', value: '25k zł/mies' },
                   ],
                   quote:
-                    "Automatyzacja AI zwolniła 30% czasu naszego zespołu na rozwój",
+                    'Automatyzacja AI zwolniła 30% czasu naszego zespołu na rozwój',
                 },
               ].map((study, i) => (
                 <motion.div
@@ -832,10 +832,10 @@ export default function IntegrajeAI() {
                         </span>
                         <span
                           className={`text-sm font-bold ${
-                            result.value.includes("+") ||
-                            result.value.includes("k")
-                              ? "text-green-500"
-                              : "text-blue-500"
+                            result.value.includes('+') ||
+                            result.value.includes('k')
+                              ? 'text-green-500'
+                              : 'text-blue-500'
                           }`}
                         >
                           {result.value}
@@ -851,7 +851,7 @@ export default function IntegrajeAI() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Pakiety */}
         <section className="py-20 bg-muted/20">
@@ -868,50 +868,50 @@ export default function IntegrajeAI() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {[
                 {
-                  name: "AI Starter",
-                  price: "2 990",
-                  time: "1 tydzień",
-                  desc: "Idealne do rozpoczęcia przygody z AI",
+                  name: 'AI Starter',
+                  price: '2 990',
+                  time: '1 tydzień',
+                  desc: 'Idealne do rozpoczęcia przygody z AI',
                   features: [
-                    "1 proces do automatyzacji",
-                    "Chatbot na stronę WWW",
-                    "Integracja z 1 systemem",
-                    "Szkolenie zespołu",
-                    "1 miesiąc wsparcia",
-                    "Raport ROI",
+                    '1 proces do automatyzacji',
+                    'Chatbot na stronę WWW',
+                    'Integracja z 1 systemem',
+                    'Szkolenie zespołu',
+                    '1 miesiąc wsparcia',
+                    'Raport ROI',
                   ],
                   best: false,
                 },
                 {
-                  name: "AI Business",
-                  price: "9 990",
-                  time: "2-3 tygodnie",
-                  desc: "Kompleksowa automatyzacja dla firm",
+                  name: 'AI Business',
+                  price: '9 990',
+                  time: '2-3 tygodnie',
+                  desc: 'Kompleksowa automatyzacja dla firm',
                   features: [
-                    "Do 5 procesów",
-                    "Zaawansowany chatbot",
-                    "Integracje API",
-                    "Personalizacja AI",
-                    "Panel analityczny",
-                    "3 miesiące wsparcia",
-                    "Optymalizacja co miesiąc",
+                    'Do 5 procesów',
+                    'Zaawansowany chatbot',
+                    'Integracje API',
+                    'Personalizacja AI',
+                    'Panel analityczny',
+                    '3 miesiące wsparcia',
+                    'Optymalizacja co miesiąc',
                   ],
                   best: true,
                 },
                 {
-                  name: "AI Enterprise",
-                  price: "od 19 990",
-                  time: "4+ tygodnie",
-                  desc: "Transformacja cyfrowa z AI",
+                  name: 'AI Enterprise',
+                  price: 'od 19 990',
+                  time: '4+ tygodnie',
+                  desc: 'Transformacja cyfrowa z AI',
                   features: [
-                    "Nieograniczone procesy",
-                    "Dedykowane modele AI",
-                    "Pełna automatyzacja",
-                    "Integracja z ERP/CRM",
-                    "Machine Learning",
-                    "SLA 99.9%",
-                    "Dedykowany opiekun",
-                    "Rozwój ciągły",
+                    'Nieograniczone procesy',
+                    'Dedykowane modele AI',
+                    'Pełna automatyzacja',
+                    'Integracja z ERP/CRM',
+                    'Machine Learning',
+                    'SLA 99.9%',
+                    'Dedykowany opiekun',
+                    'Rozwój ciągły',
                   ],
                   best: false,
                 },
@@ -922,7 +922,7 @@ export default function IntegrajeAI() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
-                    plan.best ? "border-primary shadow-xl" : "border-primary/10"
+                    plan.best ? 'border-primary shadow-xl' : 'border-primary/10'
                   }`}
                 >
                   {plan.best && (
@@ -956,8 +956,8 @@ export default function IntegrajeAI() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.best
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Wybierz pakiet
@@ -974,7 +974,7 @@ export default function IntegrajeAI() {
                 href="/kontakt"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold"
               >
-                Zapytaj o dedykowane wdrożenie{" "}
+                Zapytaj o dedykowane wdrożenie{' '}
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -993,28 +993,28 @@ export default function IntegrajeAI() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Czy AI zastąpi moich pracowników?",
-                  a: "Nie, AI nie zastępuje pracowników, tylko automatyzuje nudne, powtarzalne zadania. Twój zespół będzie mógł skupić się na kreatywnej pracy, strategii i budowaniu relacji z klientami. AI to narzędzie, które zwiększa produktywność zespołu.",
+                  q: 'Czy AI zastąpi moich pracowników?',
+                  a: 'Nie, AI nie zastępuje pracowników, tylko automatyzuje nudne, powtarzalne zadania. Twój zespół będzie mógł skupić się na kreatywnej pracy, strategii i budowaniu relacji z klientami. AI to narzędzie, które zwiększa produktywność zespołu.',
                 },
                 {
-                  q: "Ile czasu zajmuje wdrożenie AI?",
-                  a: "Podstawowe wdrożenie (np. chatbot) może być gotowe w 3-5 dni. Średniej złożoności automatyzacje zajmują 2-3 tygodnie. Kompleksowe transformacje AI to 4-8 tygodni. Zawsze zaczynamy od pilotażu, żebyś mógł szybko zobaczyć efekty.",
+                  q: 'Ile czasu zajmuje wdrożenie AI?',
+                  a: 'Podstawowe wdrożenie (np. chatbot) może być gotowe w 3-5 dni. Średniej złożoności automatyzacje zajmują 2-3 tygodnie. Kompleksowe transformacje AI to 4-8 tygodni. Zawsze zaczynamy od pilotażu, żebyś mógł szybko zobaczyć efekty.',
                 },
                 {
-                  q: "Czy muszę wymienić moje obecne systemy?",
-                  a: "Nie! AI integruję z Twoimi obecnymi systemami przez API. Pracuję z WordPress, Shopify, WooCommerce, systemami CRM, ERP, narzędziami Google, Microsoft i wieloma innymi. AI działa jako warstwa nad istniejącą infrastrukturą.",
+                  q: 'Czy muszę wymienić moje obecne systemy?',
+                  a: 'Nie! AI integruję z Twoimi obecnymi systemami przez API. Pracuję z WordPress, Shopify, WooCommerce, systemami CRM, ERP, narzędziami Google, Microsoft i wieloma innymi. AI działa jako warstwa nad istniejącą infrastrukturą.',
                 },
                 {
-                  q: "Jakie są koszty utrzymania AI?",
-                  a: "Koszty zależą od skali użycia. Dla małej firmy to 200-500 zł/miesiąc za API AI. Średnie firmy płacą 1000-3000 zł/miesiąc. Zawsze pokazuję dokładną kalkulację kosztów vs oszczędności przed wdrożeniem.",
+                  q: 'Jakie są koszty utrzymania AI?',
+                  a: 'Koszty zależą od skali użycia. Dla małej firmy to 200-500 zł/miesiąc za API AI. Średnie firmy płacą 1000-3000 zł/miesiąc. Zawsze pokazuję dokładną kalkulację kosztów vs oszczędności przed wdrożeniem.',
                 },
                 {
-                  q: "Co jeśli AI popełni błąd?",
-                  a: "Implementuję zabezpieczenia: walidację odpowiedzi, limity decyzyjne, human-in-the-loop dla krytycznych procesów. AI ma 95-99% skuteczności, ale zawsze jest możliwość interwencji człowieka. Dodatkowo AI uczy się i poprawia swoją dokładność.",
+                  q: 'Co jeśli AI popełni błąd?',
+                  a: 'Implementuję zabezpieczenia: walidację odpowiedzi, limity decyzyjne, human-in-the-loop dla krytycznych procesów. AI ma 95-99% skuteczności, ale zawsze jest możliwość interwencji człowieka. Dodatkowo AI uczy się i poprawia swoją dokładność.',
                 },
                 {
-                  q: "Czy moje dane będą bezpieczne?",
-                  a: "Absolutnie. Używam tylko certyfikowanych dostawców AI (OpenAI, Anthropic, Google). Dane są szyfrowane, przetwarzane zgodnie z RODO. Możemy też wdrożyć AI on-premise dla maksymalnego bezpieczeństwa.",
+                  q: 'Czy moje dane będą bezpieczne?',
+                  a: 'Absolutnie. Używam tylko certyfikowanych dostawców AI (OpenAI, Anthropic, Google). Dane są szyfrowane, przetwarzane zgodnie z RODO. Możemy też wdrożyć AI on-premise dla maksymalnego bezpieczeństwa.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -1031,7 +1031,7 @@ export default function IntegrajeAI() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -1058,13 +1058,13 @@ export default function IntegrajeAI() {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Każdy dzień bez AI to{" "}
+                Każdy dzień bez AI to{' '}
                 <span className="text-gradient">stracone pieniądze</span>
               </h2>
 
               <p className="text-lg text-muted-foreground mb-8">
                 Twoja konkurencja już wdraża AI. Firma która zautomatyzuje
-                procesy pierwsza, wygra rynek.{" "}
+                procesy pierwsza, wygra rynek.{' '}
                 <strong>
                   Darmowy audyt AI pokaże Ci dokładnie, gdzie tracisz pieniądze
                   i jak AI może to zmienić.
