@@ -1,29 +1,29 @@
 // src/app/uslugi/sklepy-internetowe-torun/page.tsx
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { Navigation } from "@/components/layout/navigation";
+import { Navigation } from '@/components/layout/navigation';
 import {
-  Rocket,
-  TrendingUp,
-  Shield,
-  Zap,
-  Code2,
-  Check,
-  Server,
   ArrowRight,
-  Package,
-  CreditCard,
-  Globe,
-  Gauge,
+  Check,
   ChevronRight,
-  Phone,
+  Code2,
+  CreditCard,
+  Gauge,
+  Globe,
   Mail,
   MapPin,
-} from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
+  Package,
+  Phone,
+  Rocket,
+  Server,
+  Shield,
+  TrendingUp,
+  Zap,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function SklepyInternetoweTorun() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -35,33 +35,33 @@ export default function SklepyInternetoweTorun() {
   };
 
   const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPageElement",
-    name: "Sklepy internetowe Toruń - E-commerce",
+    '@context': 'https://schema.org',
+    '@type': 'WebPageElement',
+    name: 'Sklepy internetowe Toruń - E-commerce',
     description:
-      "Tworzenie sklepów internetowych w Toruniu. WooCommerce, własne rozwiązania, integracje płatności.",
+      'Tworzenie sklepów internetowych w Toruniu. WooCommerce, własne rozwiązania, integracje płatności.',
     provider: {
-      "@type": "LocalBusiness",
-      name: "Karol Leszczyński - Sklepy internetowe",
-      priceRange: "4990-19990 PLN",
-      telephone: "+48509370772",
+      '@type': 'LocalBusiness',
+      name: 'Karol Leszczyński - Sklepy internetowe',
+      priceRange: '4990-19990 PLN',
+      telephone: '+48509370772',
     },
     areaServed: {
-      "@type": "City",
-      name: "Toruń",
+      '@type': 'City',
+      name: 'Toruń',
     },
     offers: {
-      "@type": "Offer",
-      price: "4990",
-      priceCurrency: "PLN",
-      availability: "https://schema.org/InStock",
-      validFrom: "2024-01-01",
+      '@type': 'Offer',
+      price: '4990',
+      priceCurrency: 'PLN',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2024-01-01',
     },
     potentialAction: {
-      "@type": "OrderAction",
+      '@type': 'OrderAction',
       target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://www.karol-leszczynski.pl/kontakt",
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.karol-leszczynski.pl/kontakt',
       },
     },
   };
@@ -98,7 +98,7 @@ export default function SklepyInternetoweTorun() {
                   transition={{
                     duration: Math.random() * 20 + 10,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 />
               ))}
@@ -119,8 +119,8 @@ export default function SklepyInternetoweTorun() {
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Tworzę <strong>szybkie, konwertujące sklepy internetowe</strong>{" "}
-                które naprawdę sprzedają. 15 lat doświadczenia w e-commerce,
+                Tworzę <strong>szybkie, konwertujące sklepy internetowe</strong>{' '}
+                które skutecznie sprzedają. 15 lat doświadczenia w e-commerce,
                 copywritingu i SEO - połączenie, którego nie znajdziesz często u
                 programisty.
               </p>
@@ -142,7 +142,7 @@ export default function SklepyInternetoweTorun() {
                   transition={{ delay: 0.4 }}
                 >
                   <Check className="w-5 h-5 text-green-500" />
-                  <span>PageSpeed 90+</span>
+                  <span>Optymalizacja SEO</span>
                 </motion.div>
                 <motion.div
                   className="flex items-center gap-2"
@@ -179,7 +179,7 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Dlaczego Twój sklep{" "}
+                Dlaczego Twój sklep{' '}
                 <span className="text-gradient">zarobi więcej</span> ze mną?
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -202,14 +202,14 @@ export default function SklepyInternetoweTorun() {
                   Technologia + Marketing
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Nie tylko koduję, ale też{" "}
+                  Nie tylko koduję, ale też{' '}
                   <strong>rozumiem psychologię zakupów</strong>. Twój sklep
                   będzie szybki technicznie i przekonujący marketingowo.
                 </p>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-green-500 mt-0.5" />
-                    <span>Opisy produktów które sprzedają</span>
+                    <span>Opisy produktów, które sprzedają</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-green-500 mt-0.5" />
@@ -265,7 +265,7 @@ export default function SklepyInternetoweTorun() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Lokalna przewaga</h3>
                 <p className="text-muted-foreground mb-4">
-                  Jestem z Torunia. <strong>Możemy spotkać się na kawę</strong>{" "}
+                  Jestem z Torunia. <strong>Możemy spotkać się na kawę</strong>{' '}
                   i omówić projekt. Wsparcie po wdrożeniu na miejscu.
                 </p>
                 <ul className="space-y-2 text-sm">
@@ -292,8 +292,8 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Sklepy które{" "}
-                <span className="text-gradient">naprawdę sprzedają</span>
+                Sklepy, które{' '}
+                <span className="text-gradient">skutecznie sprzedają</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Realizacje z konkretnymi wynikami biznesowymi
@@ -481,34 +481,34 @@ export default function SklepyInternetoweTorun() {
             <div className="max-w-4xl mx-auto">
               {[
                 {
-                  nr: "01",
-                  title: "Analiza i strategia",
-                  desc: "Analizuję Twoją konkurencję, grupę docelową i cele biznesowe. Przygotowuję strategię UX/UI i plan SEO.",
-                  time: "2-3 dni",
+                  nr: '01',
+                  title: 'Analiza i strategia',
+                  desc: 'Analizuję Twoją konkurencję, grupę docelową i cele biznesowe. Przygotowuję strategię UX/UI i plan SEO.',
+                  time: '2-3 dni',
                 },
                 {
-                  nr: "02",
-                  title: "Projekt i prototyp",
-                  desc: "Projektuję interfejs sklepu z myślą o konwersji. Przygotowuję interaktywny prototyp do akceptacji.",
-                  time: "5-7 dni",
+                  nr: '02',
+                  title: 'Projekt',
+                  desc: 'Tworzę interfejs sklepu z myślą o konwersji, który otrzymuesz do akceptacji.',
+                  time: '5-7 dni',
                 },
                 {
-                  nr: "03",
-                  title: "Programowanie",
-                  desc: "Koduję sklep w najnowszych technologiach. Integruję płatności, dostawy, Allegro i inne systemy.",
-                  time: "3-4 tygodnie",
+                  nr: '03',
+                  title: 'Programowanie',
+                  desc: 'Koduję sklep w najnowszych technologiach. Integruję płatności, dostawy, Allegro i inne systemy.',
+                  time: '3-4 tygodnie',
                 },
                 {
-                  nr: "04",
-                  title: "Content i SEO",
-                  desc: "Wypełniam sklep treścią, piszę opisy kategorii i produktów. Optymalizuję pod wyszukiwarki.",
-                  time: "1 tydzień",
+                  nr: '04',
+                  title: 'Content i SEO',
+                  desc: 'Wypełniam sklep treścią, piszę opisy kategorii i produktów. Optymalizuję pod wyszukiwarki.',
+                  time: '1 tydzień',
                 },
                 {
-                  nr: "05",
-                  title: "Testy i wdrożenie",
-                  desc: "Testuję każdy element sklepu. Przeprowadzam szkolenie z obsługi. Uruchamiam na produkcji.",
-                  time: "3-5 dni",
+                  nr: '05',
+                  title: 'Testy i wdrożenie',
+                  desc: 'Testuję każdy element sklepu. Przeprowadzam szkolenie z obsługi. Uruchamiam na produkcji.',
+                  time: '3-5 dni',
                 },
               ].map((step, i) => (
                 <motion.div
@@ -550,8 +550,8 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Technologie które{" "}
-                <span className="text-gradient">gwarantują sukces</span>
+                Technologie, które{' '}
+                <span className="text-gradient">przekładają się na sukces</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Używam tylko sprawdzonych, najnowszych rozwiązań
@@ -561,30 +561,30 @@ export default function SklepyInternetoweTorun() {
             <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  name: "Next.js 14",
-                  desc: "Błyskawiczne ładowanie",
+                  name: 'Next.js 14',
+                  desc: 'Błyskawiczne ładowanie',
                   icon: <Zap />,
                 },
-                { name: "Node.js", desc: "Wydajny backend", icon: <Server /> },
+                { name: 'Node.js', desc: 'Wydajny backend', icon: <Server /> },
                 {
-                  name: "PostgreSQL",
-                  desc: "Niezawodna baza danych",
+                  name: 'PostgreSQL',
+                  desc: 'Niezawodna baza danych',
                   icon: <Shield />,
                 },
                 {
-                  name: "Stripe",
-                  desc: "Bezpieczne płatności",
+                  name: 'Stripe',
+                  desc: 'Bezpieczne płatności',
                   icon: <CreditCard />,
                 },
-                { name: "AWS", desc: "Skalowalny hosting", icon: <Globe /> },
-                { name: "TypeScript", desc: "Kod bez błędów", icon: <Code2 /> },
+                { name: 'AWS', desc: 'Skalowalny hosting', icon: <Globe /> },
+                { name: 'TypeScript', desc: 'Kod bez błędów', icon: <Code2 /> },
                 {
-                  name: "Tailwind CSS",
-                  desc: "Responsywny design",
+                  name: 'Tailwind CSS',
+                  desc: 'Responsywny design',
                   icon: <Package />,
                 },
                 {
-                  name: "Redis",
+                  name: 'Redis',
                   desc: "Szybkie cache'owanie",
                   icon: <Gauge />,
                 },
@@ -612,7 +612,7 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Wybierz pakiet{" "}
+                Wybierz pakiet{' '}
                 <span className="text-gradient">dopasowany do Ciebie</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -623,51 +623,51 @@ export default function SklepyInternetoweTorun() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
                 {
-                  name: "Start",
-                  price: "4 900",
-                  desc: "Dla małych firm rozpoczynających sprzedaż online",
+                  name: 'Start',
+                  price: '4 900',
+                  desc: 'Dla małych firm rozpoczynających sprzedaż online',
                   features: [
-                    "Do 100 produktów",
-                    "Responsywny design",
-                    "Płatności Przelewy24",
-                    "Integracja InPost",
-                    "Panel administracyjny",
-                    "Podstawowe SEO",
-                    "SSL i hosting (1 rok)",
-                    "Szkolenie z obsługi",
+                    'Do 100 produktów',
+                    'Responsywny design',
+                    'Płatności Przelewy24',
+                    'Integracja InPost',
+                    'Panel administracyjny',
+                    'Podstawowe SEO',
+                    'SSL i hosting (1 rok)',
+                    'Szkolenie z obsługi',
                   ],
                   popular: false,
                 },
                 {
-                  name: "Profesjonalny",
-                  price: "9 900",
-                  desc: "Dla firm z większym asortymentem i ambicjami",
+                  name: 'Profesjonalny',
+                  price: '9 900',
+                  desc: 'Dla firm z większym asortymentem i ambicjami',
                   features: [
-                    "Do 1000 produktów",
-                    "Projekt UX/UI na miarę",
-                    "Płatności Stripe + PayPal",
-                    "Integracja Allegro",
-                    "Automatyzacja procesów",
-                    "Zaawansowane SEO",
-                    "Newsletter i email marketing",
-                    "AI do opisów produktów",
-                    "Multijęzyczność",
-                    "3 miesiące wsparcia",
+                    'Do 1000 produktów',
+                    'Projekt UX/UI na miarę',
+                    'Płatności Stripe + PayPal',
+                    'Integracja Allegro',
+                    'Automatyzacja procesów',
+                    'Zaawansowane SEO',
+                    'Newsletter i email marketing',
+                    'AI do opisów produktów',
+                    'Multijęzyczność',
+                    '3 miesiące wsparcia',
                   ],
                   popular: true,
                 },
                 {
-                  name: "Enterprise",
-                  price: "na zapytanie",
-                  desc: "Dedykowane rozwiązania dla dużych firm",
+                  name: 'Enterprise',
+                  price: 'na zapytanie',
+                  desc: 'Dedykowane rozwiązania dla dużych firm',
                   features: [
-                    "Nieograniczona ilość produktów",
-                    "Integracje B2B",
-                    "API dla partnerów",
-                    "Zaawansowana automatyzacja",
-                    "Dedicated hosting AWS",
-                    "Wsparcie 24/7",
-                    "Rozwój i optymalizacja",
+                    'Nieograniczona ilość produktów',
+                    'Integracje B2B',
+                    'API dla partnerów',
+                    'Zaawansowana automatyzacja',
+                    'Dedicated hosting AWS',
+                    'Wsparcie 24/7',
+                    'Rozwój i optymalizacja',
                   ],
                   popular: false,
                 },
@@ -679,8 +679,8 @@ export default function SklepyInternetoweTorun() {
                   transition={{ delay: i * 0.1 }}
                   className={`relative bg-background/50 backdrop-blur-sm border rounded-xl p-8 hover:scale-105 transition-all ${
                     plan.popular
-                      ? "border-primary shadow-xl"
-                      : "border-primary/10"
+                      ? 'border-primary shadow-xl'
+                      : 'border-primary/10'
                   }`}
                 >
                   {plan.popular && (
@@ -691,7 +691,7 @@ export default function SklepyInternetoweTorun() {
 
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                   <div className="mb-4">
-                    {plan.price === "na zapytanie" ? (
+                    {plan.price === 'na zapytanie' ? (
                       <span className="text-3xl font-bold">{plan.price}</span>
                     ) : (
                       <>
@@ -715,8 +715,8 @@ export default function SklepyInternetoweTorun() {
                     href="/kontakt"
                     className={`block w-full py-3 text-center rounded-lg font-semibold transition-all ${
                       plan.popular
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-primary text-primary hover:bg-primary/10"
+                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        : 'border border-primary text-primary hover:bg-primary/10'
                     }`}
                   >
                     Wybierz pakiet
@@ -732,7 +732,7 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Najczęściej zadawane{" "}
+                Najczęściej zadawane{' '}
                 <span className="text-gradient">pytania</span>
               </h2>
             </motion.div>
@@ -740,28 +740,28 @@ export default function SklepyInternetoweTorun() {
             <div className="max-w-3xl mx-auto space-y-4">
               {[
                 {
-                  q: "Ile trwa stworzenie sklepu internetowego?",
-                  a: "Standardowy sklep internetowy tworzę w 6-8 tygodni. Prosty sklep może być gotowy w 4 tygodnie, bardziej rozbudowany projekt może zająć do 12 tygodni.",
+                  q: 'Ile trwa stworzenie sklepu internetowego?',
+                  a: 'Standardowy sklep internetowy tworzę w 6-8 tygodni. Prosty sklep może być gotowy w 4 tygodnie, bardziej rozbudowany projekt może zająć do 12 tygodni.',
                 },
                 {
-                  q: "Czy mogę sam zarządzać sklepem po wdrożeniu?",
-                  a: "Oczywiście! Każdy sklep wyposażam w intuicyjny panel administracyjny. Dodatkowo przeprowadzam szkolenie z obsługi i dostarczam dokumentację. Oferuję też wsparcie po wdrożeniu.",
+                  q: 'Czy mogę sam zarządzać sklepem po wdrożeniu?',
+                  a: 'Oczywiście! Każdy sklep wyposażam w intuicyjny panel administracyjny. Dodatkowo przeprowadzam szkolenie z obsługi i dostarczam dokumentację. Oferuję też wsparcie po wdrożeniu.',
                 },
                 {
-                  q: "Czy sklep będzie działał na telefonie?",
-                  a: "Tak, wszystkie sklepy tworzę w technologii responsive (RWD). Sklep będzie perfekcyjnie wyglądał i działał na każdym urządzeniu - telefonie, tablecie i komputerze.",
+                  q: 'Czy sklep będzie działał na telefonie?',
+                  a: 'Tak, wszystkie sklepy tworzę w technologii responsive (RWD). Sklep będzie perfekcyjnie wyglądał i działał na każdym urządzeniu - telefonie, tablecie i komputerze.',
                 },
                 {
-                  q: "Jakie integracje oferujesz?",
-                  a: "Integruję sklepy z Allegro, InPost, DPD, PayU, Przelewy24, Stripe, PayPal, Fakturownia, BaseLinker, Google Analytics, Facebook Pixel i wieloma innymi.",
+                  q: 'Jakie integracje oferujesz?',
+                  a: 'Integruję sklepy z Allegro, InPost, DPD, PayU, Przelewy24, Stripe, PayPal, Fakturownia, BaseLinker, Google Analytics, Facebook Pixel i wieloma innymi.',
                 },
                 {
-                  q: "Czy zajmujesz się też pozycjonowaniem?",
-                  a: "Każdy sklep buduję od podstaw z myślą o SEO. Po wdrożeniu mogę również prowadzić działania pozycjonerskie - mam 15 lat doświadczenia w SEO.",
+                  q: 'Czy zajmujesz się też pozycjonowaniem?',
+                  a: 'Każdy sklep buduję od podstaw z myślą o SEO. Po wdrożeniu mogę również prowadzić działania pozycjonerskie - mam 15 lat doświadczenia w SEO.',
                 },
                 {
-                  q: "Co jeśli mam już sklep na WooCommerce?",
-                  a: "Specjalizuję się w migracjach z WooCommerce. Przeniosę wszystkie produkty, zachowam adresy URL (ważne dla SEO) i poprawię wydajność nawet o 300%.",
+                  q: 'Co jeśli mam już sklep na WooCommerce?',
+                  a: 'Specjalizuję się w migracjach z WooCommerce. Przeniosę wszystkie produkty, zachowam adresy URL (ważne dla SEO) i poprawię wydajność nawet o 300%.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -778,7 +778,7 @@ export default function SklepyInternetoweTorun() {
                     <span className="font-semibold">{item.q}</span>
                     <ChevronRight
                       className={`w-5 h-5 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
+                        openFaq === i ? 'rotate-90' : ''
                       }`}
                     />
                   </button>
@@ -798,7 +798,7 @@ export default function SklepyInternetoweTorun() {
           <div className="container mx-auto px-6">
             <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Gotowy na sklep, który{" "}
+                Gotowy na sklep, który{' '}
                 <span className="text-gradient">naprawdę sprzedaje</span>?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
