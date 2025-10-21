@@ -78,3 +78,35 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary;
 }
+
+/* Cookie Consent Animations */
+@keyframes cookie-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+}
+
+.cookie-float {
+  animation: cookie-float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar dla ustawień cookies */
+.cookie-settings-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cookie-settings-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cookie-settings-scroll::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full;
+}
+
+.cookie-settings-scroll::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/50;
+}

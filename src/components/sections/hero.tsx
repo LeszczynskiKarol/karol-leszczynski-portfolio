@@ -3,7 +3,6 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 
 const skills = [
   "Full-Stack Developer",
@@ -11,7 +10,7 @@ const skills = [
   "E-commerce Specialist",
   "Author & Publisher",
   "SEO Expert",
-  "Copywriter",
+  "Copywriter & Content Writer",
 ];
 
 export function HeroSection() {
@@ -147,7 +146,7 @@ export function HeroSection() {
               Zobacz projekty
             </a>
             <a
-              href="#contact"
+              href="/kontakt"
               className="px-6 sm:px-8 lg:px-10 py-3 lg:py-4 border border-primary text-primary rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-primary/10 transition-all hover:scale-105"
             >
               Kontakt
@@ -155,15 +154,6 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <ChevronDown className="w-6 h-6 text-muted-foreground" />
-      </motion.div>
     </section>
   );
 }

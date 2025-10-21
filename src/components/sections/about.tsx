@@ -23,7 +23,7 @@ const timeline = [
   },
   {
     year: "2012",
-    title: "Specjalizacja SEO",
+    title: "Specjalista SEO",
     description:
       "Rozszerzenie kompetencji o SEO i content marketing. Pierwsze sukcesy w pozycjonowaniu.",
     icon: <TrendingUp className="w-5 h-5" />,

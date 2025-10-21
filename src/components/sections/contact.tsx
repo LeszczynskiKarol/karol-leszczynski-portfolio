@@ -38,7 +38,7 @@ export function ContactSection() {
           >
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <motion.a
-                href="mailto:karolleszczynskikorektor@gmail.com"
+                href="mailto:kontakt@karol-leszczynski.pl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 }}
@@ -49,7 +49,7 @@ export function ContactSection() {
                 </div>
                 <h3 className="font-semibold mb-1">Email</h3>
                 <p className="text-muted-foreground text-sm">
-                  karolleszczynskikorektor@gmail.com
+                  kontakt@karol-leszczynski.pl
                 </p>
               </motion.a>
 
@@ -94,7 +94,7 @@ export function ContactSection() {
               </p>
 
               <a
-                href="mailto:karolleszczynskikorektor@gmail.com"
+                href="/kontakt"
                 className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
               >
                 Napisz do mnie
