@@ -304,32 +304,6 @@ const projects = [
     link: "https://ecopywriting.pl",
     year: "2024",
   },
-  {
-    id: 9,
-    title: "eBookCopywriting.pl",
-    category: "E-book / Content",
-    description: "Autorski e-book o copywritingu z 15-letnim doświadczeniem",
-    fullDescription:
-      "Kompletny przewodnik „Jak zostać copywriterem” - autorski e-book bazujący na moim 15-letnim doświadczeniu w branży. Książka zawiera praktyczne porady dla przyszłych copywriterów i pokazuje, jak krok po kroku rozpocząć oraz rozwijać się w tym zawodzie. System sprzedaży zintegrowany ze Stripe, automatyczna dostawa po płatności, hosting na AWS S3.",
-    image: "/projects/ebook.jpg",
-    technologies: [
-      "Next.js",
-      "Stripe",
-      "AWS S3",
-      "AWS CloudFront",
-      "SendGrid",
-      "LaTeX",
-      "PDF Generation",
-    ],
-    features: [
-      "40+ stron praktycznej wiedzy",
-      "Automatyczna sprzedaż przez Stripe",
-      "Natychmiastowa dostawa po płatności",
-      "Landing page z wysoką konwersją",
-    ],
-    link: "https://ebookcopywriting.pl",
-    year: "2023",
-  },
 ];
 
 export function ProjectsSection() {
