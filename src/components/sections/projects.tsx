@@ -10,6 +10,60 @@ import { ExternalLink, X, ChevronRight, Calendar } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "Smart-Copy.AI",
+    category: "SaaS / AI Content",
+    description:
+      "Zaawansowana platforma AI do generowania treści marketingowych z multi-agent architecture",
+    fullDescription:
+      "Profesjonalna platforma full-stack do generowania treści marketingowych za pomocą sztucznej inteligencji Claude. System wykorzystuje zaawansowaną architekturę multi-agent - Kierownik dzieli strukturę tekstu na części, a zespół Pisarzy generuje treść równolegle. Platforma potrafi wygenerować teksty do 150 stron, automatycznie wyszukuje źródła przez Google Custom Search API, scrapuje i analizuje treści, a następnie tworzy unikalne, SEO-friendly artykuły. System obsługuje 8 języków, oferuje integrację własnych źródeł użytkownika (URL-e i pliki), oraz zaawansowane opcje SEO (frazy kluczowe, linkowanie wewnętrzne). Płatności przez Stripe z systemem prepaid balance.",
+    image: "/projects/smart-copy.jpg",
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Fastify",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Anthropic Claude AI",
+      "Google Custom Search API",
+      "Stripe",
+      "AWS S3",
+      "AWS SES",
+      "AWS EC2",
+      "Zustand",
+      "TanStack Query",
+      "Zod",
+      "Framer Motion",
+      "TailwindCSS",
+    ],
+    features: [
+      "Multi-agent AI architecture (Kierownik + Pisarze)",
+      "Generowanie tekstów do 150 stron",
+      "Automatyczne wyszukiwanie źródeł (Google API)",
+      "Scrapowanie i analiza treści z internetu",
+      "Wsparcie dla 8 języków",
+      "Upload własnych źródeł (URL-e + pliki PDF/DOCX)",
+      "Zaawansowane opcje SEO (keywords, linki)",
+      "System prepaid balance z Stripe",
+      "Real-time progress tracking",
+      "Eksport do HTML z formatowaniem",
+      "Panel administracyjny z monitoringiem",
+      "JWT authentication + Google OAuth",
+      "Rate limiting i reCAPTCHA protection",
+      "Email notifications przez AWS SES",
+      "Blog z CMS dla content marketingu",
+      "Responsywny design z dark mode",
+    ],
+    link: "https://smart-copy.ai",
+    year: "2024-2025",
+    stats: {
+      agents: "Multi-agent",
+      languages: "8 języków",
+      maxPages: "150 stron",
+    },
+  },
+  {
+    id: 2,
     title: "MaturaPolski.pl",
     category: "SaaS / EdTech",
     description:
@@ -57,7 +111,7 @@ const projects = [
     year: "2024-2025",
   },
   {
-    id: 2,
+    id: 3,
     title: "Smart-Edu.AI",
     category: "SaaS / EdTech",
     description: "Platforma AI do generowania prac pisemnych i naukowych",
@@ -89,7 +143,47 @@ const projects = [
     year: "2024",
   },
   {
-    id: 3,
+    id: 4,
+    title: "Nadamel.pl",
+    category: "Strona firmowa",
+    description:
+      "Nowoczesna strona dla firmy stolarskiej z pełną optymalizacją SEO i wydajności",
+    fullDescription:
+      "Profesjonalna strona internetowa dla firmy stolarskiej Nadamel zbudowana w Astro z naciskiem na maksymalną wydajność i SEO. Strona wykorzystuje statyczną generację (SSG) dla błyskawicznego ładowania. Rozbudowana struktura 8 podstron usługowych z bogatą treścią SEO, mega menu dropdown w nawigacji, oraz zaawansowane structured data (JSON-LD z OfferCatalog). Hosting na AWS S3 + CloudFront CDN zapewnia globalną dostępność. Perfect Lighthouse score dzięki optymalizacji Core Web Vitals.",
+    image: "/projects/nadamel.jpg",
+    technologies: [
+      "Astro",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+    ],
+    features: [
+      "Statyczna generacja stron (SSG)",
+      "8 kompletnych podstron usługowych",
+      "Mega menu dropdown w nawigacji",
+      "Rozbudowane JSON-LD structured data",
+      "Automatyczny sitemap i robots.txt",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Perfect Lighthouse score (98-100)",
+      "Pełna responsywność mobile-first",
+      "FAQ z interaktywnymi akordeonami",
+      "Formularz kontaktowy",
+      "Core Web Vitals optimization",
+      "SEO-friendly routing i metadata",
+      "Open Graph i Twitter Cards",
+      "Nowoczesny design z animacjami",
+    ],
+    link: "https://nadamel.pl",
+    year: "2025",
+    stats: {
+      lighthouse: "98/100",
+      pages: "8 podstron",
+      hosting: "AWS CDN",
+    },
+  },
+  {
+    id: 5,
     title: "GrandKuchnie.pl",
     category: "Strona firmowa",
     description:
@@ -123,7 +217,7 @@ const projects = [
     year: "2025",
   },
   {
-    id: 4,
+    id: 6,
     title: "Stojan Shop",
     category: "E-commerce",
     description: "Własny sklep e-commerce z pełną migracją z WooCommerce",
@@ -161,7 +255,7 @@ const projects = [
     year: "2021-2024",
   },
   {
-    id: 5,
+    id: 7,
     title: "Zeszyty ćwiczeń dla szkół policealnych",
     category: "Publishing / EdTech",
     description:
@@ -191,7 +285,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 8,
     title: "Meble-Bydgoszcz.pl",
     category: "Strona firmowa",
     description:
@@ -226,7 +320,7 @@ const projects = [
     year: "2024-2025",
   },
   {
-    id: 7,
+    id: 9,
     title: "Project-Design.pl",
     category: "Portfolio / Strona firmowa",
     description:
@@ -267,7 +361,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 10,
     title: "eCopywriting.pl",
     category: "SaaS / Content",
     description:
