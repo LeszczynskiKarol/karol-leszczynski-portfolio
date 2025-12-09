@@ -108,7 +108,7 @@ const skillCategories = {
     skills: [
       {
         name: "AWS",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+        logo: "/aws.jpg",
       },
       {
         name: "Vercel",
