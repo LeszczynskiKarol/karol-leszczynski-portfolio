@@ -398,6 +398,44 @@ const projects = [
     link: "https://ecopywriting.pl",
     year: "2024",
   },
+  {
+    id: 11,
+    title: "MagisterkaOnline.com.pl",
+    category: "Content / EdTech",
+    description:
+      "Kompleksowy portal edukacyjny z poradnikami o pisaniu pracy magisterskiej",
+    fullDescription:
+      "Rozbudowany portal edukacyjny zawierający kompleksowe poradniki dla studentów piszących prace magisterskie. Strona oferuje szczegółowe artykuły na temat każdego etapu pisania pracy - od wyboru tematu, przez metodologię badań, po obronę. Szczególnie rozbudowana sekcja metodologii zawiera 16 podstron omawiających badania ilościowe i jakościowe, konstrukcję ankiet, hipotezy badawcze, dobór próby i analizę danych. Zbudowana w Astro 5 ze statyczną generacją dla maksymalnej wydajności SEO. Hosting na AWS S3 + CloudFront CDN.",
+    image: "/projects/magisterkaonline.jpg",
+    technologies: [
+      "Astro 5",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+    ],
+    features: [
+      "Statyczna generacja stron (SSG)",
+      "30+ podstron z poradnikami",
+      "Rozbudowana sekcja metodologii (16 artykułów)",
+      "Poradniki: bibliografia, cytowanie, formatowanie",
+      "Sekcje: wstęp, zakończenie, streszczenie, obrona",
+      "Optymalizacja SEO z meta tagami",
+      "Tailwind Typography dla czytelności",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Responsywny design mobile-first",
+      "Szybkie ładowanie dzięki SSG",
+      "Automatyczny sitemap",
+      "Przyjazna struktura URL",
+    ],
+    link: "https://magisterkaonline.com.pl",
+    year: "2025",
+    stats: {
+      articles: "30+ artykułów",
+      methodology: "16 poradników",
+      hosting: "AWS CDN",
+    },
+  },
 ];
 
 export function ProjectsSection() {
