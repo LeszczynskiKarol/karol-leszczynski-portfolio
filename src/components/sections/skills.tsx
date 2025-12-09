@@ -154,7 +154,7 @@ const skillCategories = {
       },
       {
         name: "LangChain",
-        logo: "https://python.langchain.com/img/brand/wordmark.png",
+        logo: "/langchain.jpg",
       },
     ],
   },
