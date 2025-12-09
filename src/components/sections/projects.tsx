@@ -475,6 +475,52 @@ const projects = [
       backend: "Serverless",
     },
   },
+  {
+    id: 13,
+    title: "TorWeb.pl",
+    category: "Strona firmowa / Agencja",
+    description:
+      "Profesjonalna strona agencji interaktywnej z Torunia z pełnym systemem cookies GDPR i Google Consent Mode v2",
+    fullDescription:
+      "Kompleksowa strona internetowa dla własnej agencji interaktywnej TorWeb.pl zbudowana w Astro 5. Strona prezentuje portfolio 12 realizacji, 6 podstron usługowych (strony WWW, sklepy, aplikacje, AI, automatyzacja, migracje), sekcje: hero, usługi, portfolio, dlaczego my, proces, FAQ i kontakt. Zaawansowany system cookies zgodny z GDPR i Google Consent Mode v2 - dynamiczne ładowanie GA4 i GTM tylko po wyrażeniu zgody. Formularz kontaktowy z EmailJS i Cloudinary do uploadu plików. Dark/light mode z płynnym przełączaniem. Infrastruktura AWS: S3 + CloudFront CDN z przekierowaniem apex → www. Pełna optymalizacja SEO z JSON-LD structured data dla LocalBusiness i Service.",
+    image: "/projects/torweb.jpg",
+    technologies: [
+      "Astro 5",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+      "AWS Route53",
+      "Google Analytics 4",
+      "Google Tag Manager",
+      "Google Consent Mode v2",
+      "EmailJS",
+      "Cloudinary",
+    ],
+    features: [
+      "6 podstron usługowych z pełnym SEO",
+      "Portfolio 12 realizacji z modalami",
+      "System cookies GDPR z Consent Mode v2",
+      "Dynamiczne ładowanie GA4/GTM po zgodzie",
+      "Dark/light mode z persystencją",
+      "Formularz kontaktowy z EmailJS",
+      "Upload plików przez Cloudinary",
+      "Przekierowanie apex → www (CloudFront)",
+      "JSON-LD structured data (LocalBusiness, Service)",
+      "Mega menu dropdown w nawigacji",
+      "Responsywny design mobile-first",
+      "Perfect Lighthouse score (95+)",
+      "Automatyczny sitemap i robots.txt",
+      "Breadcrumbs z Schema.org",
+    ],
+    link: "https://torweb.pl",
+    year: "2025",
+    stats: {
+      services: "6 usług",
+      portfolio: "12 projektów",
+      lighthouse: "95+",
+    },
+  },
 ];
 
 export function ProjectsSection() {
