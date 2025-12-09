@@ -436,6 +436,45 @@ const projects = [
       hosting: "AWS CDN",
     },
   },
+  {
+    id: 12,
+    title: "By-Interior.pl",
+    category: "Portfolio / Strona firmowa",
+    description:
+      "Elegancka strona dla studia projektowania wnętrz w Bydgoszczy",
+    fullDescription:
+      "Profesjonalna strona internetowa dla studia projektowania wnętrz ByInterior z Bydgoszczy. Strona prezentuje portfolio realizacji, zespół projektantów, proces współpracy oraz ofertę usług. Zbudowana w Astro ze statyczną generacją dla maksymalnej wydajności. Zawiera sekcje: hero, o nas, usługi, proces, portfolio, zespół, opinie klientów, CTA i kontakt. Serverless Lambda obsługuje backend (formularz/opinie). Hosting na AWS S3 + CloudFront CDN zapewnia błyskawiczne ładowanie.",
+    image: "/projects/by-interior.jpg",
+    technologies: [
+      "Astro 4",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+      "AWS Lambda",
+    ],
+    features: [
+      "Statyczna generacja stron (SSG)",
+      "Portfolio realizacji z galerią",
+      "Prezentacja zespołu projektantów",
+      "Sekcja procesu współpracy",
+      "Opinie klientów (testimonials)",
+      "Serverless backend (AWS Lambda)",
+      "Formularz kontaktowy",
+      "Animacje scroll reveal",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Responsywny design mobile-first",
+      "Optymalizacja SEO z meta tagami",
+      "Nowoczesny design z Tailwind",
+    ],
+    link: "https://by-interior.pl",
+    year: "2025",
+    stats: {
+      sections: "9 sekcji",
+      hosting: "AWS CDN",
+      backend: "Serverless",
+    },
+  },
 ];
 
 export function ProjectsSection() {
