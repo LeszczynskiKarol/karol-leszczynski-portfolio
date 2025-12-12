@@ -144,6 +144,61 @@ const projects = [
   },
   {
     id: 4,
+    title: "Interpunkcja.com.pl",
+    category: "SaaS / AI Tools",
+    description:
+      "Korektor interpunkcji AI - sprawdzanie przecinków i błędów interpunkcyjnych z wyjaśnieniami zasad",
+    fullDescription:
+      "Profesjonalna platforma SaaS do sprawdzania interpunkcji w tekstach polskich wykorzystująca sztuczną inteligencję Claude. System analizuje tekst, wykrywa brakujące przecinki i inne błędy interpunkcyjne, a następnie wyjaśnia zastosowane zasady polskiej pisowni. Każda poprawka zawiera odniesienie do konkretnej reguły interpunkcyjnej, dzięki czemu użytkownik uczy się na bieżąco. Platforma oferuje trzy plany: FREE (5 sprawdzeń dziennie, do 500 znaków), Premium (29 zł/mies, 100 sprawdzeń, do 10 000 znaków) oraz unikalny plan Lifetime za 299 zł - jednorazowa opłata za dożywotni dostęp. System zawiera również rozbudowaną bazę wiedzy z artykułami o zasadach polskiej interpunkcji (przecinek przed że, który, gdy itp.). Zabezpieczenia: reCAPTCHA v3, JWT auth, Google OAuth (przygotowane). Płatności przez Stripe z obsługą polskich metod płatności.",
+    image: "/projects/interpunkcja.jpg",
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Fastify",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Anthropic Claude AI",
+      "Stripe",
+      "AWS EC2",
+      "AWS S3",
+      "AWS SES",
+      "Zustand",
+      "TanStack Query",
+      "Zod",
+      "TailwindCSS",
+      "reCAPTCHA v3",
+      "JWT Authentication",
+      "Google OAuth 2.0",
+    ],
+    features: [
+      "Sprawdzanie interpunkcji przez AI Claude",
+      "Wyjaśnienia każdej poprawki z regułą",
+      "Analiza tekstu w 3 sekundy",
+      "Plan Lifetime 299 zł (dożywotni dostęp)",
+      "Plany: FREE, Premium (29 zł/mies), Lifetime",
+      "Do 10 000 znaków na sprawdzenie (Premium)",
+      "Baza wiedzy o polskiej interpunkcji",
+      "Artykuły: przecinek przed że, który, gdy",
+      "Dark/light mode z persystencją",
+      "JWT authentication + Google OAuth",
+      "reCAPTCHA v3 protection",
+      "Stripe payments (Przelewy24, BLIK)",
+      "Responsywny design mobile-first",
+      "Panel użytkownika z historią",
+      "SEO-optimized z meta tagami",
+      "Email notifications przez AWS SES",
+    ],
+    link: "https://interpunkcja.com.pl",
+    year: "2025",
+    stats: {
+      accuracy: "99%",
+      speed: "3 sek",
+      lifetime: "299 zł",
+    },
+  },
+  {
+    id: 5,
     title: "Nadamel.pl",
     category: "Strona firmowa",
     description:
@@ -183,7 +238,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "GrandKuchnie.pl",
     category: "Strona firmowa",
     description:
@@ -217,7 +272,7 @@ const projects = [
     year: "2025",
   },
   {
-    id: 6,
+    id: 7,
     title: "Stojan Shop",
     category: "E-commerce",
     description: "Własny sklep e-commerce z pełną migracją z WooCommerce",
@@ -255,7 +310,7 @@ const projects = [
     year: "2021-2024",
   },
   {
-    id: 7,
+    id: 8,
     title: "Zeszyty ćwiczeń dla szkół policealnych",
     category: "Publishing / EdTech",
     description:
@@ -285,7 +340,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     title: "Meble-Bydgoszcz.pl",
     category: "Strona firmowa",
     description:
@@ -320,7 +375,7 @@ const projects = [
     year: "2024-2025",
   },
   {
-    id: 9,
+    id: 10,
     title: "Project-Design.pl",
     category: "Portfolio / Strona firmowa",
     description:
@@ -361,7 +416,7 @@ const projects = [
     },
   },
   {
-    id: 10,
+    id: 11,
     title: "eCopywriting.pl",
     category: "SaaS / Content",
     description:
@@ -399,7 +454,7 @@ const projects = [
     year: "2024",
   },
   {
-    id: 11,
+    id: 12,
     title: "MagisterkaOnline.com.pl",
     category: "Content / EdTech",
     description:
@@ -437,7 +492,7 @@ const projects = [
     },
   },
   {
-    id: 12,
+    id: 13,
     title: "By-Interior.pl",
     category: "Portfolio / Strona firmowa",
     description:
@@ -476,7 +531,7 @@ const projects = [
     },
   },
   {
-    id: 13,
+    id: 14,
     title: "TorWeb.pl",
     category: "Strona firmowa / Agencja",
     description:
