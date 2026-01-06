@@ -2,7 +2,10 @@
 
 "use client";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+
+const API_ENDPOINT =
+  "https://4xz7pkbd51.execute-api.eu-north-1.amazonaws.com/prod/send";
+const DOMAIN = "karol-leszczynski.pl";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -17,12 +20,19 @@ export default function ContactForm() {
     setStatus("sending");
 
     try {
-      await emailjs.send(
-        "YOUR_SERVICE_ID", // z EmailJS dashboard
-        "YOUR_TEMPLATE_ID", // z EmailJS dashboard
-        formData,
-        "YOUR_PUBLIC_KEY" // z EmailJS dashboard
-      );
+      const response = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          domain: DOMAIN,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Błąd wysyłania");
+
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch {
