@@ -576,7 +576,6 @@ const projects = [
   },
   {
     id: 15,
-<<<<<<< HEAD
     title: "UniaTorun.pl",
     category: "Strona firmowa / Sport",
     description:
@@ -586,22 +585,10 @@ const projects = [
     image: "/projects/uniatorun.jpg",
     technologies: [
       "Astro 5",
-=======
-    title: "Licencjackie.pl",
-    category: "Content / EdTech",
-    description:
-      "Portal edukacyjny z kompleksowymi poradnikami o pisaniu pracy licencjackiej",
-    fullDescription:
-      "Rozbudowany portal edukacyjny dla studentów piszących prace licencjackie. Strona zawiera szczegółowe poradniki na temat każdego etapu pisania pracy - od wyboru tematu i promotora, przez metodologię badań, strukturę rozdziałów, po formatowanie i obronę. Wszystkie treści napisane przeze mnie z naciskiem na praktyczne wskazówki i przykłady. Zbudowana w Astro ze statyczną generacją dla maksymalnej wydajności SEO. Hosting na AWS S3 + CloudFront CDN zapewnia błyskawiczne ładowanie na całym świecie.",
-    image: "/projects/licencjackie.jpg",
-    technologies: [
-      "Astro 4",
->>>>>>> 62d7d3d0b041d43fb52bf84c2e5b25495f7e8a32
       "TypeScript",
       "Tailwind CSS",
       "AWS S3",
       "AWS CloudFront",
-<<<<<<< HEAD
       "AWS Route53",
       "AWS ACM",
       "Google Analytics 4",
@@ -634,64 +621,6 @@ const projects = [
       pages: "17 stron",
       lighthouse: "95+",
       hosting: "AWS CDN",
-=======
-    ],
-    features: [
-      "Statyczna generacja stron (SSG)",
-      "Kompleksowe poradniki o pracy licencjackiej",
-      "Sekcje: temat, struktura, metodologia, formatowanie",
-      "Poradniki: bibliografia, cytowanie, obrona",
-      "Optymalizacja SEO z meta tagami",
-      "Tailwind Typography dla czytelności",
-      "Hosting na AWS S3 + CloudFront CDN",
-      "Responsywny design mobile-first",
-      "Automatyczny sitemap i robots.txt",
-      "Core Web Vitals optimization",
-    ],
-    link: "https://licencjackie.pl",
-    year: "2025",
-    stats: {
-      type: "EdTech",
-      hosting: "AWS CDN",
-      content: "Autorskie treści",
-    },
-  },
-  {
-    id: 16,
-    title: "Praca-Magisterska.pl",
-    category: "Content / EdTech",
-    description:
-      "Kompleksowy portal z poradnikami dla magistrantów - od tematu po obronę",
-    fullDescription:
-      "Profesjonalny portal edukacyjny dedykowany studentom piszącym prace magisterskie. Zawiera rozbudowane poradniki obejmujące cały proces pisania - wybór tematu, współpraca z promotorem, metodologia badań, struktura pracy, formatowanie zgodne z wymogami uczelni, oraz przygotowanie do obrony. Wszystkie treści opracowane przeze mnie na podstawie doświadczenia w branży edukacyjnej. Architektura oparta na Astro z automatycznym sitemap dla SEO. Hosting na AWS S3 + CloudFront CDN.",
-    image: "/projects/praca-magisterska.jpg",
-    technologies: [
-      "Astro 4",
-      "TypeScript",
-      "Tailwind CSS",
-      "AWS S3",
-      "AWS CloudFront",
-      "@astrojs/sitemap",
-    ],
-    features: [
-      "Statyczna generacja stron (SSG)",
-      "Rozbudowane poradniki dla magistrantów",
-      "Sekcje tematyczne: metodologia, struktura, formatowanie",
-      "Praktyczne przykłady i wzory",
-      "Automatyczny sitemap z @astrojs/sitemap",
-      "Optymalizacja SEO z meta tagami",
-      "Hosting na AWS S3 + CloudFront CDN",
-      "Responsywny design mobile-first",
-      "Tailwind Typography",
-      "Perfect Lighthouse score",
-    ],
-    link: "https://praca-magisterska.pl",
-    year: "2025",
-    stats: {
-      type: "EdTech",
-      hosting: "AWS CDN",
-      seo: "Auto Sitemap",
->>>>>>> 62d7d3d0b041d43fb52bf84c2e5b25495f7e8a32
     },
   },
 ];
