@@ -1,12 +1,13 @@
 // src/app/kontakt/page.tsx
 "use client";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { Navigation } from "@/components/layout/navigation";
 import { motion } from "framer-motion";
-import { Phone, Mail, Building, Send, User, MessageSquare } from "lucide-react";
+import { Building, Mail, MessageSquare, Phone, Send, User } from "lucide-react";
+import { useState } from "react";
 
-emailjs.init("gjau8dneW58l9l3tz");
+const API_ENDPOINT =
+  "https://4xz7pkbd51.execute-api.eu-north-1.amazonaws.com/prod/send";
+const DOMAIN = "karol-leszczynski.pl";
 
 export default function KontaktPage() {
   const [formData, setFormData] = useState({
@@ -21,12 +22,24 @@ export default function KontaktPage() {
     setStatus("sending");
 
     try {
-      await emailjs.send("service_hggmpni", "template_erjuq9n", formData);
+      const response = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.from_name,
+          email: formData.from_email,
+          message: formData.message,
+          domain: DOMAIN,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Błąd wysyłania");
+
       setStatus("success");
       setFormData({ from_name: "", from_email: "", message: "" });
       setTimeout(() => setStatus(""), 5000);
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error("Error:", error);
       setStatus("error");
     }
   };

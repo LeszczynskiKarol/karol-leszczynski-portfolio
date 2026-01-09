@@ -1,11 +1,11 @@
-// src/components/sections/projects.tsx
+// src/components/sections/projects.tsx - karol-leszczynski.pl
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
+import { Calendar, ChevronRight, ExternalLink, X } from "lucide-react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink, X, ChevronRight, Calendar } from "lucide-react";
 
 const projects = [
   {
@@ -574,6 +574,55 @@ const projects = [
       services: "6 usług",
       portfolio: "12 projektów",
       lighthouse: "95+",
+    },
+  },
+  {
+    id: 15,
+    title: "UniaTorun.pl",
+    category: "Strona firmowa / Sport",
+    description:
+      "Kompleksowa strona dla akademii piłkarskiej z systemem cookies GDPR, dark mode i zaawansowanym SEO",
+    fullDescription:
+      "Profesjonalna strona internetowa dla Akademii Piłkarskiej Unia Toruń - szkółki piłkarskiej dla dzieci w wieku 3-13 lat. Projekt obejmuje 17 stron z pełną optymalizacją SEO, w tym 5 podstron grup wiekowych i 4 SEO landing pages. Zaawansowany system cookies zgodny z GDPR i Google Consent Mode v2 - dynamiczne ładowanie GA4 i GTM tylko po wyrażeniu zgody użytkownika. Elegancki dark/light mode z płynnym przełączaniem i persystencją w localStorage. Custom video player z kontrolkami w stylu YouTube (progress bar, play/pause, mute). Formularze kontaktowy i zapisów z walidacją. Hosting na AWS S3 + CloudFront CDN z przekierowaniem apex → www. Pełne structured data JSON-LD (SportsOrganization, OfferCatalog) dla lepszej widoczności w Google.",
+    image: "/projects/uniatorun.jpg",
+    technologies: [
+      "Astro 5",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+      "AWS Route53",
+      "AWS ACM",
+      "Google Analytics 4",
+      "Google Tag Manager",
+      "Google Consent Mode v2",
+    ],
+    features: [
+      "17 stron z pełną optymalizacją SEO",
+      "5 podstron grup wiekowych (3-6, 7-9, 9-11, 11-13 lat)",
+      "4 SEO landing pages dla fraz kluczowych",
+      "System cookies GDPR z Consent Mode v2",
+      "Dynamiczne ładowanie GA4/GTM po zgodzie",
+      "Dark/light mode z persystencją",
+      "Custom video player (YouTube-style controls)",
+      "Formularz zapisów z wyborem grupy wiekowej",
+      "Formularz kontaktowy z walidacją",
+      "Strona cennika z 3 pakietami",
+      "Strona lokalizacji z mapą Google",
+      "Galeria z lightbox i paginacją",
+      "JSON-LD structured data (SportsOrganization)",
+      "Mega menu z dropdown dla treningów",
+      "Hosting AWS S3 + CloudFront CDN",
+      "Przekierowanie apex → www",
+      "Perfect Lighthouse score (95+)",
+      "Responsywny design mobile-first",
+    ],
+    link: "https://www.uniatorun.pl",
+    year: "2025",
+    stats: {
+      pages: "17 stron",
+      lighthouse: "95+",
+      hosting: "AWS CDN",
     },
   },
 ];
