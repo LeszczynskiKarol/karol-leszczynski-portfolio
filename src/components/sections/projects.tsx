@@ -417,41 +417,39 @@ const projects = [
   },
   {
     id: 11,
-    title: "eCopywriting.pl",
-    category: "SaaS / Content",
+    title: "Prace-Magisterskie.pl",
+    category: "Content / EdTech",
     description:
-      "Platforma do bezkontakowego zamawiania tekstów copywriterskich",
+      "Portal edukacyjny z bazą wiedzy o pisaniu prac dyplomowych i naukowych",
     fullDescription:
-      "Zaawansowana platforma umożliwiająca bezkontakowe zamawianie profesjonalnych tekstów copywriterskich. System łączy klientów z copywriterami poprzez intuicyjny panel, gdzie obie strony mogą komunikować się i realizować zamówienia. Wcześniej firma działała jako tradycyjna agencja wymagająca bezpośredniego kontaktu. Teraz cały proces jest zautomatyzowany - od wyceny po dostarczenie tekstów.",
-    image: "/projects/ecopywriting.jpg",
+      "Kompleksowy portal edukacyjny oferujący bazę wiedzy dla studentów i doktorantów piszących prace dyplomowe. Strona zawiera artykuły o metodologii badań, strukturze prac naukowych, zasadach cytowania i tworzenia bibliografii, oraz wskazówki dotyczące obrony. Treści merytoryczne przygotowane przeze mnie. Zbudowana w Astro 4 ze statyczną generacją. Hosting na AWS S3 + CloudFront CDN z konfiguracją przekierowania apex → www.",
+    image: "/projects/prace-magisterskie.jpg",
     technologies: [
-      "Next.js",
-      "MongoDB",
+      "Astro 4",
+      "TypeScript",
+      "Tailwind CSS",
       "AWS S3",
-      "AWS EC2",
-      "Stripe",
-      "Node.js",
-      "Nginx",
-      "PM2",
-      "TinyMCE",
-      "Socket.io",
+      "AWS CloudFront",
     ],
     features: [
-      "Panel klienta z historią zamówień",
-      "Panel administracyjny do zarządzania zleceniami",
-      "System komunikacji między klientem a copywriterem",
-      "Automatyczna wycena na podstawie typu i długości tekstu",
-      "Płatności online przez Stripe",
-      "Edytor tekstów TinyMCE",
-      "System powiadomień email",
-      "Hosting na AWS EC2 z Nginx i PM2",
-      "Przechowywanie plików na AWS S3",
-      "Real-time komunikacja przez Socket.io",
-      "System statusów zamówień",
-      "Generowanie faktur",
+      "Statyczna generacja stron (SSG)",
+      "Baza wiedzy o pracach dyplomowych",
+      "Artykuły o metodologii i strukturze",
+      "Poradniki: bibliografia, cytowanie, formatowanie",
+      "Przekierowanie apex → www (CloudFront)",
+      "Optymalizacja SEO z meta tagami",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Responsywny design mobile-first",
+      "Automatyczny sitemap",
+      "Core Web Vitals optimization",
     ],
-    link: "https://ecopywriting.pl",
-    year: "2024",
+    link: "https://prace-magisterskie.pl",
+    year: "2025",
+    stats: {
+      type: "EdTech",
+      hosting: "AWS CDN",
+      content: "Autorskie",
+    },
   },
   {
     id: 12,
@@ -578,6 +576,7 @@ const projects = [
   },
   {
     id: 15,
+<<<<<<< HEAD
     title: "UniaTorun.pl",
     category: "Strona firmowa / Sport",
     description:
@@ -587,10 +586,22 @@ const projects = [
     image: "/projects/uniatorun.jpg",
     technologies: [
       "Astro 5",
+=======
+    title: "Licencjackie.pl",
+    category: "Content / EdTech",
+    description:
+      "Portal edukacyjny z kompleksowymi poradnikami o pisaniu pracy licencjackiej",
+    fullDescription:
+      "Rozbudowany portal edukacyjny dla studentów piszących prace licencjackie. Strona zawiera szczegółowe poradniki na temat każdego etapu pisania pracy - od wyboru tematu i promotora, przez metodologię badań, strukturę rozdziałów, po formatowanie i obronę. Wszystkie treści napisane przeze mnie z naciskiem na praktyczne wskazówki i przykłady. Zbudowana w Astro ze statyczną generacją dla maksymalnej wydajności SEO. Hosting na AWS S3 + CloudFront CDN zapewnia błyskawiczne ładowanie na całym świecie.",
+    image: "/projects/licencjackie.jpg",
+    technologies: [
+      "Astro 4",
+>>>>>>> 62d7d3d0b041d43fb52bf84c2e5b25495f7e8a32
       "TypeScript",
       "Tailwind CSS",
       "AWS S3",
       "AWS CloudFront",
+<<<<<<< HEAD
       "AWS Route53",
       "AWS ACM",
       "Google Analytics 4",
@@ -623,6 +634,64 @@ const projects = [
       pages: "17 stron",
       lighthouse: "95+",
       hosting: "AWS CDN",
+=======
+    ],
+    features: [
+      "Statyczna generacja stron (SSG)",
+      "Kompleksowe poradniki o pracy licencjackiej",
+      "Sekcje: temat, struktura, metodologia, formatowanie",
+      "Poradniki: bibliografia, cytowanie, obrona",
+      "Optymalizacja SEO z meta tagami",
+      "Tailwind Typography dla czytelności",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Responsywny design mobile-first",
+      "Automatyczny sitemap i robots.txt",
+      "Core Web Vitals optimization",
+    ],
+    link: "https://licencjackie.pl",
+    year: "2025",
+    stats: {
+      type: "EdTech",
+      hosting: "AWS CDN",
+      content: "Autorskie treści",
+    },
+  },
+  {
+    id: 16,
+    title: "Praca-Magisterska.pl",
+    category: "Content / EdTech",
+    description:
+      "Kompleksowy portal z poradnikami dla magistrantów - od tematu po obronę",
+    fullDescription:
+      "Profesjonalny portal edukacyjny dedykowany studentom piszącym prace magisterskie. Zawiera rozbudowane poradniki obejmujące cały proces pisania - wybór tematu, współpraca z promotorem, metodologia badań, struktura pracy, formatowanie zgodne z wymogami uczelni, oraz przygotowanie do obrony. Wszystkie treści opracowane przeze mnie na podstawie doświadczenia w branży edukacyjnej. Architektura oparta na Astro z automatycznym sitemap dla SEO. Hosting na AWS S3 + CloudFront CDN.",
+    image: "/projects/praca-magisterska.jpg",
+    technologies: [
+      "Astro 4",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS CloudFront",
+      "@astrojs/sitemap",
+    ],
+    features: [
+      "Statyczna generacja stron (SSG)",
+      "Rozbudowane poradniki dla magistrantów",
+      "Sekcje tematyczne: metodologia, struktura, formatowanie",
+      "Praktyczne przykłady i wzory",
+      "Automatyczny sitemap z @astrojs/sitemap",
+      "Optymalizacja SEO z meta tagami",
+      "Hosting na AWS S3 + CloudFront CDN",
+      "Responsywny design mobile-first",
+      "Tailwind Typography",
+      "Perfect Lighthouse score",
+    ],
+    link: "https://praca-magisterska.pl",
+    year: "2025",
+    stats: {
+      type: "EdTech",
+      hosting: "AWS CDN",
+      seo: "Auto Sitemap",
+>>>>>>> 62d7d3d0b041d43fb52bf84c2e5b25495f7e8a32
     },
   },
 ];
