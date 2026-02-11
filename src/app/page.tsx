@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Karol Leszczyński | Full-Stack Developer",
     description: "Portfolio Full-Stack Developera z 15-letnim doświadczeniem",
-    url: "https://karol-leszczynski.pl",
+    url: "https://www.karol-leszczynski.pl",
     type: "website",
   },
 };
