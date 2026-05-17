@@ -10,6 +10,65 @@ import { useInView } from "react-intersection-observer";
 const projects = [
   {
     id: 1,
+    title: "Matury-Online.pl",
+    category: "SaaS / EdTech",
+    description:
+      "Kompleksowa platforma do przygotowania do matury 2026 z 9000+ pytań, oceną AI i autonomicznym pipeline news",
+    fullDescription:
+      "Zaawansowana platforma edukacyjna do przygotowania do egzaminu maturalnego 2026 obejmująca 11 przedmiotów i ponad 9 000 pytań. System wykorzystuje sztuczną inteligencję Claude do oceny wypracowań, generowania spersonalizowanych ćwiczeń słuchania (angielski i niemiecki), oraz autonomicznego pipeline newsów maturalnych. Pipeline news działa w 6 krokach: generuje zapytania do Google Custom Search, scrapuje świeże artykuły z polskich portali edukacyjnych (CKE, gov.pl, Strefa Edukacji, Otouczelnie), analizuje treści i pisze unikalne artykuły, wykonuje semantic deduplication przez Claude Haiku przed zapisem do bazy. Platforma oferuje tryb egzaminu na żywo z timerem, spaced repetition, dashboard analityki postępów i system subskrypcji przez Stripe. Frontend zbudowany w Astro 5 ze statyczną generacją dla maksymalnej wydajności SEO, backend w Fastify + Prisma + PostgreSQL na AWS EC2. Pełna zgodność z Google News Publisher i schema.org NewsArticle.",
+    image: "/projects/matury-online.png",
+    technologies: [
+      "Astro 5",
+      "TypeScript",
+      "React",
+      "Fastify",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Anthropic Claude AI",
+      "Claude Haiku 4.5",
+      "Google Custom Search API",
+      "Stripe",
+      "AWS EC2",
+      "AWS S3",
+      "AWS SES",
+      "TailwindCSS",
+      "JWT Authentication",
+      "Google OAuth",
+      "node-cron",
+      "PM2",
+      "Nginx",
+    ],
+    features: [
+      "11 przedmiotów maturalnych z bazą 9000+ pytań",
+      "Ocena wypracowań przez AI Claude",
+      "Autonomiczny pipeline newsów (6 kroków)",
+      "Semantic deduplication przez Claude Haiku",
+      "Google Custom Search + web scraping artykułów",
+      "Generowanie ćwiczeń słuchania na żywo (PL/DE/EN)",
+      "Tryb egzaminu live z timerem",
+      "Spaced repetition algorithm",
+      "Dashboard analityki postępów ucznia",
+      "Plany subskrypcyjne przez Stripe",
+      "Google News Publisher integration",
+      "Schema.org NewsArticle + BreadcrumbList",
+      "Autonomiczny cron z dynamicznym harmonogramem",
+      "Panel admin z monitoringiem pipeline",
+      "JWT auth + Google OAuth",
+      "Dark/light mode z persystencją",
+      "JSON-LD structured data dla SEO",
+      "News sitemap dla Google News",
+      "Polityka redakcyjna + AI disclosure (EEAT)",
+    ],
+    link: "https://www.matury-online.pl",
+    year: "2025-2026",
+    stats: {
+      questions: "9000+",
+      subjects: "11",
+      pipeline: "6 kroków",
+    },
+  },
+  {
+    id: 2,
     title: "Smart-Copy.AI",
     category: "SaaS / AI Content",
     description:
@@ -63,7 +122,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "MaturaPolski.pl",
     category: "SaaS / EdTech",
     description:
@@ -111,7 +170,7 @@ const projects = [
     year: "2024-2025",
   },
   {
-    id: 3,
+    id: 4,
     title: "Smart-Edu.AI",
     category: "SaaS / EdTech",
     description: "Platforma AI do generowania prac pisemnych i naukowych",
@@ -143,7 +202,7 @@ const projects = [
     year: "2024",
   },
   {
-    id: 4,
+    id: 5,
     title: "Interpunkcja.com.pl",
     category: "SaaS / AI Tools",
     description:
@@ -198,7 +257,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Nadamel.pl",
     category: "Strona firmowa",
     description:
@@ -238,7 +297,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "GrandKuchnie.pl",
     category: "Strona firmowa",
     description:
@@ -272,7 +331,7 @@ const projects = [
     year: "2025",
   },
   {
-    id: 7,
+    id: 8,
     title: "Stojan Shop",
     category: "E-commerce",
     description: "Własny sklep e-commerce z pełną migracją z WooCommerce",
@@ -310,7 +369,7 @@ const projects = [
     year: "2021-2024",
   },
   {
-    id: 8,
+    id: 9,
     title: "Zeszyty ćwiczeń dla szkół policealnych",
     category: "Publishing / EdTech",
     description:
@@ -340,7 +399,7 @@ const projects = [
     },
   },
   {
-    id: 9,
+    id: 10,
     title: "Meble-Bydgoszcz.pl",
     category: "Strona firmowa",
     description:
@@ -375,7 +434,7 @@ const projects = [
     year: "2024-2025",
   },
   {
-    id: 10,
+    id: 11,
     title: "Project-Design.pl",
     category: "Portfolio / Strona firmowa",
     description:
@@ -416,7 +475,7 @@ const projects = [
     },
   },
   {
-    id: 11,
+    id: 12,
     title: "Prace-Magisterskie.pl",
     category: "Content / EdTech",
     description:
@@ -452,7 +511,7 @@ const projects = [
     },
   },
   {
-    id: 12,
+    id: 13,
     title: "MagisterkaOnline.com.pl",
     category: "Content / EdTech",
     description:
@@ -490,7 +549,7 @@ const projects = [
     },
   },
   {
-    id: 13,
+    id: 14,
     title: "By-Interior.pl",
     category: "Portfolio / Strona firmowa",
     description:
@@ -529,7 +588,7 @@ const projects = [
     },
   },
   {
-    id: 14,
+    id: 15,
     title: "TorWeb.pl",
     category: "Strona firmowa / Agencja",
     description:
@@ -575,7 +634,7 @@ const projects = [
     },
   },
   {
-    id: 15,
+    id: 16,
     title: "UniaTorun.pl",
     category: "Strona firmowa / Sport",
     description:
@@ -805,7 +864,15 @@ export function ProjectsSection() {
                       <a
                         href={selectedProject.link}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel={`noopener noreferrer${
+                          selectedProject.link.includes("matury-online.pl") ||
+                          selectedProject.link.includes("smart-copy.ai") ||
+                          selectedProject.link.includes("maturapolski.pl") ||
+                          selectedProject.link.includes("torweb.pl") ||
+                          selectedProject.link.includes("interpunkcja.com.pl")
+                            ? " me"
+                            : ""
+                        }`}
                         className="ml-auto flex items-center gap-2 text-primary hover:text-primary/80"
                       >
                         Odwiedź stronę <ExternalLink className="w-4 h-4" />
@@ -832,7 +899,7 @@ export function ProjectsSection() {
                               {key.replace("_", " ")}
                             </div>
                           </div>
-                        )
+                        ),
                       )}
                     </div>
                   )}
@@ -850,7 +917,7 @@ export function ProjectsSection() {
                               {feature}
                             </span>
                           </div>
-                        )
+                        ),
                       )}
                     </div>
                   </div>

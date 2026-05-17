@@ -18,6 +18,7 @@ interface FooterLink {
   label: string;
   href: string;
   disabled?: boolean;
+  external?: boolean;
 }
 
 interface FooterLinks {
@@ -58,6 +59,25 @@ export function Footer() {
       { label: "Wszystkie usługi", href: "/uslugi" },
       //{ label: "Blog", href: "/blog", disabled: true },
       //{ label: "Case studies", href: "/case-studies", disabled: true },
+    ],
+    "Moje projekty": [
+      {
+        label: "Matury Online",
+        href: "https://www.matury-online.pl",
+        external: true,
+      },
+      { label: "Smart-Copy.AI", href: "https://smart-copy.ai", external: true },
+      {
+        label: "MaturaPolski.pl",
+        href: "https://maturapolski.pl",
+        external: true,
+      },
+      {
+        label: "Interpunkcja.com.pl",
+        href: "https://interpunkcja.com.pl",
+        external: true,
+      },
+      { label: "TorWeb.pl", href: "https://torweb.pl", external: true },
     ],
   };
 
@@ -222,7 +242,7 @@ export function Footer() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-b border-primary/10"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 py-12 border-t border-b border-primary/10"
         >
           {Object.entries(footerLinks).map(
             ([category, links], categoryIndex) => (
@@ -246,6 +266,16 @@ export function Footer() {
                           {link.label}
                           <span className="text-xs ml-1">(wkrótce)</span>
                         </span>
+                      ) : link.external ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="me noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary text-sm transition-colors inline-flex items-center gap-1 group"
+                        >
+                          {link.label}
+                          <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </a>
                       ) : (
                         <Link
                           href={link.href}
@@ -259,7 +289,7 @@ export function Footer() {
                   ))}
                 </ul>
               </div>
-            )
+            ),
           )}
         </motion.div>
 

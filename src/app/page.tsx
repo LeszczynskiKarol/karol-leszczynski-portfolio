@@ -37,13 +37,40 @@ const structuredData = {
     addressRegion: "Kujawsko-Pomorskie",
     addressCountry: "PL",
   },
-
+  sameAs: [
+    "https://www.matury-online.pl",
+    "https://smart-copy.ai",
+    "https://maturapolski.pl",
+    "https://smart-edu.ai",
+    "https://interpunkcja.com.pl",
+    "https://torweb.pl",
+    "https://github.com/LeszczynskiKarol",
+  ],
+  worksFor: [
+    {
+      "@type": "Organization",
+      name: "Matury Online",
+      url: "https://www.matury-online.pl",
+      description: "Platforma EdTech do przygotowania do matury 2026",
+    },
+    {
+      "@type": "Organization",
+      name: "TorWeb",
+      url: "https://torweb.pl",
+      description: "Agencja interaktywna z Torunia",
+    },
+  ],
   knowsAbout: [
     "Web Development",
     "React",
     "Next.js",
     "Node.js",
     "AI Integration",
+    "EdTech",
+    "SaaS Development",
+    "SEO",
+    "Astro",
+    "TypeScript",
   ],
   offers: {
     "@type": "Offer",
